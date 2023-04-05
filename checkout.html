@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/coleman.js"></script>
+    <link rel="icon" type="image/favicon.png" href="images/favicon.png" sizes="48x48">
+    <link rel="stylesheet" href="css/import.css">
+<body>
+    <div id="searchPanel" class="panel search">
+        <div>
+            <form>
+                <input type="search" id="searchKeyword" placeholder="What are you looking for?" title="insert your search Keyword's">                            
+                <input type="submit" value="Search">
+            </form>
+            <strong>POPULAR SEARCHES</strong>
+            <ul>
+                <li><a href="coolersList.html">Coolers</a></li>
+                <li><a href="tent1_detail.html">Reunion Collection</a></li>
+                <li><a href="tent3_detail.html">PEAK1 collection</a></li>
+                <li><a href="tentList.html">Tent</a></li>
+                <li><a href="funiture.html">Chair</a></li>
+            </ul>
+        </div>
+        <input type="button" value="close" class="material-symbols-outlined">
+    </div>
+    <!-- popup -->
+    <header>
+        <div>
+            <span>
+                Ship To: United States of America ($USD) | EN
+                <a href="findstore.html">Find a Store</a>
+            </span>
+            <ul class="index_After">
+                <li data-popname="searchPanel">search</li>
+                <li>
+                    <a href="accountset.html">mypages</a>
+                </li>
+                <li>
+                    <a href="cart.html">Bag</a>
+                    <span>3</span>
+                </li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-symbols-outlined mui" data-panelName="muIPanel">
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/coleman_logo.png" alt="coleman">
+                </a>
+            </h1>
+        </div>
+        <nav>
+            <input type="button" value="close" class="material-symbols-outlined">   
+            <ul>
+                <li><a href="index_after.html"><img src="../images/coleman_logo.png" alt="coleman_logo"></a></li>
+                <li data-gnbbox="coolers">
+                    Coolers &amp; Drinkware
+                    <figure class="boxGnb" id="coolers">
+                        <img src="images/lnb1.png" alt="316 series">
+                        <figcaption>
+                            <h2>
+                                <small>since 1954</small>
+                                Your family cooler just got a whole lot
+                                cooler. Say hello to the Coleman® 
+                            </h2>
+                            <p>Coleman coolers are perfect for outdoor events like camping, backyard hangs and tailgating.Find all coolers of various sizes so that you can enjoy the convenience your Coleman camping gear brings to outdoor recreation.
+                            </p>
+                            <a href="coolersList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="tent">
+                    Tents &amp; Canopies
+                    <figure class="boxGnb" id="tent">
+                        <img src="images/lnb2.png" alt="skydome 4person">
+                        <figcaption>
+                            <h2>
+                                Coleman® Skylodge™ 4-Person Tent
+                            </h2>
+                            <p>Crank up the camping fun in the comfort of Coleman® tents and canopies,
+                                for shelter that's always got you covered. Get ready for your fastest tent pitch yet
+                                with the Skylodge™ 4-Person Tent for an easy-up tent in as little as 1 minute,
+                                so you can stroke campfires and stack s'mores in no time.
+                            </p>
+                            <a href="tentList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="sleepingBag">
+                    Sleeping Bags &amp; Beds
+                    <figure class="boxGnb" id="sleepingBag">
+                        <img src="images/lnb3.png" alt="Big Bay series">
+                        <figcaption>
+                            <h2>                        
+                                Big Bay™ 20° Mummy Sleeping Bag
+                            </h2>
+                            <p>Cold-weather camping is easy when you have a Big Bay™ 20° Mummy Sleeping Bag.
+                                From treks out for a car camping trip to stargazing nights in the backyard,
+                                this sleeping bag's Coletherm™ MAX insulation will keep you warm
+                                in temps as low as 20°F.
+                            </p>
+                            <a href="sleepingBagList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="lighting">
+                    Lighting
+                    <figure class="boxGnb" id="lighting">
+                        <img src="images/lnb4.png" alt="1900 Collection™ 600 Lumen LED Lantern">
+                            <figcaption>
+                                <h2>                            
+                                    Coleman® will keep everything illuminated.
+                                </h2>
+                                <p>
+                                    Whether you’re at the campsite or in your backyard,
+                                    our selection of outdoor lighting products are perfect for
+                                    your next bright adventure. 
+                                </p>
+                                <a href="lightingList.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="grills">
+                    Grills &amp; Stoves
+                    <figure class="boxGnb" id="grills">
+                        <img src="images/lnb5.png" alt="coleman grills">
+                            <figcaption>
+                                <h2>                            
+                                    Level up your food game with the Cascade™ Collection. 
+                                </h2>
+                                <p>
+                                    Wow friends and family with a variety of outdoor meals when you travel with 
+                                    Coleman Camp Kitchen Equipment for your crew. Our camping stoves &amp; grills are
+                                    perfect for small or large crews when preparing breakfast, lunch, &amp; dinner.
+                                </p>
+                                <a href="grillsList.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="campFuniture">
+                    Camp Furniture
+                    <figure class="boxGnb" id="campFuniture">
+                        <img src="images/lnb6.png" alt="Cross Rocker Outdoor Rocking Chair">
+                            <figcaption>
+                                <h2>
+                                    <small>New Arrival</small>
+                                    Say hello to the Cross Rocker Outdoor Rocking Chair.
+                                </h2>
+                                <p>
+                                    Sit back and count the constellations in our Big and Tall camping chair, featuring
+                                    an oversized seat and large footing for well-balanced stability. Recline in a heavy duty
+                                    camping chair you can trust with the reinforced steel frame of this oversized camping
+                                    chair that comfortably supports up to 600 lbs. 
+                                </p>
+                                <a href="funiture.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="ourStory">
+                    Explore Coleman
+                    <figure class="boxGnb" id="ourStory">
+                        <img src="images/lnb7.png" alt="since 1901">
+                            <figcaption>
+                                <h2>
+                                    Where We Are Today.
+                                </h2>
+                                <p>
+                                    After 122 years, Coleman gear is everywhere you are: on the trail, by the lake, 
+                                    at the match, or in the middle of a music festival. We're always around a place where
+                                    there are friends, coolers, and campfires. So, grab a tent, fire up a grill, and
+                                    pull up a chair. The Outside Is Calling. Answer it.
+                                </p>
+                                <a href="exploreColeman.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li><a href="findstore.html">Find a Store</a></li>
+            </ul>
+        </nav>
+        <ol class="rollingBanner">
+            <li>
+                <a href="faq.html">Free Shipping on orders $50</a>
+            </li>
+            <li>
+                <a href="eventsale.html">Shop Best of Sale.</a>
+            </li>
+            <li>
+                Enjoy complimentary Standard shipping and returns on all orders..
+            </li>
+        </ol>
+    </header>
+    <!-- Header-->
+    <section class="checkoutContainer">
+        <h2>check out Stepper</h2>
+        <ol class="fsttxtNv">
+            <li><a href="index_after.html">Home</a></li>
+            <li><a href="cart.html">shoppingBag</a></li>
+            <li>checkout</li>
+        </ol>
+        <form action="ordercomp.html">
+            <div>
+                <div class="checkLt">
+                    <div data-panelName="returnAddPopup" class="popup returnAdd">
+                        <strong>Shipping address list</strong>
+                        <input type="radio" name="returnCheck" id="selectAddr">
+                        <label for="selectAddr">Kaylyn office</label>
+                        <div>
+                            kaykim KIM <span>|</span>010-1234-5678
+                            <address>[77886] 333-607, B8654 <br>
+                                truffle-street, everland happy town US. 
+                            </address>
+                        </div>
+                        <input type="button" value="apply" class="btn close">
+                    </div>
+                    <ul class="inputList">
+                        <li>
+                            <label for="shipInfoUsrE">Email*</label>
+                            <input type="email" id="shipInfoUsrE" placeholder="example@gmail.com">
+                        </li>
+                        <li>
+                            <label for="shipInfoUsrM">Phone Number*</label>
+                            <input type="tel" id="shipInfoUsrM" placeholder="Enter only number without '-'">
+                        </li>
+                    </ul>
+                    <div class="coMethod">
+                        <h3>
+                            Shipping Information
+                            <small>*Required</small>
+                        </h3>
+                        <em>Your shipping address cannot be changed once your order has been placed</em>
+                        <ol class="addrRadio">
+                            <li>
+                                <input type="radio" name="shipAddChoose" id="shipAddT1">
+                                <label for="shipAddT1">primary address</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="shipAddChoose" id="shipAddT2" checked>
+                                <label for="shipAddT2">last delivery address</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="shipAddChoose" id="shipAddT3">
+                                <label for="shipAddT3">Direct input</label>
+                            </li>
+                            <li>
+                                <input type="button" data-popname="returnAddPopup" value="Shipping address list">
+                            </li>
+                        </ol>
+                        <ul id="shipAddC" class="inputList">
+                            <li>
+                                <label for="directInFN">First Name*</label>
+                                <input type="text" id="directInFN" value="kaylyn">
+                            </li>
+                            <li>
+                                <label for="directInLN">Last Name*</label>
+                                <input type="text" id="directInLN" value="KIM">
+                            </li>
+                            <li>
+                                <label for="directInAdd">Address*</label>
+                                <input type="text" id="directInAdd" value="joongang-ro 123">
+                            </li>
+                            <li>
+                                <label for="directInApt">Apartment, Suite, etc</label>
+                                <input type="text" id="directInApt" value="greentown apt">
+                            </li>
+                            <li>
+                                <label for="directInZip">Postal Code*</label>
+                                <input type="text" id="directInZip" value="01234">
+                            </li>
+                            <li>
+                                <label for="directInCity">City*</label>
+                                <input type="text" id="directInCity" value="seoul">
+                            </li>
+                            <li>
+                                <label for="directInProv">Province*</label>
+                                <input type="text" id="directInProv" value="seongsu-dong">
+                            </li>
+                        </ul>
+                        <div>
+                            <h4>Method of payment</h4>
+                            <ul class="tabUI">
+                                <li data-tabNumb="method1" class="btn L17034 active">Credit card</li>
+                                <li data-tabNumb="method2" class="btn L17034">Bank Transfer</li>
+                                <li data-tabNumb="method3" class="btn L17034">Virtual Account</li>
+                            </ul>
+                        </div>
+                        <ul id="method1" class="inputList active">
+                            <li>
+                                <label for="credCardSL">Choose a credit card</label>
+                                <select id="credCardSL">
+                                    <option>Choose a credit card</option>
+                                    <option>Chase Card</option>
+                                    <option>American Express</option>
+                                    <option>Citi Bank</option>
+                                    <option>Discover card</option>
+                                    <option>Capital one card</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="credCardMonth">Payment option</label>
+                                <select id="credCardMonth">
+                                    <option>Lump sum</option>
+                                    <option>2 - month</option>
+                                    <option>3 - month</option>
+                                    <option>4 - month</option>
+                                    <option>5 - month</option>
+                                    <option>6 - month</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="credCardNumb">Card number</label>
+                                <input type="password" id="credCardNumb" placeholder="Enter without '-'">
+                            </li>
+                            <li>
+                                <label for="credCardCvc">CVC number</label>
+                                <input type="password" id="credCardCvc" placeholder="Last 3 digits of CVC number">
+                            </li>
+                        </ul>
+                        <ul id="method2" class="inputList">
+                            <li>                   
+                                <label for="bankTransFni">Financial institutions</label>
+                                <select id="bankTransFni">
+                                    <option>Choose your bank.</option>
+                                    <option>Chase Bank</option>
+                                    <option>Bank of America</option>
+                                    <option>Wells Fargo Bank</option>
+                                    <option>Citi Bank</option>
+                                    <option>U.S bank</option>
+                                    <option>Truist Bank</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="bankTransAccNumb">Account Number</label>
+                                <input type="password" id="bankTransAccNumb" placeholder="Enter without '-'">
+                            </li>
+                            <li>
+                                <label for="bankTransAccPw">Account password</label>
+                                <input type="password" id="bankTransAccPw">
+                            </li>
+                            <li>
+                                <label for="bankTransRe">Registration Number</label>
+                                <input type="text" id="bankTransRe" placeholder="Enter without '-'">
+                                <p>*In the case of a corporate account, enter the business registration number</p>
+                            </li>
+                            <li>
+                                * The account information you entered is encrypted and the payment is made directly at the financial institution.
+                            </li>
+                        </ul>
+                        <ul id="method3" class="inputList">
+                            <li>
+                                <label for="virtAccDps">Depositor</label>
+                                <input type="text" id="virtAccDps" placeholder="Enter without '-'">
+                            </li>
+                            <li>
+                                <label for="virtAccDpsB">Deposit Bank</label>
+                                <select id="virtAccDpsB">
+                                    <option>Chase Bank</option>
+                                    <option>Bank of America</option>
+                                    <option>Wells Fargo Bank</option>
+                                    <option>Citi Bank</option>
+                                    <option>U.S bank</option>
+                                    <option>Truist Bank</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="virtAccAN">Account Number<small>*It will be confirmed after order completion.</small></label>
+                                <input type="text" id="virtAccAN" placeholder="Enter without '-'">
+                            </li>
+                            <li>
+                                Deposit within 7 days from the issuance date.
+                                <span>[ Deposit bank: chase bank / account number: 12345678910 ]</span>
+                            </li>  
+                        </ul>
+                    </div>
+                </div>
+                <div class="checkRt">
+                    <div class="odThum">
+                        <span>$USD</span>
+                        <ul>
+                            <li>
+                                <label for="choutTotPay">Your Estimated Total</label>
+                                <input type="text" id="choutTotPay" value="$723.97" readonly disabled>
+                            </li>
+                            <li>
+                                <label for="choutTotSub">Subtotal</label>
+                                <input type="text" id="choutTotSub" value="$723.97" readonly disabled>
+                            </li>
+                            <li>
+                                <label for="choutTotShip">Shipping 
+                                    <small>*Free shipping on orders $50 or more.</small>
+                                </label>
+                                <input type="text" id="choutTotShip" value="Free" readonly disabled>
+                            </li>
+                            <li>
+                                <label for="choutTotEst">Estimated Sales Tax</label>
+                                <input type="text" id="choutTotEst" value="TBD" readonly disabled>
+                            </li>
+                        </ul>
+                        <div>
+                            <h4>order product</h4>
+                            <ol>
+                                <li>
+                                    <a href="tent3_detail.html"><img src="images/checkout_01.png" alt="PEAK1™ 4-Person Dome Tent"></a>
+                                    <h5>PEAK1™ 4-Person Dome Tent</h5>
+                                    <span>
+                                        <label for="sumSKU1">SKU :</label> 
+                                        <input type="text" id="sumSKU1" value="2155774" readonly>
+                                    </span>
+                                    <span>
+                                        <label for="sumOp1">option :</label>
+                                        <input type="text" id="sumOp1" value="Marigold/ Dark Stone" readonly>
+                                    </span>
+                                    <b>$ 394.99</b>
+                                </li>
+                                <li>
+                                    <a href="canopies1_detail.html"><img src="images/checkout_02.png" alt="OASIS™ Lite 7 x 7 Canopy with Sun Wall"></a>
+                                    <h5>OASIS™ Lite 7 x 7 Canopy with Sun Wall</h5>
+                                    <span>
+                                        <label for="sumSKU2">SKU :</label> 
+                                        <input type="text" id="SumSKU2" value="2156416">
+                                    </span>
+                                    <span>
+                                        <label for="sumOp2">option :</label>
+                                        <input type="text" id="sumOp2" value="Black">
+                                    </span>
+                                    <b>$ 118.99</b>
+                                </li>
+                                <li>
+                                    <a href="cooler2_detail.html"><img src="images/checkout_03.png" alt="Reunion™ 54-Quart Steel Belted® Matte Cooler"></a>
+                                    <h5>Reunion™ 54-Quart Steel Belted® Matte Cooler</h5>
+                                    <span>
+                                        <label for="sumSKU3">SKU :</label> 
+                                        <input type="text" id="sumSKU3" value="3000006556">
+                                    </span>
+                                    <span>
+                                        <label for="sumOp3">option :</label>
+                                        <input type="text" id="sumOp3" value="Stainless Steel">
+                                    </span>
+                                    <b>$ 209.99</b>
+                                </li>
+                            </ol>
+                            <a class="btn 55550" href="ordercomp.html">check out</a>
+                        </div>
+                    </div>
+                    <ol>
+                        <li>
+                            <input type="checkbox" id="checkoutUseShip">
+                            <label for="checkoutUseShip">Use Shipping Address As Billing Address</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkoutADD">
+                            <label for="checkoutADD">Add to Address Book</label>
+                        </li>
+                        <li>                        
+                            <input type="checkbox" id="checkoutCheck">
+                            <label for="checkoutCheck">By checking off the box. I agree that I want to receive emails from Coleman Inc.
+                                about updates, products, collections, upcoming events and services that
+                                I may find interesting. I can withdraw this consent at any time as described in the
+                                <a href="privacypolicy.html">Privacy Policy</a>
+                                or by clicking on the "unsubscribe" link in the email.</label>
+                            <a href="mailto:colemaninc@coleman.com">E-mail colemaninc@coleman.com</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </form>
+    </section>   
+    <footer>
+        <a href="#">Back To top</a>
+        <div>            
+            <h2>
+               <img src="images/footer_logo.png" alt="coleman">
+            </h2>
+            <div>
+                <form>
+                    <span>
+                        <label for="userEmail">Subscribe</label>
+                        <input type="email" name="Subscribe" id="userEmail" placeholder="Email Address">
+                        <input type="submit" value="send">
+                    </span>
+                </form>
+                <ul>
+                    <li><a href="https://www.facebook.com/colemanusa">facebook</a></li>
+                    <li><a href="https://www.instagram.com/colemanusa/">instagram</a></li>
+                    <li><a href="https://www.youtube.com/user/Colemancampfire">youtube</a></li>
+                    <li><a href="findstore.html" class="btn L22534">Find a Store</a></li>
+                    <li><a href="contactus.html" class="btn L22534">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <address>
+            <span>
+                <mark>Coleman Korea Service Center</mark>
+                <a href="tel:+8215775932">1577-5932</a>
+                10:00am - 4:00pm (Monday - Friday)
+            </span>
+            <span>
+                Contact Us Coleman Korea Check the location of the service center.
+            </span>
+            <span>
+                Coleman Service Center, 2nd floor, 60 Dolmugae-gil, Gwacheon-si, Gyeonggi-do
+            </span>
+        </address>
+        <div>
+            <ol>
+                <li>© 2023 The Coleman Company, Inc. All rights reserved.</li>
+                <li><a href="accessibility.html">Accessibility Statement</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                <li><a href="faq.html">Faq</a></li>
+                <li><a href="sitemap_si.html">Site map</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="exploreColeman.html">Our Story</a></li>
+            </ol>
+        </div>
+    </footer>
+</body>
+</html>

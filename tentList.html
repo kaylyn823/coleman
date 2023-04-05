@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tent&Canopies</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/coleman.js"></script>
+    <link rel="icon" type="image/favicon.png" href="images/favicon.png" sizes="48x48">
+    <link rel="stylesheet" href="css/import.css">
+<body>
+    <div id="forgotPopup" class="popup forgot">
+        <input type="button" value="close" class="material-symbols-outlined">
+        <p>
+            <strong>Reset Password</strong>
+            Enter the email address you're using for your account. We'll send you an email with a link to reset your password.
+        </p>
+        <form>
+            <input type="email" id="signInuserE" placeholder="Please enter a valid email address">
+            <input type="submit" value="Send" class="btn L22550">
+        </form>
+    </div>
+    <div id="searchPanel" class="panel search">
+        <div>
+            <form>
+                <input type="search" id="searchKeyword" placeholder="What are you looking for?" title="insert your search Keyword's">                            
+                <input type="submit" value="Search">
+            </form>
+            <strong>POPULAR SEARCHES</strong>
+            <ul>
+                <li><a href="coolersList.html">Coolers</a></li>
+                <li><a href="tent1_detail.html">Reunion Collection</a></li>
+                <li><a href="tent3_detail.html">PEAK1 collection</a></li>
+                <li><a href="tentList.html">Tent</a></li>
+                <li><a href="funiture.html">Chair</a></li>
+            </ul>
+        </div>
+        <input type="button" value="close" class="material-symbols-outlined">
+    </div>
+    <div id="signInPanel" class="panel signIn">
+        <div>
+            <h2>Create Account</h2>                
+            <input type="button" value="Sign up" class="btn R15050" data-panelName="signUpPanel">
+            <img src="images/coleman_logo.png" alt="coleman logo">
+        </div>
+        <form action="index_after.html">
+            <div>
+                <h2>Login</h2>
+                <p>Welcome Back</p>
+                <p>Sign in for a more personalized experience</p>
+                <ul>
+                    <li>
+                        <label for="userLEmail">EMAIL ADDRESS*</label>
+                        <input type="email" id="userLEmail">
+                    </li>
+                    <li>
+                        <label for="userLPW">PASSWORDS*</label>
+                        <input type="password" id="userLPW">
+                        <span class="material-symbols-outlined">
+                            visibility_off
+                        </span>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </li>
+                    <li data-popname="forgotPopup">
+                        Forgot Password?
+                    </li>
+                </ul>
+                <input type="button" value="close" class="material-symbols-outlined">
+                <input type="submit" value="Login" class="btn R22550">
+            </div>
+        </form>
+    </div>
+    <div id="signUpPanel" class="panel signUp">
+        <div>
+            <h2>have an account?</h2>
+            <input type="button" value="Login" class="btn R15050" data-panelName="signInPanel">
+            <img src="images/coleman_logo.png" alt="coleman logo">
+        </div>
+        <form action="index_after.html">
+            <div>                                             
+                <h2>Create an Account</h2>
+                <ul>
+                    <li>
+                        <label for="userSFname">FIRST NAME</label>
+                        <input type="text" id="userSFname">
+                    </li>
+                    <li>
+                        <label for="userSLname">LAST NAME</label>
+                        <input type="text" id="userSLname">
+                    </li>
+                    <li>
+                        <label for="userSEmail">EMAIL ADDRESS*</label>
+                        <input type="email" id="userSEmail">
+                    </li>
+                    <li>
+                        <label for="userSPw">PASSWORD*</label>
+                        <input type="password" id="userSPw">
+                        <span class="material-symbols-outlined">visibility_off</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="rssAgreee">
+                        <label for="rssAgreee">agree to RSS</label>
+                        <p>By checking off the box, I agree that I want to receive emails from Coleman. about updates, products, collections, upcoming events and services that I may find interesting. 
+                            I can withdraw this consent at any time as described in the <a href="privacypolicy.html"><strong>Privacy Policy</strong></a> or by clicking on the “unsubscribe” link in the
+                            <a href="contactus.html"><strong>email.</strong></a>
+                        </p>
+                    </li>
+                </ul>
+                <input type="button" value="close" class="material-symbols-outlined">
+                <input type="submit" value="Register" class="btn R22550">
+            </div>
+        </form>
+    </div>  
+    <!-- popup -->
+    <header>
+        <div>
+            <span>
+                Ship To: United States of America ($USD) | EN
+                <a href="findstore.html">Find a Store</a>
+            </span>
+            <ul class="index_Gen">
+                <li data-panelName="signUpPanel">Sign up</li>
+                <li data-popname="searchPanel">search</li>
+                <li data-panelName="signInPanel">Login</li>
+                <li data-panelName="signInPanel">
+                    Bag
+                    <span>0</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-symbols-outlined mui" data-panelName="muIPanel">
+            <h1>
+                <a href="index.html">
+                    <img src="images/coleman_logo.png" alt="coleman">
+                </a>
+            </h1>
+        </div>
+        <nav>
+            <input type="button" value="close" class="material-symbols-outlined">   
+            <ul>
+                <li><a href="index.html"><img src="../images/coleman_logo.png" alt="coleman_logo"></a></li>
+                <li data-gnbbox="coolers">
+                    Coolers &amp; Drinkware
+                    <figure class="boxGnb" id="coolers">
+                        <img src="images/lnb1.png" alt="316 series">
+                        <figcaption>
+                            <h2>
+                                <small>since 1954</small>
+                                Your family cooler just got a whole lot
+                                cooler. Say hello to the Coleman® 
+                            </h2>
+                            <p>Coleman coolers are perfect for outdoor events like camping, backyard hangs and tailgating.Find all coolers of various sizes so that you can enjoy the convenience your Coleman camping gear brings to outdoor recreation.
+                            </p>
+                            <a href="coolersList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="tent">
+                    Tents &amp; Canopies
+                    <figure class="boxGnb" id="tent">
+                        <img src="images/lnb2.png" alt="skydome 4person">
+                        <figcaption>
+                            <h2>
+                                Coleman® Skylodge™ 4-Person Tent
+                            </h2>
+                            <p>Crank up the camping fun in the comfort of Coleman® tents and canopies,
+                                for shelter that's always got you covered. Get ready for your fastest tent pitch yet
+                                with the Skylodge™ 4-Person Tent for an easy-up tent in as little as 1 minute,
+                                so you can stroke campfires and stack s'mores in no time.
+                            </p>
+                            <a href="tentList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="sleepingBag">
+                    Sleeping Bags &amp; Beds
+                    <figure class="boxGnb" id="sleepingBag">
+                        <img src="images/lnb3.png" alt="Big Bay series">
+                        <figcaption>
+                            <h2>                        
+                                Big Bay™ 20° Mummy Sleeping Bag
+                            </h2>
+                            <p>Cold-weather camping is easy when you have a Big Bay™ 20° Mummy Sleeping Bag.
+                                From treks out for a car camping trip to stargazing nights in the backyard,
+                                this sleeping bag's Coletherm™ MAX insulation will keep you warm
+                                in temps as low as 20°F.
+                            </p>
+                            <a href="sleepingBagList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="lighting">
+                    Lighting
+                    <figure class="boxGnb" id="lighting">
+                        <img src="images/lnb4.png" alt="1900 Collection™ 600 Lumen LED Lantern">
+                            <figcaption>
+                                <h2>                            
+                                    Coleman® will keep everything illuminated.
+                                </h2>
+                                <p>
+                                    Whether you’re at the campsite or in your backyard,
+                                    our selection of outdoor lighting products are perfect for
+                                    your next bright adventure. 
+                                </p>
+                                <a href="lightingList.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="grills">
+                    Grills &amp; Stoves
+                    <figure class="boxGnb" id="grills">
+                        <img src="images/lnb5.png" alt="coleman grills">
+                            <figcaption>
+                                <h2>                            
+                                    Level up your food game with the Cascade™ Collection. 
+                                </h2>
+                                <p>
+                                    Wow friends and family with a variety of outdoor meals when you travel with 
+                                    Coleman Camp Kitchen Equipment for your crew. Our camping stoves &amp; grills are
+                                    perfect for small or large crews when preparing breakfast, lunch, &amp; dinner.
+                                </p>
+                                <a href="grillsList.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="campFuniture">
+                    Camp Furniture
+                    <figure class="boxGnb" id="campFuniture">
+                        <img src="images/lnb6.png" alt="Cross Rocker Outdoor Rocking Chair">
+                            <figcaption>
+                                <h2>
+                                    <small>New Arrival</small>
+                                    Say hello to the Cross Rocker Outdoor Rocking Chair.
+                                </h2>
+                                <p>
+                                    Sit back and count the constellations in our Big and Tall camping chair, featuring
+                                    an oversized seat and large footing for well-balanced stability. Recline in a heavy duty
+                                    camping chair you can trust with the reinforced steel frame of this oversized camping
+                                    chair that comfortably supports up to 600 lbs. 
+                                </p>
+                                <a href="funiture.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="ourStory">
+                    Explore Coleman
+                    <figure class="boxGnb" id="ourStory">
+                        <img src="images/lnb7.png" alt="since 1901">
+                            <figcaption>
+                                <h2>
+                                    Where We Are Today.
+                                </h2>
+                                <p>
+                                    After 122 years, Coleman gear is everywhere you are: on the trail, by the lake, 
+                                    at the match, or in the middle of a music festival. We're always around a place where
+                                    there are friends, coolers, and campfires. So, grab a tent, fire up a grill, and
+                                    pull up a chair. The Outside Is Calling. Answer it.
+                                </p>
+                                <a href="exploreColeman.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li><a href="findstore.html">Find a Store</a></li>
+            </ul>
+        </nav>
+        <ol class="rollingBanner">
+            <li>
+                <a href="faq.html">Free Shipping on orders $50</a>
+            </li>
+            <li>
+                <a href="eventsale.html">Shop Best of Sale.</a>
+            </li>
+            <li>
+                Enjoy complimentary Standard shipping and returns on all orders..
+            </li>
+        </ol>
+    </header>
+    <section class="listContainer">
+        <h2>
+            <img src="images/listTent_bg.png" alt="Tent&amp;list">
+            <span>
+                <strong>Tent &amp;</strong> Canopies
+            </span>
+        </h2>
+        <div>
+            <h3>27 Results</h3>            
+            <div>
+                <input type="button" value="sort" data-box="sortOption"> <!-- policy 및 아코디언 열리고 닫힘에 공동으로 사용  -->
+                <ol id="sortOption" class="sot">
+                    <li><input type="radio" name="sort_radio" id="stl_radio1"><label for="stl_radio1">New product order</label></li>
+                    <li><input type="radio" name="sort_radio" id="stl_radio2"><label for="stl_radio2">by Lowest price</label></li>
+                    <li><input type="radio" name="sort_radio" id="stl_radio3"><label for="stl_radio3">by High price</label></li>
+                    <li><input type="radio" name="sort_radio" id="stl_radio4" checked><label for="stl_radio4">Popularity order</label></li>
+                </ol>
+            </div>
+        </div>
+        <div class="listBox">         
+            <div id="sharePopup" class="popup share">
+                <div id="innerPopup" class="innerpopup">
+                    URL copied.
+                    <input type="button" value="Confirm" class="btn L22550">
+                </div>
+                <h2>share</h2>
+                <input type="button" value="close" class="material-symbols-outlined">
+                <ol>
+                    <li data-popname="innerpopup">URL</li>
+                    <li>
+                        <a href="https://accounts.kakao.com/login/?continue=https://kauth.kakao.com/oauth/authorize%3Fproxy=easyXDM_Kakao_8olajvi4na_provider&ka=sdk%2F1.43.1%20os%2Fjavascript%20sdk_type%2Fjavascript%20lang%2Fko-KR%20device%2FWin32%20origin%2Fhttps%253A%252F%252Fwww.epis.or.kr&origin=https%3A%2F%2Fwww.epis.or.kr&response_type=code&redirect_uri=kakaojs&state=xfgiz4q6bzyc61r07on9e&through_account=true&client_id=950f3ae1f2f550e5ba7ff7d9fffc7781&talk_login=hidden">
+                        KAKAO
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/accounts/login/">
+                        INSTA
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <ul class="productList">
+                <li>
+                    <img src="images/tent1_01.png" alt="PEAK1™ 1-Person Backpacking Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co marigoldDarkStone active" data-src="tent1_01">Marigold Darkstone</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent1_detail.html">PEAK1™ 1-Person Backpacking Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$229.99</del>
+                            $204.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent2_01.png" alt="PEAK1™ 3-Person Backpacking Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co marigoldDarkStone active" data-src="tent2_01">Marigold Darkstone</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent2_detail.html">PEAK1™ 3-Person Backpacking Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$299.99</del>
+                            $269.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent3_01.png" alt="PEAK1™ 4-Person Dome Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co marigoldDarkStone active" data-src="tent3_01">Marigold Darkstone</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent3_detail.html">PEAK1™ 4-Person Dome Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$439.99</del>
+                            $394.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent4_01.png" alt="PEAK1™ 6-Person Dome Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co marigoldDarkStone active" data-src="tent4_01">Marigold Darkstone</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent4_detail.html">PEAK1™ 6-Person Dome Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$549.99</del>
+                            $494.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent5_01.png" alt="Skydome™ 4-Person Tent with LED Lighting">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co waterSedge active" data-src="tent5_01">Watersedge</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent5_detail.html">Skydome™ 4-Person Tent with LED Lighting</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$139.99</del>
+                            $124.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent6_01.png" alt="Skydome™ XL 8-Person Tent with LED Lighting">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co waterSedge active" data-src="tent6_01">Watersedge</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent6_detail.html">Skydome™ XL 8-Person Tent with LED Lighting</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$289.99</del>
+                            $259.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent7_01.png" alt="Skydome™ XL 10-Person Camping Tent with Dark Room™ Technology">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co darkRoom active" data-src="tent7_01">Dark Room</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent7_detail.html">Skydome™ XL 10-Person Camping Tent with Dark Room™ Technology</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$389.99</del>
+                            $349.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent8_01.png" alt="Skydome™ 2-Person Camping Tent with Full-Fly Vestibule">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co everGreen active" data-src="tent8_01">Evergreen</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent8_detail.html">Skydome™ 2-Person Camping Tent with Full-Fly Vestibule</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$129.99</del>
+                            $116.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent9_01.png" alt="Skydome™ 4-Person Camping Tent with Full-Fly Vestibule">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co everGreen active" data-src="tent9_01">Evergreen</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent9_detail.html">Skydome™ 4-Person Camping Tent with Full-Fly Vestibule</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$159.99</del>
+                            $149.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent10_01.png" alt="Skydome™ 6-Person Camping Tent with Full-Fly Vestibule">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co everGreen active" data-src="tent10_01">Evergreen</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent10_detail.html">Skydome™ 6-Person Camping Tent with Full-Fly Vestibule</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$206.99</del>
+                            $229.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent11_01.png" alt="WeatherMaster® 6-Person Tent with Screen Room">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co brownTan active" data-src="tent11_01">BrownTan</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent11_detail.html">WeatherMaster® 6-Person Tent with Screen Room</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$379.99</del>
+                            $284.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent12_01.png" alt="WeatherMaster® 10-Person Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co brownTan active" data-src="tent12_01">BrownTan</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent12_detail.html">WeatherMaster® 10-Person Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$349.99</del>
+                            $262.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent13_01.png" alt="8-Person Red Canyon™ Dome Camping Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co black active" data-src="tent13_01">Black</li>
+                                <li class="co red" data-src="tent14_01">Red</li>
+                            </ol>
+                        </div>
+                        <span>2</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent13_detail.html">8-Person Red Canyon™ Dome Camping Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$219.99</del>
+                            $149.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent14_01.png" alt="8-Person Red Canyon™ Dome Camping Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co red active" data-src="tent14_01">Red</li>
+                                <li class="co black" data-src="tent13_01">Black</li>
+                            </ol>
+                        </div>
+                        <span>2</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent14_detail.html">8-Person Red Canyon™ Dome Camping Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$219.99</del>
+                            $149.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent15_01.png" alt="Sunlodge™ 8-Person Camping Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co blueNights active" data-src="tent15_01">Blue Nights</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent15_detail.html">Sunlodge™ 8-Person Camping Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$324.99</del>
+                            $308.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent16_01.png" alt="Sunlodge™ 10-Person Camping Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co blueNights active" data-src="tent16_01">Blue Nights</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent16_detail.html">Sunlodge™ 10-Person Camping Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$379.99</del>
+                            $360.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent17_01.png" alt="Sunlodge™ 12-Person Camping Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co blueNights active" data-src="tent17_01">Blue Nights</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent17_detail.html">Sunlodge™ 12-Person Camping Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$419.99</del>
+                            $398.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent18_01.png" alt="Montana™ 8-Person Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co palmGreen active" data-src="tent18_01">Palm Green</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent18_detail.html">Montana™ 8-Person Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$269.99</del>
+                            $202.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent19_01.png" alt="Montana™ 6-Person Cabin Camping Tent with Extended Awning">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co palmGreen active" data-src="tent19_01">Palm Green</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent19_detail.html">Montana™ 6-Person Cabin Camping Tent with Extended Awning</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$169.99</del>
+                            $129.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent20_01.png" alt="Signature Prairie Breeze™ 9-Person Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co grey active" data-src="tent20_01">Grey</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent20_detail.html">Signature Prairie Breeze™ 9-Person Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$379.99</del>
+                            $284.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <span>40%</span>
+                    <img src="images/tent21_01.png" alt="Skylodge™ 12-Person Camping Tent With Screen Room">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co everGreen active" data-src="tent21_01">Evergreen</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent21_detail.html">Skylodge™ 12-Person Camping Tent With Screen Room</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$429.99</del>
+                            $716.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent22_01.png" alt="Evanston™ Screened 6-Person Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co palmGreen active" data-src="tent22_01">Palm Green</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent22_detail.html">Evanston™ Screened 6-Person Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$229.99</del>
+                            $172.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/tent23_01.png" alt="Shoreline™ Instant Shade">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co blue active" data-src="tent23_01">Blue</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="tent23_detail.html">Shoreline™ Instant Shade</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$74.99</del>
+                            $69.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/canopies1_01.png" alt="OASIS™ Lite 7 x 7 Canopy with Sun Wall">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co black active" data-src="canopies1_01">Black</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="canopies1_detail.html">OASIS™ Lite 7 x 7 Canopy with Sun Wall</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$139.99</del>
+                            $118.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/canopies2_01.png" alt="OASIS™ 13 x 13 Canopy">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co moss active" data-src="canopies2_01">Moss</li>
+                                <li class="co lightOak" data-src="canopies3_01">Light Oak</li>
+                            </ol>
+                        </div>
+                        <span>2</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="canopies2_detail.html">OASIS™ 13 x 13 Canopy</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$219.99</del>
+                            $186.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/canopies3_01.png" alt="OASIS™ 13 x 13 Canopy">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co lightOak active" data-src="canopies3_01">Light Oak</li>
+                                <li class="co moss" data-src="canopies2_01">Moss</li>
+                            </ol>
+                        </div>
+                        <span>2</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="canopies3_detail.html">OASIS™ 13 x 13 Canopy</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$219.99</del>
+                            $186.99
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/shelters1_01.png" alt="Skylodge™ 15 x 13 Instant Screen Canopy Tent">
+                    <div>
+                        <div>
+                            <ol>
+                                <li class="co moss active" data-src="shelters1_01">Moss</li>
+                            </ol>
+                        </div>
+                        <span>1</span> <!-- :after - colors-->
+                    </div>
+                    <div>
+                        <h3><a href="shelters1_detail.html">Skylodge™ 15 x 13 Instant Screen Canopy Tent</a></h3>
+                        <input type="button" value="wish" class="toggleAction">
+                        <input type="button" value="cart" class="toggleAction">
+                        <input type="button" value="share" class="toggleAction">
+                        <span>
+                            <del>$159.99</del>
+                            $135.99
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <a href="#">Back To top</a>
+        <div>            
+            <h2>
+               <img src="images/footer_logo.png" alt="coleman">
+            </h2>
+            <div>
+                <form>
+                    <span>
+                        <label for="userEmail">Subscribe</label>
+                        <input type="email" name="Subscribe" id="userEmail" placeholder="Email Address">
+                        <input type="submit" value="send">
+                    </span>
+                </form>
+                <ul>
+                    <li><a href="https://www.facebook.com/colemanusa">facebook</a></li>
+                    <li><a href="https://www.instagram.com/colemanusa/">instagram</a></li>
+                    <li><a href="https://www.youtube.com/user/Colemancampfire">youtube</a></li>
+                    <li><a href="findstore.html" class="btn L22534">Find a Store</a></li>
+                    <li><a href="contactus.html" class="btn L22534">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <address>
+            <span>
+                <mark>Coleman Korea Service Center</mark>
+                <a href="tel:+8215775932">1577-5932</a>
+                10:00am - 4:00pm (Monday - Friday)
+            </span>
+            <span>
+                Contact Us Coleman Korea Check the location of the service center.
+            </span>
+            <span>
+                Coleman Service Center, 2nd floor, 60 Dolmugae-gil, Gwacheon-si, Gyeonggi-do
+            </span>
+        </address>
+        <div>
+            <ol>
+                <li>© 2023 The Coleman Company, Inc. All rights reserved.</li>
+                <li><a href="accessibility.html">Accessibility Statement</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                <li><a href="faq.html">Faq</a></li>
+                <li><a href="sitemap.html">Site map</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="exploreColeman.html">Our Story</a></li>
+            </ol>
+        </div>
+    </footer>
+</body>
+</html>

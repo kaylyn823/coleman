@@ -1,0 +1,1479 @@
+/* colorSprite */
+.white{background-position: -0.25% -0.35%;}
+.cloudWhite{background-position: -0.25% 9.62%;}
+.whiteTruffle{background-position: -0.25% 19.75%;}
+.rock{background-position: -0.25% 29.85%;}
+.rockGrey{background-position: -0.25% 39.9%;}
+.slate{background-position: -0.25% 49.95%;}
+.grey{background-position: -0.25% 60.1%;}
+.midNight{background-position: -0.25% 70.15%;}
+.black{background-position: -0.25% 80.25%;}
+.silver{background-position: -0.25% 90.3%;}
+.stainlessSteel{background-position: -0.25% 100.4%;}
+.fog{background-position: 25.5% -0.40%;}
+.waterSedge{background-position: 25.5% 9.62%;}
+.teal{background-position: 25.5% 19.75%;}
+.blackCarribeanBlue{background-position: 25.5% 39.9%;}
+.blue{background-position: 25.5% 50%;}
+.blueWhite{background-position: 25.5% 60.1%;}
+.ocean{background-position: 25.5% 70.15%;}
+.deepOcean{background-position: 25.5% 80.25%;}
+.blueNights{background-position: 25.5% 90.3%;}
+.darkRoom{background-position: 25.5% 100.4%;}
+.beige{background-position: 51.25% -0.35%;}
+.brown{background-position: 51.25% 9.62%;}
+.lightOak{background-position: 51.25% 19.75%;}
+.brownTan{background-position: 51.25% 29.85%;}
+.tan{background-position: 51.25% 39.9%;}
+.smoke{background-position: 51.25% 49.95%;}
+.darkStorm{background-position: 51.25% 60.1%;}
+.sage{background-position: 51.25% 70.15%;}
+.yellowGrey{background-position: 51.25% 80.25%;}
+.marigoldDarkStone{background-position: 51.25% 90.3%;}
+.soldOut{background-position: 51.25% 100.4%;}
+.moss{background-position: 76.95% -0.4%;}
+.spiderMum{background-position: -628px 9.62%;}
+.palmGreen{background-position: -628px 19.75%;}
+.green{background-position: -628px 29.85%;}
+.everGreen{background-position: -628px 39.9%;}
+.heritageGreen{background-position: -628px 49.95%;}
+.space{background-position: -628px 60.1%;}
+.tigerLily{background-position: -628px 70.15%;}
+.blackRed{background-position: -628px 80.25%;}
+.red{background-position: -628px 90.3%;}
+.metallic{background-position: -628px 100.4%;}
+
+/* detail */
+a.btn{text-align: center; text-decoration: none; box-sizing: border-box; transition: 0.25s ease-in-out; }
+.btn{cursor: pointer; text-align: center; box-sizing: border-box; transition: 0.25s ease-in-out; font-weight: 600;}
+.R22550{
+    background-color: #b72c28; border: 1px solid #b72c28; color: #ffffff; border-radius: 1.87em;
+}
+.R22550:hover{background-color: #ffffff; border: 1px solid #ff3f38; color: #ff3f38;}
+.R15050{
+    text-align: center; border-radius: 1.87em; background-color: rgba(255, 255, 255, 0.75); color: #ff3f38;
+    border: 1px solid #ffffff;
+}
+.R15050:hover{background-color: #ff3f38; color: #ffffff; border: 1px solid #ff3f38;}
+
+/* FONT - Raleway*/
+textarea,
+.productList,
+.share,
+.forgot,
+.forgot input::placeholder,
+.search,
+.signIn > div > h2,
+.signIn form div p,
+.signIn form div ul li,
+.signUp div h2,
+.signUp form div ul li,
+.signUp form div ul li input,
+header,
+footer,
+footer input,
+input[type='submit'],
+.search input[type='search'],
+.btn,
+.main.Container > div:nth-of-type(2),
+.main.Container > div:nth-of-type(3):not(h2),
+.main.Container > figure:not(h2),
+.main.Container .head > li .msTt:not(h3),
+.listContainer,.listContainer > div:nth-of-type(1) div input[type='button'],
+.wcproductList,.detailContainer > ol,
+.detailContainer div:not(:nth-of-type(3) h3:nth-of-type(4) strong),
+.detailContainer > div:nth-of-type(2) > div > div:last-of-type small,
+.detailContainer .popup.write > div:nth-of-type(2) textarea,
+.detailContainer .popup.write > div:nth-of-type(2) textarea::placeholder,.wishContainer,.cartContainer,
+.wishContainer a,
+.cartContainer a,
+.accountsetContainer,
+.accountsetContainer >*,
+.inputList input,
+.saveNewAddContainer,
+.saveNewAddContainer >*,
+.orderContainer >*,
+.orderContainer input,
+select,
+select > option,
+.contactUsContainer,
+.accessibilityContainer:not(h3,h4),
+.boDo > small,
+.inputList,
+.checkoutContainer:not(h3:first-of-type),.checkoutContainer small,.checkoutContainer input,
+.orderCompleteContainer,
+.faqNavi,
+.faqNavi input,
+.fsttxtNv,
+.fsttxtNv a,
+.faqContainer details,
+.flexContr p,
+.deTxt >li:not(h4),
+.faq3 > div:last-child,
+.sitemapContainer,.historyLogo,
+.ourstoryContainer > ul li:nth-child(1) dl dd,
+.ourstoryContainer > ul li:nth-child(2) blockquote,
+.ourstoryContainer > ul li:nth-child(2) div p,
+.ourstoryContainer > ul li:nth-child(3) figure figcaption dl dd small,
+.ourstoryContainer input,
+.ourstoryContainer > ul li:nth-child(4) div p:not(strong),
+.ourstoryContainer > div:nth-of-type(2) h2 small,
+.ourstoryContainer .videoContainer div p,
+.findStoreContainer aside:not(h2),
+.findStoreContainer aside h2 small,
+.findStoreContainer input,
+.tabTab{
+    font-family: 'Raleway';
+}
+/* FONT - Libre Bodoni */
+.signIn form div h2,
+.signUp form div h2,
+.main > div:nth-child(1) p strong, 
+.main.Container > div:nth-of-type(3) h2,
+.main.Container > figure h2,
+.main.Container > ol li figure.floatBox figcaption h3,
+.detailContainer > div:nth-of-type(2) > div > div:last-of-type strong,
+.detailContainer > div:nth-of-type(4) > h3,
+.detailContainer > div:nth-of-type(5) > div > p > strong,
+.boDo:not(small),
+.deTxt h4,
+.checkoutContainer form div .checkLt div > h3:not(small),
+.faqContainer .flexBox figcaption h5,
+.ourstoryContainer > ul li:nth-child(1) dl dt,
+.ourstoryContainer > ul li:nth-child(2) div h2 mark+small,
+.ourstoryContainer > ul li:nth-child(3) figure figcaption dl:not(small),
+.ourstoryContainer > ul li:nth-child(4) div p strong,
+.ourstoryContainer > div:nth-of-type(2) h2:not(small),
+.findStoreContainer aside h2:not(small){
+    font-family: 'Libre Bodoni';
+}
+.main.Container .head > li .msTt h3,
+.ourstoryContainer > ul li:nth-child(1) h2,
+.ourstoryContainer > ul li:nth-child(2) blockquote::before,
+.ourstoryContainer > ul li:nth-child(2) blockquote::after,
+.ourstoryContainer > ul li:nth-child(2) div h2:not(mark):not(small),
+.ourstoryContainer > ul li:nth-child(3) figure figcaption:before,
+.ourstoryContainer > ul li:nth-child(4) h2,
+.ourstoryContainer .videoContainer div h2{
+    font-family: 'Playfair Display';
+}
+[class^="popup"],
+[class^="panel"]{
+    display: none;
+}
+[class^="popup"].active,
+[class^="panel"].active{
+    display: block;
+}
+
+.listBox{position: relative; width: 100%;}
+input[type='checkbox']+label{
+    padding-left: 35px; box-sizing: border-box;
+    background-position: left center; background-size: 20px; background-repeat: no-repeat;
+    background-image: url('../images/check_off.png');
+}
+input[type='checkbox']:checked+label{
+    background-position: left center; background-size: 20px; background-repeat: no-repeat;
+    background-image: url('../images/check_on.png');
+}
+.material-symbols-outlined{background-color: transparent; border: none; cursor: pointer;
+}
+@media screen and (max-width:767px){
+    .productList, footer > *:not(a){
+        margin: 0 auto;
+    }
+    header > div:first-of-type{
+        position: absolute; right: 0;
+    }
+    .orderContainer,
+    .accountsetContainer,
+    .saveNewAddContainer,
+    .wishContainer,
+    .cartContainer,
+    .policyContainer,
+    .accessibilityContainer,
+    .termsContainer,
+    .contactUsContainer,
+    .checkoutContainer,
+    .orderCompleteContainer,
+    .sitemapContainer{
+        max-width: 90%; margin: 0 auto; padding: 0 5% 210px;
+    }
+    /* search 패널 */
+    .search:after{content: ''; display: block; clear: both;}
+    .search{
+        width: 100%; position: fixed; top: 0; margin: 0 auto; z-index: 999999;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .search div form{
+        width: 90%; margin: 0 auto; padding: 25% 5% 0;
+        display: flex; flex-flow: row nowrap;
+    }
+    .search div input[type='search']{
+        width: 85%; background-color: transparent; font-size: 16px; padding: 1% 2%;
+        font-weight: 500; line-height: 35px; color: #000;
+        border: none; border-bottom: 1px solid #acacac;}
+    .search div input[type='search']::placeholder{color: #6a6a6a;}
+    .search div input[type='submit']{
+        width: 15%; background: url('../images/search_ico.png') center / 20px no-repeat #5a5a5a;
+        line-height: 35px; border: none; box-sizing: border-box;
+        text-indent: -9999px;
+    }
+    .search div strong{
+        padding: 0 7%; display: block; line-height: 50px;
+        font-size: 16px; font-weight: 600; color: #6c1b18; margin-bottom: 2.25%;}
+    .search div ul{margin-bottom: 10%; padding: 0 7%;}
+    .search div ul li{display: inline-block;}
+    .search div ul li:not(:first-child){margin-left: 3.55%;}
+    .search div ul li a{
+        display: block; width: 100%; font-size: 14px; font-weight: 300;
+        color: #8a8a8a; text-decoration: none; line-height: 24px;}
+
+    .search input[type='button']{
+        position: absolute; top: 7%; right: 5%; font-size: 20px; cursor: pointer; padding: 0;
+    }
+    .forgot{
+        position: fixed; top: 30%; left: 4%; z-index: 999; width: 86%; padding: 15% 3% 5%;
+        background-color: #fff; box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
+    }
+    .forgot p:not(strong){
+        font-size: 13px; font-weight: 400; margin-bottom: 25px; line-height: 24px;
+    }
+    .forgot p strong{
+        display: block; font-size: 16px; font-weight: 600; margin-bottom: 20px;
+    }
+    .forgot .material-symbols-outlined{
+        position: absolute; top: 5%; right: 2%;
+        display: block; font-size: 20px; 
+    }
+    .forgot form input[type='email']{
+        display: block; width: 96%; margin: 0 auto 20px; line-height: 24px;
+        padding: 1% 2%; 
+        border-style: none none solid none;
+        background-color: transparent;
+        border-color: #acacac;
+    }
+    .forgot form input[type='email']::placeholder{
+        color: #acacac;
+    }
+    .forgot form input[type='submit']{
+        display: block; width: 100%; margin: 0 auto;
+        font-size: 14px; font-weight: 500; line-height: 34px;
+        background-color: #002f4a; color: #fff; box-sizing: border-box;
+        border: 1px solid #002f4a;
+    }
+    .forgot form input[type='submit']:hover{
+        color: #002f4a; background-color: transparent;
+    }
+
+    /* signIn, signUp 공통 */
+    .signIn:after,
+    .signUp:after,
+    .signIn form div ul:after,
+    .signIn form div ul li:after,
+    .signIn > div:first-of-type:after,
+    .signUp > div:first-of-type:after,
+    .signUp form div ul:after,
+    .signUp form div ul li:after{content: ''; display: block; clear: both;}
+    .signIn,.signUp{
+        position: fixed; z-index: 99; top: -30%; left: 2%; width: 96%; overflow: scroll;
+        background-color: #f7f8f3; margin: 0 auto;
+        clear: both; box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);}
+    .signIn,.signUp{top: 10%;}
+    .signIn div,.signUp div{position:relative;}
+    .signIn > div:first-of-type,.signUp > div:first-of-type{display: none;}
+    .signIn form div,.signUp form div{width: 100%; height: auto; margin: 0 auto;}
+    .signIn form div h2,.signUp form div h2{
+        font-size: 26px; font-weight: 700; color: #000000; text-align: center;
+        padding: 45px 0 0; margin-bottom: 10%;}
+    .signIn form div ul,.signUp form div ul{width: 92%; padding: 0 4%; margin: 0 auto 35px;}
+    .signIn form div ul li:not(:nth-child(3)),.signUp form div ul li:not(:nth-child(5)),.signUp form div ul li:nth-child(5) p,.signUp form div ul li:nth-child(5) label{font-size: 12px;}
+    .signIn form div ul li input,.signUp form div ul li input{background-color: transparent; border: none;}
+    .signIn form div ul li input[type='checkbox'],.signUp form div ul li input[type='checkbox']{display: none;}
+    .signIn form div input[type='submit'],
+    .signUp form div input[type='submit']{display: block; width: 45%; line-height: 50px; font-size: 16px; margin: 0 auto; margin-bottom: 9%;}
+    .signUp form div > .material-symbols-outlined,.signIn form div > .material-symbols-outlined{position: absolute; top: 3%; right: 2%; font-size: 20px;}
+    /* signIn */
+    .signIn form div p:first-of-type{font-size: 24px; font-weight: 500; color: #c0d8c0; text-align: center; margin-bottom: 2.5%;}
+    .signIn form div p:last-of-type{font-size: 12px; font-weight: 400; color: #6a6a6a; text-align: center; text-transform: uppercase; margin-bottom: 5%;}
+    .signIn form div ul li{width: 100%;}
+    .signIn form div ul li:nth-child(1),
+    .signIn form div ul li:nth-child(2){display: block; box-sizing: border-box; border-bottom: 1px solid #acacac;}
+    .signIn form div ul li:nth-child(1){margin-bottom: 10.5%;}
+    .signIn form div ul li:nth-child(2){position: relative; margin-bottom: 8%;}
+    .signIn form div ul li:nth-child(1) label,
+    .signIn form div ul li:nth-child(2) label{display: block; padding:0  2%; line-height: 32px;}
+    .signIn form div ul li:nth-child(1) input,
+    .signIn form div ul li:nth-child(2) input{
+        width: 95%; display: block; padding:0 2% ; line-height: 32px;}
+    .signIn form div ul li:nth-child(2) .material-symbols-outlined{position: absolute; right: 5%; bottom: 15%; font-size: 15px;}
+    .signIn form div ul li:nth-child(3){float: left; display: block; width: 50%; line-height: 32px;}
+    .signIn form div ul li:nth-child(3) label{font-size: 12px; display: block;}
+    .signIn form div ul li:nth-child(4){float: right; display: block; width: 50%; text-align: right; line-height: 32px; color: #b72c28;}    
+    /* signUp */
+    .signUp form div ul li:not(:last-of-type){display: block; margin-bottom: 2%;}
+    .signUp form div ul li label:not(:last-child),
+    .signUp form div ul li input{line-height: 32px; padding: 0 2%;}    
+    .signUp form div ul li label:not(:last-child){width: 100%;}
+    .signUp form div ul li input{width: 95%}
+    .signUp form div ul li:not(:last-of-type){border-bottom: 1px solid #acacac; box-sizing: border-box;}
+    .signUp form div ul li:nth-child(4){position: relative;}
+    .signUp form div ul li:nth-child(4) span{position: absolute; bottom: 5%; right: 5%; font-size: 15px;}
+    .signUp form div ul li:last-child{display: block;}
+    .signUp form div ul li:last-child label{float: left; display: block; width: 12%; text-indent: -9999px; line-height: 30px;}
+    .signUp form div ul li:last-child p{width: 88%;  display: block; padding: 1% 0 0 12%; line-height: 18px;}
+    .signUp form div ul li:last-child p a{display: inline-block;}
+    .signUp form div ul li:last-child p a strong{display: block; color: #000;}
+    /* 헤더 */
+    header{position: relative; width: 100%; padding-top: 8%;}
+    
+    header div:first-child{
+        display: flex; max-width: 100%;
+        position: relative;
+    }
+    header div:first-child span{
+        display: none;
+    }
+    header div:first-child span a{
+        display: none;
+    }
+    header div:first-child ul.index_Gen,
+    header div:first-child ul.index_After{
+        position:fixed; left: 0; bottom: 0; width: 100%; background-color: #ffffff;
+        display: flex; flex-flow: row nowrap; justify-content: center;
+        z-index: 999; box-sizing: border-box; border-top: 1px solid #eaeaea;
+    }
+    header div:first-child ul.index_After li,
+    header div:first-child ul.index_Gen li{
+        display: flex; width: 50px; height: 55px;
+        background-repeat: no-repeat; cursor: pointer; background-position: center;
+        font-size: 10px;  text-indent: -9999px;
+        align-self: center;
+    }
+    header div:first-child ul.index_After li a,
+    header div:first-child ul.index_Gen li a{
+        display: block; width: 100%;
+    }    
+    header div:first-child ul.index_After li:not(:first-child),
+    header div:first-child ul.index_Gen li:not(:first-child){
+        margin-left: 5%;
+    }
+    header div:first-child ul.index_Gen li:nth-child(1){
+        background-image: url('../images/header_ico_02.png');
+    }
+    header div:first-child ul.index_Gen li:nth-child(2){
+        background-image: url('../images/header_ico_03.png');
+    }
+    header div:first-child ul.index_Gen li:nth-child(3){
+        background-image: url('../images/header_ico_04.png');
+    }
+    header div:first-child ul.index_Gen li:nth-child(4){
+        background-image: url('../images/header_ico_05.png');
+    }    
+    header div:first-child ul.index_After li:nth-child(1){
+        background-image: url('../images/header_ico_03.png');
+    }
+    header div:first-child ul.index_After li:nth-child(2){
+        background-image: url('../images/header_ico_06.png');
+    }
+    header div:first-child ul.index_After li a{
+        display: flex; width: 100%; 
+    }
+    header div:first-child ul.index_After li:nth-child(2) ol{
+        display: none;
+    } 
+    header div:first-child ul.index_After li:nth-child(3){
+        background-image: url('../images/header_ico_05.png');
+    }
+    
+    header div:first-child ul.index_After li:nth-child(4){
+        background-image: url('../images/header_ico_07.png');
+    }
+    header div:nth-child(2){
+        width: 100%; margin: 0 auto 5%;
+        display: flex; justify-content: center;
+    }
+    header div:nth-child(2) .material-symbols-outlined.mui{
+       width: 12.5%; height: 50px; font-size: 35px;
+    }
+    header div:nth-child(2) h1{
+        width: 30%; display: flex; margin: 0 auto; align-self: center; padding-right: 14.5%;}
+    header div:nth-child(2) a{width: 100%; display: block;}
+    header div:nth-child(2) h1 img{width: 100%;}
+    header nav{
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.98);
+        z-index: 99999; display: none; overflow-y: scroll;
+    }
+    header nav.active{
+        display: block;
+    }
+    header nav input.material-symbols-outlined{
+        position: absolute; z-index: 9999; top: 25px; right: 5%; font-size: 20px;
+    }
+    header nav ul{
+        display: flex; 
+        width: 90%; height: 100%;
+        flex-flow: column nowrap; 
+        padding: 5% 0 5%;
+    }
+    header nav ul li:first-child{
+        width: 100%; margin: 0 auto 5%;
+    }
+    header nav ul li:nth-child(8){
+        margin-bottom: 5%;
+    }
+    header nav ul li:not(:first-child){
+        width: 100%; line-height: 50px; box-sizing: border-box; 
+        padding: 0 5%; cursor: pointer;
+    }
+    header nav ul li:not(:first-child):not(:last-child){
+        border-bottom: 1px solid #eaeaea;
+    }
+    header nav ul li{position: relative;}
+    header nav ul li:not(:first-child):after{
+        position: absolute; top: 0; right: 5%;
+        display: block;
+        rotate: 90deg;
+        content: url('../images/sort_arrow.png');
+        transition: 0.2s ease;
+    }
+    header nav ul li.active:after{
+        rotate: 180deg;
+    }   
+    header nav ul li > a{
+        text-decoration: none; display: block; color: #000;
+    } 
+    header nav ul li:first-child a{
+        max-width: 35%; display: block; margin: 0 auto;
+    }
+    header nav ul li:first-child a img{
+        width: 100%;
+    }
+    header nav ul li figure{
+        position: relative; width: 100%;
+        display: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    header nav ul li.active figure{
+        display: block; 
+    }
+    header nav ul li figure .material-symbols-outlined{
+        position: absolute; top: 5%; right: 2%; width: 10%; font-size: 15px;
+    }
+    header nav ul li:nth-child(2) figure{background-image: url('../images/lnb1.png');}
+    header nav ul li:nth-child(3) figure{background-image: url('../images/lnb2.png');}
+    header nav ul li:nth-child(4) figure{background-image: url('../images/lnb3.png');}
+    header nav ul li:nth-child(5) figure{background-image: url('../images/lnb4.png');}
+    header nav ul li:nth-child(6) figure{background-image: url('../images/lnb5.png');}
+    header nav ul li:nth-child(7) figure{background-image: url('../images/lnb6.png');}
+    header nav ul li:nth-child(8) figure{background-image: url('../images/lnb7.png');}
+    header nav ul li figure img{display: none;}
+    header nav ul li figure figcaption{width: 100%; box-sizing: border-box; padding: 10% 5%; align-self: center;
+        display: flex; flex-direction: column; align-items: flex-start;
+        background-color: rgb(255, 255, 255, 0.85);
+    }
+    header nav ul li figure figcaption h2{
+        color: #5a5a5a; font-size: 16px; font-weight: 600; line-height: 24px; margin-bottom: 15px;
+    }
+    header nav ul li figure figcaption h2 small{ display: block; color: #00456c; font-size: 14px; font-weight: 700; line-height: 24px;}
+    header nav ul li figure figcaption p{
+        display: none;    
+    }
+    header nav ul li figure figcaption .btn{
+        background-color: #002f4a; color: #ffffff; text-decoration: none; display: block; line-height: 34px;
+        border: 1px solid #002f4a; font-weight: 700; box-sizing: border-box; width: 100%; font-size: 14px;
+    }
+    header .bx-wrapper{
+        text-align: center; background-color: #2d3432; color: #e3ffe3; font-size: 16px;
+        line-height: 45px; height: 45px; overflow: hidden;
+    }
+    header .bx-wrapper .bx-viewport .rollingBanner li a{
+        display: block; width: 100%; text-decoration: none; color: inherit; font-size: inherit; font-weight: inherit;
+    }
+    /* bx-slider index 설정 */
+    .bx-wrapper{
+        box-shadow: none; border: none; background: transparent; margin-bottom: 0;
+    }
+    .main.Container .bx-wrapper .bx-pager{
+        bottom: 30px; text-align: center;
+    }
+    .main.Container .bx-wrapper .bx-controls .bx-pager .bx-pager-item a{
+        background: rgba(255, 255, 255, 0.5); text-indent: -9999px;
+        display: block;
+        width: 50px; height: 4px; margin: 0 5px; border-radius: 0;
+    }
+    .main.Container .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link.active,.main.Container .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link:focus {
+        background: #ffffff;
+    }
+    .mainSliderBox .bx-controls-direction{display:none;}
+    /* index 카드뷰 */
+    .productList{
+        padding: 0 5% 30%;
+    }
+    .productList:after{content: ''; display: block; clear: both;}
+    .productList >:not(li:last-child){margin-bottom: 5%;}
+    /* .productList > li:last-child{margin-bottom: 65px;} */
+    .productList li{width: 100%; display: block; background-color: #ffffff; position: relative;}
+    .productList li > mark{
+        position: absolute; top: 0; left: 0; width: 55%;
+        display: block; background-color: #000; color: #fff;
+        font-style: normal; font-size: 13px; font-weight: 500; text-align: center;
+        line-height: 24px;
+    }
+    .productList li > span{
+        position: absolute; top: 0; left: 0; width: 20%; text-align: center;
+        background-color: #b72c28; color: #fff; line-height: 24px;
+        font-size: 13px; font-weight: 600;
+    }
+    .productList li img{width: 100%;}
+    .productList li > div:first-of-type:after{content: ''; display: block; clear: both;}
+    .productList li > div:first-of-type{ padding: 15px 5%; font-size: 14px; color: #727483; line-height: 24px;vertical-align: middle; }
+    .productList li > div:first-of-type > *{float: left; display: block; line-height: 24px;}
+    .productList li > div:first-of-type ol:after{content: ''; display: block; clear: both;}
+    .productList li > div:first-of-type ol{width: 70%;}
+    .productList li > div:first-of-type > div{width: 70%;}
+    .productList li > div:first-of-type > div ol{float: left; width: 80%;}
+    .productList li > div:first-of-type > div span{float: right; width: 20%;}
+    .productList li > div:first-of-type > div span:hover{color: #000;}
+    .productList li > div:first-of-type > div span::before{content: '+';}
+    .productList li > div:first-of-type ol .co:not(:first-child){margin-left: 5.45%;}
+    .productList li > div:first-of-type ol .co{ float: left; width: 26px; display: block; border-radius: 16px; text-indent: -9999px; box-sizing: border-box;
+        background-image: url('../images/coloroption_sprite.png'); background-repeat: no-repeat; border: 1px solid transparent;}
+    .productList li > div:first-of-type ol .active{ border: 1px solid #000; box-sizing: border-box;}
+    .productList li > div:first-of-type ol .co:hover:not(.active){ border: 1px solid #acacac; box-sizing: border-box;}
+    .productList li > div:first-of-type > span::after{content: 'colors'; padding-left: 5px;}
+    .productList li > div:first-of-type > span{float: right; display: block; width: 30%; text-align: right;}
+    .productList li > div:last-of-type{padding: 0 5% 15px; display: block;}
+    .productList li > div:last-of-type h3{min-height: 70px;}
+    .productList li > div:last-of-type h3 a{display: block; text-decoration: none; font-size: 13px; line-height: 20px; color: #000000; font-weight: 600;}
+    .productList li > div:last-of-type h3 a:hover{color: #8a8a8a; font-weight: 600;}
+    .productList li > div:last-of-type div{float: left; width: 50%; display: block;}
+    .productList li > div:last-of-type input{background-repeat: no-repeat; border: none; cursor: pointer; background-color: transparent; text-indent: -9999px; min-width: 19px; line-height: 22px; box-sizing: border-box;}
+    .productList li > div:last-of-type input:not(:nth-of-type(1)){margin-left: 20px;}
+    .productList li > div:last-of-type input:nth-of-type(1){background-image: url('../images/productlist_ico_1.png');}
+    .productList li > div:last-of-type input:nth-of-type(2){background-image: url('../images/productlist_ico_2.png');}
+    .productList li > div:last-of-type input:nth-of-type(3){background-image: url('../images/productlist_ico_3.png');}
+    .productList li > div:last-of-type input:nth-of-type(1).active{background-image: url('../images/productlist_ico_f1.png');}
+    .productList li > div:last-of-type input:nth-of-type(2).active{background-image: url('../images/productlist_ico_f2.png');}
+    .productList li > div:last-of-type input:nth-of-type(3).active{background-image: url('../images/productlist_ico_F3.png');}
+    .productList li > div:last-of-type span{text-align: right; padding: 15px 0; display: block;}
+    .productList li > div:last-of-type span del{font-size: 12px; font-weight: 500; color: #acacac; padding-right: 20px;}
+    .productList li > div:last-of-type span:not(:first-child){font-size: 13px; font-weight: 600; color: #6a6a6a;}
+    .productList li > div:last-of-type span[title $="Out"]{color: #b72c28; font-weight: 700;}
+    
+    footer{background-color: #2d3432; clear: both; position: relative;}
+    footer > a{
+        background-color: #ffffff; display: block; line-height: 65px; text-decoration: none; color: #000;
+        font-size: 16px; font-weight: 700; text-transform: uppercase; text-align: center; border-top: 1px solid #eaeaea; box-sizing: border-box;
+    }
+    footer > a:after{content: url('../images/arrowtop.png'); padding-left: 5%;}
+    footer > div:first-of-type{
+        position: relative; padding: 55px 5% 10px; margin: 0 auto; text-align: center;
+    }
+    footer > div:first-of-type h2 img{
+        position: absolute; left: 32.5%; bottom: -105%; width: 100%; max-width: 35%;
+    }
+    footer > div:first-of-type div form span{
+        position: relative; width: 100%; color: #ffffff; line-height: 35px;
+        box-sizing: border-box; margin-bottom: 55px;
+        display: inline-block;
+    }
+    footer > div:first-of-type div form span input{ background-color: transparent;}
+    footer > div:first-of-type div form span input[type='email']{
+        border-width: 0 0 1px; border-style: solid; padding: 1% 2%;
+        border-color: #fff; line-height: inherit; width: 90%;
+        color: #ffffff; font-size: 16px;
+    }
+    footer > div:first-of-type div span input[type='submit']{
+        position: absolute; right: 5%; bottom: 0; height: 35px; border: none; width: 10%;
+        background-image: url('../images/footer_ico_1.png');
+        background-repeat: no-repeat; background-position: center;
+        background-size: 60%; text-indent: -9999px; cursor: pointer;
+    }
+    footer > div:first-of-type div ul{
+        width: 100%;
+        /* display: inline-flex; flex-flow: row nowrap; justify-content: space-evenly;
+        align-self: center; margin-bottom: 35px; */
+    }
+    footer > div:first-of-type div ul li{
+        width: 20%; display: inline-flex; justify-content: center;
+        margin-bottom: 20px;
+    }
+    /* footer > div:first-of-type div ul li:not(:nth-child(n):nth-child(-n+3)){
+        margin-left: 5%;
+    } */
+    footer > div:first-of-type div ul li a{
+        display: block; width: 100%; 
+    }
+    /* footer > div:first-of-type div ul li:nth-child(2),footer > div:first-of-type div ul li:nth-child(3){
+        margin-left: 20px;
+    } */
+    footer > div:first-of-type div ul li:nth-child(n):nth-child(-n+3) a{
+        text-indent: -9999px; width: 40px; height: 40px; background-position: center;
+        background-size: contain;
+    }
+    footer > div:first-of-type div ul li:nth-child(1) a{background-image: url('../images/footer_ico_2.png');}
+    footer > div:first-of-type div ul li:nth-child(2) a{background-image: url('../images/footer_ico_3.png');}
+    footer > div:first-of-type div ul li:nth-child(3) a{background-image: url('../images/footer_ico_4.png');}
+    footer > div:first-of-type div ul li:not(:nth-child(n):nth-child(-n+3)){width: 12.5%; min-width: 225px;}
+    footer > div:first-of-type div ul li:not(:nth-child(n):nth-child(-n+3)) a{
+        background-color: #fff; line-height: 50px; font-size: 16px; font-weight: 700;
+        color: #4a4a4a;
+    }
+    footer > address{
+        padding: 0 0 40px; text-align: center; display: block; margin: 0 5%;
+        box-sizing: border-box; border-bottom: 1px solid #ffffff;
+    }
+    footer > address span{
+        font-style: normal; line-height: 26px; color: #ffffff;
+    }
+    footer > address span:nth-child(1){font-weight: 700; display: block; margin-bottom: 25px;}
+    footer > address span:nth-child(1) mark{
+        display: block; background-color: transparent; color: #e3ffe3; font-style: normal; font-size: 16px;}
+    footer > address span:nth-child(1) a{display: inline-block; text-decoration: none; margin: 0 1.3%; color: #ffffff;}
+    footer > address span:nth-child(2),footer > address span:nth-child(3){display: block; font-size: 12px; font-weight: 500;}
+    footer > div:last-of-type{
+        margin: 0 5%;
+        display: flex; text-align: center; font-size: 12px; color: #fff; font-style: normal;
+        padding: 35px 0 250px; font-weight: 500;
+    }
+    footer > div:last-of-type ol{
+        position: relative; justify-content: center; width: 100%;
+    }
+    footer > div:last-of-type ol li:first-child{
+        position: absolute; top: 180px; width: 100%; text-align: center; display: block;
+        line-height: 24px;
+    }
+    footer > div:last-of-type ol li:not(:first-child){display: inline-block; line-height: 26px;}
+    footer > div:last-of-type ol li:not(:first-child):not(:nth-child(2)){margin-left: 3%;}
+    footer > div:last-of-type ol li a{display: block; color: inherit; text-decoration: none;}
+}
+
+@media screen and (min-width:768px) and (max-width: 1279px){
+    .productList, footer > *:not(a){
+        margin: 0 auto;
+    }
+    header > div:first-of-type{
+        position: absolute; right: 0;
+    }
+    .orderContainer,
+    .accountsetContainer,
+    .saveNewAddContainer,
+    .wishContainer,
+    .cartContainer,
+    .policyContainer,
+    .accessibilityContainer,
+    .termsContainer,
+    .contactUsContainer,
+    .checkoutContainer,
+    .orderCompleteContainer,
+    .sitemapContainer{
+        max-width: 90%; margin: 0 auto; padding: 0 5% 210px;
+    }
+    /* search 패널 */
+    .search:after{content: ''; display: block; clear: both;}
+    .search{
+        width: 100%; position: absolute; top: 0; margin: 0 auto; z-index: 10;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .search div form{
+        width: 90%; margin: 0 auto; padding: 10% 5% 0;
+        display: flex; flex-flow: row nowrap;
+    }
+    .search div input[type='search']{
+        width: 92%; background-color: transparent; font-size: 16px; padding: 1% 2%;
+        font-weight: 500; line-height: 35px; color: #000;
+        border: none; border-bottom: 1px solid #acacac;}
+    .search div input[type='search']::placeholder{color: #6a6a6a;}
+    .search div input[type='submit']{
+        width: 8%; background: url('../images/search_ico.png') center / 30% no-repeat #5a5a5a;
+        line-height: 35px; border: none; box-sizing: border-box;
+        text-indent: -9999px;
+    }
+    .search div strong{
+        padding: 0 7%; display: block; line-height: 50px;
+        font-size: 16px; font-weight: 600; color: #6c1b18; margin-bottom: 2.25%;}
+    .search div ul{margin-bottom: 10%; padding: 0 7%;}
+    .search div ul li{display: inline-block;}
+    .search div ul li:not(:first-child){margin-left: 3.55%;}
+    .search div ul li a{display: block; font-size: 12px; font-weight: 300; color: #8a8a8a; text-decoration: none;}
+
+    .search input[type='button']{
+        position: absolute; top: 7%; right: 5%; font-size: 20px; cursor: pointer; padding: 0;
+    }
+    .forgot{
+        position: fixed; top: 30%; left: 33%; z-index: 999; width: 30%; padding: 2%;
+        background-color: #fff; box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
+    }
+    .forgot p:not(strong){
+        font-size: 14px; font-weight: 400; margin-bottom: 25px; line-height: 24px;
+    }
+    .forgot p strong{
+        display: block; font-size: 24px; font-weight: 600; margin-bottom: 20px;
+    }
+    .forgot .material-symbols-outlined{
+        position: absolute; top: 5%; right: 2%;
+        display: block; font-size: 20px; 
+    }
+    .forgot form input[type='email']{
+        display: block; width: 96%; margin: 0 auto 20px; line-height: 24px;
+        padding: 1% 2%; 
+        border-style: none none solid none;
+        background-color: transparent;
+        border-color: #acacac;
+    }
+    .forgot form input[type='email']::placeholder{
+        color: #acacac;
+    }
+    .forgot form input[type='submit']{
+        display: block; width: 100%; margin: 0 auto;
+        font-size: 14px; font-weight: 500; line-height: 34px;
+        background-color: #002f4a; color: #fff; box-sizing: border-box;
+        border: 1px solid #002f4a;
+    }
+    .forgot form input[type='submit']:hover{
+        color: #002f4a; background-color: transparent;
+    }
+    /* signIn, signUp 공통 */
+    .signIn:after,
+    .signUp:after,
+    .signIn form div ul:after,
+    .signIn form div ul li:after,
+    .signIn > div:first-of-type:after,
+    .signUp > div:first-of-type:after,
+    .signUp form div ul:after,
+    .signUp form div ul li:after{content: ''; display: block; clear: both;}
+    .signIn,.signUp{
+        position: fixed; z-index: 99; left: 22.5%; background-color: #f7f8f3; width: 55%; height: auto; margin: 0 auto;
+        clear: both; box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);}
+    .signIn{top: 10%;}
+    .signUp{top: 10%;}
+    .signIn div,.signUp div{position:relative;}
+    .signIn > div:first-of-type,.signUp > div:first-of-type{display: none;}
+    /* .signIn > div:first-of-type h2,.signUp > div:first-of-type h2{font-size: 16px; font-weight: 400; margin: 22.5% 0 4.2%;} */
+    /* .signIn > div:first-of-type input[type='button'].R15050,.signUp > div:first-of-type input[type='button'].R15050{max-width: 150px; max-height: 50px; display: block;    font-size: 16px; font-weight: 700;  margin: 0 auto 51%; padding: 15px 50px;} */
+    /* .signIn > div:first-of-type img,.signUp > div:first-of-type img{display: block; width: 100%; max-width: 118px; margin: 0 auto 55px;} */
+    .signIn form div,.signUp form div{width: 100%; height: auto; margin: 0 auto;}
+    .signIn form div h2,.signUp form div h2{font-size: 32px; font-weight: 700; color: #000000; text-align: center; padding: 75px 0 0; margin-bottom: 10%;}
+    .signIn form div ul,.signUp form div ul{width: 80%; padding: 0 9.26%; margin-bottom: 35px;}
+    .signIn form div ul li:not(:nth-child(3)),.signUp form div ul li:not(:nth-child(5)),.signUp form div ul li:nth-child(5) p,.signUp form div ul li:nth-child(5) label{font-size: 12px;}
+    .signIn form div ul li input,.signUp form div ul li input{background-color: transparent; border: none;}
+    .signIn form div ul li input[type='checkbox'],.signUp form div ul li input[type='checkbox']{display: none;}
+    .signIn form div input[type='submit'],
+    .signUp form div input[type='submit']{display: block; width: 45%; line-height: 50px; font-size: 16px; margin: 0 auto; margin-bottom: 9%;}
+    .signUp form div > .material-symbols-outlined,.signIn form div > .material-symbols-outlined{position: absolute; top: 3%; right: 2%; font-size: 20px;}
+    /* signIn */
+    .signIn form div p:first-of-type{font-size: 24px; font-weight: 500; color: #c0d8c0; text-align: center; margin-bottom: 2.5%;}
+    .signIn form div p:last-of-type{font-size: 12px; font-weight: 400; color: #6a6a6a; text-align: center; text-transform: uppercase; margin-bottom: 5%;}
+    .signIn form div ul li{width: 100%;}
+    .signIn form div ul li:nth-child(1),
+    .signIn form div ul li:nth-child(2){display: block; box-sizing: border-box; border-bottom: 1px solid #acacac;}
+    .signIn form div ul li:nth-child(1){margin-bottom: 10.5%;}
+    .signIn form div ul li:nth-child(2){position: relative; margin-bottom: 8%;}
+    .signIn form div ul li:nth-child(1) label,
+    .signIn form div ul li:nth-child(2) label{display: block; padding:0 1.85%; line-height: 32px;}
+    .signIn form div ul li:nth-child(1) input,
+    .signIn form div ul li:nth-child(2) input{
+        width: 96%; display: block; padding:0 2% ; line-height: 32px;}
+    .signIn form div ul li:nth-child(2) .material-symbols-outlined{position: absolute; right: 5%; bottom: 15%; font-size: 15px;}
+    .signIn form div ul li:nth-child(3){float: left; display: block; width: 50%; line-height: 32px;}
+    .signIn form div ul li:nth-child(3) label{font-size: 12px; display: block;}
+    .signIn form div ul li:nth-child(4){float: right; display: block; width: 50%; text-align: right; line-height: 32px; color: #b72c28;}
+    
+    /* signUp */
+    .signUp form div ul li:not(:last-of-type){display: block; margin-bottom: 9.5%;}
+    .signUp form div ul li label:not(:last-child),
+    .signUp form div ul li input{line-height: 32px; padding: 0 2%;}    
+    .signUp form div ul li label:not(:last-child){width: 30%;}
+    .signUp form div ul li input{float: right; width: 62%;}
+    .signUp form div ul li:not(:last-of-type){border-bottom: 1px solid #acacac; box-sizing: border-box;}
+    .signUp form div ul li:nth-child(4){position: relative;}
+    .signUp form div ul li:nth-child(4) span{position: absolute; bottom: 30%; right: 5%; font-size: 15px;}
+    .signUp form div ul li:last-child{display: block;}
+    .signUp form div ul li:last-child label{float: left; display: block; width: 12%; text-indent: -9999px; line-height: 30px;}
+    .signUp form div ul li:last-child p{width: 88%;  display: block; padding: 1% 0 0 12%; line-height: 18px;}
+    .signUp form div ul li:last-child p a{display: inline-block;}
+    .signUp form div ul li:last-child p a strong{display: block; color: #000;}
+    /* 헤더 */
+    header{position: relative; padding-top: 8%;}
+    
+    header div:first-child{
+        display: flex; max-width: 90%;
+        padding: 0 5%;
+    }
+    header div:first-child span{
+        display: none;
+    }
+    header div:first-child span a{
+        display: none;
+    }
+    header div:first-child ul.index_Gen,
+    header div:first-child ul.index_After{
+        display: flex; max-width: 100%; flex-flow: row nowrap;
+    }
+    header div:first-child ul.index_After li,
+    header div:first-child ul.index_Gen li{
+        display: flex; width: 50px; height: 55px;
+        background-repeat: no-repeat; cursor: pointer; background-position: center;
+        font-size: 10px;  text-indent: -9999px;
+    }
+    
+    header div:first-child ul.index_After li:not(:first-child),
+    header div:first-child ul.index_Gen li:not(:first-child){
+        margin-left: 5%;
+    }
+    header div:first-child ul.index_Gen li:nth-child(1){
+        background-image: url('../images/header_ico_02.png');
+    }
+    header div:first-child ul.index_Gen li:nth-child(2){
+        background-image: url('../images/header_ico_03.png');
+    }
+    header div:first-child ul.index_Gen li:nth-child(3){
+        background-image: url('../images/header_ico_04.png');
+    }
+    header div:first-child ul.index_Gen li:nth-child(4){
+        background-image: url('../images/header_ico_05.png');
+    }    
+    header div:first-child ul.index_After li:nth-child(1){
+        background-image: url('../images/header_ico_03.png');
+    }
+    header div:first-child ul.index_After li:nth-child(2){
+        background-image: url('../images/header_ico_06.png');
+    }
+    header div:first-child ul.index_After li a{
+        display: flex; width: 100%; 
+    }
+    header div:first-child ul.index_After li:nth-child(2) ol{
+        display: none;
+    } 
+    header div:first-child ul.index_After li:nth-child(3){
+        background-image: url('../images/header_ico_05.png');
+    }
+    header div:first-child ul.index_After li:nth-child(4){
+        background-image: url('../images/header_ico_07.png');
+    }
+    header div:nth-child(2){
+        width: 90%; display: flex; margin-bottom: 5%;
+        padding-left: 5%;
+    }
+    header div:nth-child(2) .material-symbols-outlined.mui{
+        display: flex;  flex-flow: row nowrap; 
+        width: 10%; height: 55px; font-size: 50px;
+        justify-content: flex-start;
+    }
+    header div:nth-child(2) h1{
+        width: 30%; display: flex; padding-left: 24%;}
+    header div:nth-child(2) a{width: 100%; display: block;}
+    header div:nth-child(2) h1 img{width: 100%;}
+    header nav{
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.98);
+        z-index: 99999; display: none; overflow-y: scroll;
+    }
+    header nav.active{
+        display: block;
+    }
+    header nav input.material-symbols-outlined{
+        position: absolute; z-index: 999999; top: 25px; right: 5%; font-size: 20px;
+    }
+    header nav ul{
+        display: flex; 
+        width: 100%; height: 100%;
+        flex-flow: column nowrap; 
+        padding: 5% 0 5%;
+    }
+    header nav ul li:first-child{
+        margin: 0 auto; margin-bottom: 2%;
+    }
+    header nav ul li:nth-child(8){
+        margin-bottom: 5%;
+    }
+    header nav ul li:not(:first-child){
+        line-height: 50px; box-sizing: border-box; 
+        padding: 0 5%; cursor: pointer;
+    }
+    header nav ul li:not(:first-child):not(:last-child){
+        border-bottom: 1px solid #eaeaea;
+    }
+    header nav ul li{position: relative;}
+    header nav ul li:not(:first-child):after{
+        position: absolute; top: 0; right: 5%;
+        display: block;
+        rotate: 90deg;
+        content: url('../images/sort_arrow.png');
+        transition: 0.2s ease;
+    }
+    header nav ul li.active:after{
+        rotate: 180deg;
+    }
+    header nav ul li a{
+        display: inline-block; color: #000; text-decoration: none; width: 100%;
+    }   
+    header nav ul li figure{
+        display: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }    
+    header nav ul li.active figure{
+        display: flex;
+    }
+    header nav ul li figure .material-symbols-outlined{
+        position: absolute; top: 3%; left: 2%; font-size: 20px; width: 5%; text-align: left;
+    }
+    header nav ul li:nth-child(2) figure{background-image: url('../images/lnb1.png');}
+    header nav ul li:nth-child(3) figure{background-image: url('../images/lnb2.png');}
+    header nav ul li:nth-child(4) figure{background-image: url('../images/lnb3.png');}
+    header nav ul li:nth-child(5) figure{background-image: url('../images/lnb4.png');}
+    header nav ul li:nth-child(6) figure{background-image: url('../images/lnb5.png');}
+    header nav ul li:nth-child(7) figure{background-image: url('../images/lnb6.png');}
+    header nav ul li:nth-child(8) figure{background-image: url('../images/lnb7.png');}
+    header nav ul li figure img{display: none;}
+    header nav ul li figure figcaption{
+        width: 100%; box-sizing: border-box; padding: 10% 5%; align-self: center;
+        display: flex; flex-direction: column; align-items: flex-start;
+        background-color: rgb(255, 255, 255, 0.85);
+    }
+    header nav ul li figure figcaption h2{
+        color: #5a5a5a; font-size: 24px; font-weight: 600; line-height: 30px; margin-bottom: 36px;
+    }
+    header nav ul li figure figcaption h2 small{ display: block; color: #00456c; font-size: 14px; font-weight: 700; line-height: 24px;}
+    header nav ul li figure figcaption p{ line-height: 28px; color: #000000; text-transform: uppercase; font-size: 14px; margin-bottom: 50px;}
+    header nav ul li figure figcaption .btn{
+        background-color: #002f4a; color: #ffffff; text-decoration: none; display: block; line-height: 50px;
+        border: 1px solid #002f4a; font-weight: 700; box-sizing: border-box; width: 39%;
+    }
+    header .bx-wrapper{
+        text-align: center; background-color: #2d3432; color: #e3ffe3; font-size: 16px;
+        line-height: 45px;
+    }
+    header .bx-wrapper .bx-viewport .rollingBanner li a{
+        display: block; width: 100%; text-decoration: none; color: inherit; font-size: inherit; font-weight: inherit;
+    }
+    /* bx-slider index 설정 */
+    .bx-wrapper{
+        box-shadow: none; border: none; background: transparent; margin-bottom: 0;
+    }
+    .main.Container .bx-wrapper .bx-pager{
+        bottom: 30px; text-align: right; right: 5%;
+    }
+    .main.Container .bx-wrapper .bx-controls .bx-pager .bx-pager-item a{
+        background: rgba(255, 255, 255, 0.5); text-indent: -9999px; display: block; width: 80px;
+        height: 5px; margin: 0 5px; border-radius: 0;
+    }
+    .main.Container .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link.active,.main.Container .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link:focus {
+        background: #ffffff;
+    }
+    .mainSliderBox .bx-controls-direction{ display:none;}
+    /* index 카드뷰 */
+    .productList{
+        padding: 0 5%;
+    }
+    .productList:after{content: ''; display: block; clear: both;}
+    .productList >:not(li:nth-child(2n+1)){margin-left: 2%;}
+    .productList >:not(li:last-child){margin-bottom: 35px;}
+    .productList > li:last-child{margin-bottom: 110px;}
+    .productList li{float:left; width: 49%; display: block; background-color: #ffffff; position: relative;}
+    .productList li > mark{
+        position: absolute; top: 0; left: 0; width: 45%;
+        display: block; background-color: #000; color: #fff;
+        font-style: normal; font-size: 14px; font-weight: 500; text-align: center;
+        line-height: 24px;
+    }
+    .productList li > span{
+        position: absolute; top: 0; left: 0; width: 20%; text-align: center;
+        background-color: #b72c28; color: #fff; line-height: 24px;
+        font-size: 14px;
+    }
+    .productList li img{width: 100%;}
+    .productList li > div:first-of-type:after{content: ''; display: block; clear: both;}
+    .productList li > div:first-of-type{ padding: 15px 4.8%; font-size: 14px; color: #727483; line-height: 24px;vertical-align: middle; }
+    .productList li > div:first-of-type > *{float: left; display: block; line-height: 24px;}
+    .productList li > div:first-of-type ol:after{content: ''; display: block; clear: both;}
+    .productList li > div:first-of-type ol{width: 70%;}
+    .productList li > div:first-of-type > div{width: 70%;}
+    .productList li > div:first-of-type > div ol{float: left; width: 70%;}
+    .productList li > div:first-of-type > div span{float: right; width: 30%;}
+    .productList li > div:first-of-type > div span:hover{color: #000;}
+    .productList li > div:first-of-type > div span::before{content: '+';}
+    .productList li > div:first-of-type ol .co:not(:first-child){margin-left: 5.45%;}
+    .productList li > div:first-of-type ol .co{ float: left; width: 26px; display: block; border-radius: 16px; text-indent: -9999px; box-sizing: border-box;
+        background-image: url('../images/coloroption_sprite.png'); background-repeat: no-repeat; border: 1px solid transparent;}
+    .productList li > div:first-of-type ol .active{ border: 1px solid #000; box-sizing: border-box;}
+    .productList li > div:first-of-type ol .co:hover:not(.active){ border: 1px solid #acacac; box-sizing: border-box;}
+    .productList li > div:first-of-type > span::after{content: 'colors'; padding-left: 5px;}
+    .productList li > div:first-of-type > span{float: right; display: block; width: 30%; text-align: right;}
+    .productList li > div:last-of-type{padding: 0 20px 15px;}
+    .productList li > div:last-of-type h3{min-height: 55px;}
+    .productList li > div:last-of-type h3 a{display: block; text-decoration: none; font-size: 13px; line-height: 20px; color: #000000; font-weight: 600;}
+    .productList li > div:last-of-type h3 a:hover{color: #8a8a8a; font-weight: 600;}
+    .productList li > div:last-of-type div{float: left; width: 50%; display: block;}
+    .productList li > div:last-of-type span{float: right; text-align: right; display: block;}
+    .productList li > div:last-of-type input{background-repeat: no-repeat; border: none; cursor: pointer; background-color: transparent; text-indent: -9999px; min-width: 19px; line-height: 22px; box-sizing: border-box;}
+    .productList li > div:last-of-type input:not(:nth-of-type(1)){margin-left: 20px;}
+    .productList li > div:last-of-type input:nth-of-type(1){background-image: url('../images/productlist_ico_1.png');}
+    .productList li > div:last-of-type input:nth-of-type(2){background-image: url('../images/productlist_ico_2.png');}
+    .productList li > div:last-of-type input:nth-of-type(3){background-image: url('../images/productlist_ico_3.png');}
+    .productList li > div:last-of-type input:nth-of-type(1).active{background-image: url('../images/productlist_ico_f1.png');}
+    .productList li > div:last-of-type input:nth-of-type(2).active{background-image: url('../images/productlist_ico_f2.png');}
+    .productList li > div:last-of-type input:nth-of-type(3).active{background-image: url('../images/productlist_ico_F3.png');}
+    .productList li > div:last-of-type span{float: right; display: block;}
+    .productList li > div:last-of-type span del{font-size: 12px; font-weight: 500; color: #acacac; padding-right: 20px;}
+    .productList li > div:last-of-type span:not(:first-child){font-size: 13px; font-weight: 600; color: #6a6a6a;}
+    .productList li > div:last-of-type span[title $="Out"]{color: #b72c28; font-weight: 700;}
+    
+    footer{background-color: #2d3432; clear: both; position: relative;}
+    footer > a{
+        background-color: #ffffff; display: block; line-height: 65px; text-decoration: none; color: #000;
+        font-size: 16px; font-weight: 700; text-transform: uppercase; text-align: center; border-top: 1px solid #eaeaea; box-sizing: border-box;
+    }
+    footer > a:after{content: url('../images/arrowtop.png'); padding-left: 0.8%;}
+    footer > div:first-of-type{position: relative; padding: 55px 5% 10px; margin: 0 auto; text-align: center; display: flex; justify-content: center;}
+    footer > div:first-of-type h2 img{
+        position: absolute; left: 37.75%; bottom: -145%; width: 100%; max-width: 24.5%;
+    }
+    footer > div:first-of-type div form span{
+        position: relative; width: 50%; color: #ffffff; line-height: 35px;
+        box-sizing: border-box; margin-bottom: 55px;
+        display: inline-block;
+    }
+    footer > div:first-of-type div span label{
+        padding-right: 2%;
+    }
+    footer > div:first-of-type div span input{ background-color: transparent;}
+    footer > div:first-of-type div span input[type='email']{
+        border-width: 0 0 1px; border-style: solid; padding: 1% 2%;
+        border-color: #fff; line-height: inherit; width: 70%;
+        color: #ffffff; font-size: 16px;
+    }
+    footer > div:first-of-type div span input[type='submit']{
+        position: absolute; right: 0; top: 10%; height: 35px; border: none; width: 10%;
+        background-image: url('../images/footer_ico_1.png');
+        background-repeat: no-repeat; background-position: center;
+        background-size: 60%; text-indent: -9999px; cursor: pointer;
+    }
+    footer > div:first-of-type div ul{
+        display: flex; flex-flow: row nowrap; justify-content: center;
+        width: 44%; min-width: 690px; align-self: center;
+        margin-bottom: 35px;
+    }
+    footer > div:first-of-type div ul li{
+        display: flex; justify-content: center; align-self: center;
+    }
+    footer > div:first-of-type div ul li:not(:nth-child(n):nth-child(-n+3)){
+        margin-left: 4.5%;
+    }
+    footer > div:first-of-type div ul li a{
+        display: block; width: 100%;
+    }
+    footer > div:first-of-type div ul li:nth-child(2),footer > div:first-of-type div ul li:nth-child(3){
+        margin-left: 20px;
+    }
+    footer > div:first-of-type div ul li:nth-child(n):nth-child(-n+3) a{
+        text-indent: -9999px; width: 35px; height: 35px; background-position: center; background-size: contain;
+    }
+    footer > div:first-of-type div ul li:nth-child(1) a{background-image: url('../images/footer_ico_2.png');}
+    footer > div:first-of-type div ul li:nth-child(2) a{background-image: url('../images/footer_ico_3.png');}
+    footer > div:first-of-type div ul li:nth-child(3) a{background-image: url('../images/footer_ico_4.png');}
+    footer > div:first-of-type div ul li:not(:nth-child(n):nth-child(-n+3)){width: 12.5%; min-width: 225px;}
+    footer > div:first-of-type div ul li:not(:nth-child(n):nth-child(-n+3)) a{
+        background-color: #fff; line-height: 35px; font-size: 16px; font-weight: 700; color: #4a4a4a;
+    }
+    footer > address{
+        padding: 0 0 40px; text-align: center; display: block; margin: 0 5%;
+        box-sizing: border-box; border-bottom: 1px solid #ffffff;
+    }
+    footer > address span{
+        font-style: normal; line-height: 26px; color: #ffffff;
+    }
+    footer > address span:nth-child(1){font-weight: 700; display: block; margin-bottom: 25px;}
+    footer > address span:nth-child(1) mark{background-color: transparent; color: #e3ffe3; font-style: normal; font-size: 16px;}
+    footer > address span:nth-child(1) a{display: inline-block; text-decoration: none; margin: 0 1.3%; color: #ffffff;}
+    footer > address span:nth-child(2),footer > address span:nth-child(3){display: block; font-size: 12px; font-weight: 500;}
+    footer > div:last-of-type{
+        margin: 0 5%;
+        display: flex; text-align: center; font-size: 12px; color: #fff; font-style: normal;
+        padding: 35px 0 200px; font-weight: 500;
+    }
+    footer > div:last-of-type ol{
+        position: relative; justify-content: center; width: 100%;
+    }
+    footer > div:last-of-type ol li:first-child{
+        position: absolute; top: 180px; width: 100%; text-align: center; display: block;
+    }
+    footer > div:last-of-type ol li:not(:first-child){display: inline-block; line-height: 26px;}
+    footer > div:last-of-type ol li:not(:first-child):not(:nth-child(2)){margin-left: 3%;}
+    footer > div:last-of-type ol li a{display: block; color: inherit; text-decoration: none;}
+}
+    
+@media screen and (min-width:1280px){
+
+.mui{display: none;}
+header div:first-child,
+.productList, footer > *:not(a),.wcproductList,
+.orderContainer{
+    max-width: 1770px; margin: 0 auto;
+}
+.wishContainer div:first-of-type,
+.cartContainer div:first-of-type,
+.fsttxtNv,
+.tabTab,
+.saveNewAddContainer,
+.policyContainer,
+.accessibilityContainer,
+.termsContainer,
+.contactUsContainer,
+.faqContainer > div:first-of-type,
+.orderCompleteContainer,.sitemapContainer{
+    max-width: 1770px; margin: 0 auto 40px;
+}
+/* search 패널 */
+.search:after{content: ''; display: block; clear: both;}
+.search{width: 100%; position: absolute; top: 25.7%; margin: 0 auto; z-index: 12; background-color: rgba(255, 255, 255, 0.9);}
+.search div{max-width: 845px; margin: 0 auto; padding: 1.3% 0;}
+.search div form input:not([type='button']){float: left; display: block; box-sizing: border-box;}
+.search div input[type='search']{width: 71.3%; background-color: transparent; font-size: 26px; font-weight: 500; line-height: 45px; color: #000; margin-bottom: 2.95%; padding: 0 1.2%; border: none; border-bottom: 1px solid #acacac;}
+.search div input[type='search']::placeholder{color: #6a6a6a;}
+.search div input[type='submit']{width: 27%; background: url('../images/search_ico.png') 26.66% center / 7.96% no-repeat #5a5a5a; font-size: 16px; font-weight: 700; color: #ffffff; margin-left: 1.7%; padding: 12px 0; border: none; border: 1px solid #5a5a5a;}
+.search div input[type='submit']:hover{background: url('../images/search_5a_ico.png') 26.66% center / 7.96% no-repeat #ffffff; border: 1px solid #5a5a5a; color: #5a5a5a; box-sizing: border-box;}
+.search div strong{float: left; width: 100%; display: block; font-size: 18px; font-weight: 600; color: #6c1b18; margin-bottom: 2.25%;}
+.search div ul{float: left; width: 100%; margin-bottom: 8.28%;}
+.search div ul li{display: inline-block;}
+.search div ul li:not(:first-child){margin-left: 3.55%;}
+.search div ul li a{display: block; font-size: 12px; font-weight: 300; color: #8a8a8a; text-decoration: none;}
+.search div ul li:hover a{color: #000000;}
+.search input[type='button']{position: absolute; top: 11.42%; right: 4.25%; font-size: 24px; cursor: pointer;}
+.forgot{
+    position: fixed; top: 50%; left: 40.75%; z-index: 999; width: 16.5%; padding: 2%;
+    background-color: #fff; box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
+}
+.forgot p:not(strong){
+    font-size: 14px; font-weight: 400; margin-bottom: 25px; line-height: 24px;
+}
+.forgot p strong{
+    display: block; font-size: 24px; font-weight: 600; margin-bottom: 20px;
+}
+.forgot .material-symbols-outlined{
+    position: absolute; top: 5%; right: 2%;
+    display: block; font-size: 20px; 
+}
+.forgot form input[type='email']{
+    display: block; width: 96%; margin: 0 auto 20px; line-height: 24px;
+    padding: 1% 2%; 
+    border-style: none none solid none;
+    background-color: transparent;
+    border-color: #acacac;
+}
+.forgot form input[type='email']::placeholder{
+    color: #acacac;
+}
+.forgot form input[type='submit']{
+    display: block; width: 100%; margin: 0 auto;
+    font-size: 14px; font-weight: 500; line-height: 34px;
+    background-color: #002f4a; color: #fff; box-sizing: border-box;
+    border: 1px solid #002f4a;
+}
+.forgot form input[type='submit']:hover{
+    color: #002f4a; background-color: transparent;
+}
+/* signIn, signUp 공통 */
+.signIn:after,.signUp:after,.signIn form div ul:after,.signIn form div ul li:after,.signIn > div:first-of-type:after,.signUp > div:first-of-type:after,.signUp form div ul:after,.signUp form div ul li:after{content: ''; display: block; clear: both;}
+.signIn{top: 65%;}
+.signUp{top: 85%;}
+.signIn,.signUp{
+    position: absolute; z-index: 99; top: 25%; left: 21.5%; width: 57%; height: 70%;
+    background-color: #f7f8f3; clear: both; box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
+}
+.signIn > div:first-of-type,.signUp > div:first-of-type{background: url('../images/signup_bg.png') center / cover no-repeat; display: block; width: 50%; height: 100%; text-align: center;}
+.signIn > div:first-of-type{float: left;}
+.signUp > div:first-of-type{float: right;}
+.signIn > div:first-of-type h2,.signUp > div:first-of-type h2{font-size: 32px; font-weight: 400; color: #ffffff; margin: 22.5% 0 4.2%;}
+.signIn > div:first-of-type input[type='button'].R15050,.signUp > div:first-of-type input[type='button'].R15050{max-width: 150px; max-height: 50px; display: block;    font-size: 16px; font-weight: 700;  margin: 0 auto 51%; padding: 15px 50px;}
+.signIn > div:first-of-type img,.signUp > div:first-of-type img{display: block; width: 100%; max-width: 118px; margin: 0 auto 55px;}
+.signIn form div{float: right; position:relative;}
+.signUp form div{float: left; position:relative;}
+.signIn form div,.signUp form div{width: 50%; height: auto;}
+.signIn form div h2,.signUp form div h2{font-size: 32px; font-weight: 700; color: #000000; text-align: center;}
+.signIn form div ul,.signUp form div ul{width: 81.48%; padding: 0 9.26%;}
+.signIn form div ul li:not(:nth-child(3)),.signUp form div ul li:not(:nth-child(5)),.signUp form div ul li:nth-child(5) p,.signUp form div ul li:nth-child(5) label{font-size: 12px;}
+.signIn form div ul li input,.signUp form div ul li input{background-color: transparent; border: none;}
+.signIn form div ul li input[type='checkbox'],.signUp form div ul li input[type='checkbox']{display: none;}
+.signIn form div input[type='submit'].R22550, .signUp form div input[type='submit'].R22550{padding: 15px 75px; display: block; font-size: 16px;}
+/* signIn */
+.signIn form div h2{margin: 10.83%;}
+.signIn form div p:first-of-type{font-size: 24px; font-weight: 500; color: #c0d8c0; text-align: center; margin-bottom: 2.5%;}
+.signIn form div p:last-of-type{font-size: 12px; font-weight: 400; color: #6a6a6a; text-align: center; text-transform: uppercase; margin-bottom: 5%;}
+.signIn form div ul{width: 81.5%; display: block;}
+.signIn form div ul li{width: 100%;}
+.signIn form div ul li:nth-child(1),.signIn form div ul li:nth-child(2){display: block; box-sizing: border-box; border-bottom: 1px solid #acacac;}
+.signIn form div ul li:nth-child(1){margin-bottom: 10.5%;}
+.signIn form div ul li:nth-child(2){position: relative; margin-bottom: 8%;}
+.signIn form div ul li:nth-child(1) label,.signIn form div ul li:nth-child(2) label{float: left; display: block; width: 27.5%; padding:0 1.85%; line-height: 32px;}
+.signIn form div ul li:nth-child(1) input,.signIn form div ul li:nth-child(2) input{float: right; display: block; width: 65.1%; padding:0 1.85% ; line-height: 32px;}
+.signIn form div ul li:nth-child(2) .material-symbols-outlined{position: absolute; right: 5%; bottom: 20%; font-size: 15px;}
+.signIn form div ul li:nth-child(3){float: left; display: block; width: 50%; line-height: 32px;}
+.signIn form div ul li:nth-child(3) label{font-size: 12px; display: block;}
+.signIn form div ul li:nth-child(4){float: right; display: block; width: 50%; text-align: right; line-height: 32px; color: #b72c28;}
+.signIn form div > .material-symbols-outlined{position: absolute; top: 3%; right: 2%; font-size: 20px;}
+.signIn form div input[type='submit'].R22550{margin: 15.5% auto 9%;}
+/* signUp */
+.signUp form div h2{margin: 12.5% 0 5.8%;}
+.signUp form div ul{position: relative;}
+.signUp form div ul li:not(:last-of-type){display: block; margin-bottom: 9.5%;}
+.signUp form div ul li label:not(:last-child),.signUp form div ul li input{line-height: 30px; padding: 0 5px;}
+.signUp form div ul li:not(:last-of-type){border-bottom: 1px solid #acacac; box-sizing: border-box;}
+.signUp form div ul li:nth-child(1),.signUp form div ul li label{float: left; display: block;}
+.signUp form div ul li:nth-child(2),.signUp form div ul li input{float: right; display: block;}
+.signUp form div ul li:nth-child(1),.signUp form div ul li:nth-child(2){width: 45%;}
+.signUp form div ul li:nth-child(1) label,.signUp form div ul li:nth-child(2) label{width: 37%;}
+.signUp form div ul li:nth-child(1) input,.signUp form div ul li:nth-child(2) input{width: 44%;}
+.signUp form div ul li:nth-child(3) label,.signUp form div ul li:nth-child(4) label{width: 25%;}
+.signUp form div ul li:nth-child(3) input,.signUp form div ul li:nth-child(4) input{width: 64%;}
+.signUp form div ul li:nth-child(4){position: relative;}
+.signUp form div ul li:nth-child(4) span{position: absolute; bottom: 30%; right: 5%; font-size: 15px;}
+.signUp form div ul li:last-child{display: block;}
+.signUp form div ul li:last-child label{width: 12%; text-indent: -9999px; line-height: 30px;}
+.signUp form div ul li:last-child p{width: 88%;  display: block; padding: 1% 0 0 12%; line-height: 18px;}
+.signUp form div ul li:last-child p a{display: inline-block;}
+.signUp form div ul li:last-child p a strong{display: block; color: #000;}
+.signUp form div > .material-symbols-outlined{position: absolute; top: 3%; left: 2%; font-size: 20px;}
+.signUp form div input[type='submit'].R22550{margin: 5.8% auto 9%;}
+/* 헤더 */
+header{position: relative; padding-top: 4.25%;}
+header div:first-child{font-size: 0.75em; font-weight: 500; line-height: 30px; position: relative;}
+header div:first-child > *{width: 45%; position: absolute;}
+header div:first-child span{left: 0; display: block; line-height: 30px;}
+header div:first-child ::before{display: inline-block; vertical-align: middle; line-height: 14px;}
+header div:first-child span a::before{padding-right: 1.25em; content: url('/images/header_ico_01.png');}
+header div:first-child span a{display: inline-block; text-decoration: none; color: #000000; margin-left: 3%;  vertical-align: middle;}
+/* logout상태 index */
+header div:first-child ul.index_Gen{right: 0; text-align: right;}
+header div:first-child ul.index_Gen li{display: inline-block; vertical-align: middle; cursor: pointer;}
+header div:first-child ul.index_Gen li > *{float: left; display: block; line-height: 30px; box-sizing: border-box;}
+header div:first-child ul.index_Gen > li:not(:last-child){margin-right: 2.82%;}
+header div:first-child ul.index_Gen > li:nth-child(1)::before{content: url('/images/header_ico_02.png');}
+header div:first-child ul.index_Gen > li:nth-child(2)::before{content: url('/images/header_ico_03.png');}
+header div:first-child ul.index_Gen > li:nth-child(3)::before{content: url('/images/header_ico_04.png');}
+header div:first-child ul.index_Gen > li::before{padding-right: 1.25em;}
+header div:first-child ul.index_Gen > li:nth-child(4){position: relative;}
+header div:first-child ul.index_Gen > li:nth-child(4)::before{padding-right: 1.25em; content: url('/images/header_ico_05.png');}
+header div:first-child ul.index_Gen > li:nth-child(4) > span{
+    color: #ffffff; display: block; position: absolute; bottom: -5px;
+    left: 15%; background-color: #ea3a33; width: 20px; height: 20px; line-height: 20px;
+    border-radius: 50%; text-align: center; box-sizing: border-box;}
+/* login상태 index_after */
+header div:first-child ul.index_After{right: 0; text-align: right;}
+header div:first-child ul.index_After li{display:inline-block; vertical-align: middle; cursor: pointer;}
+header div:first-child ul.index_After > li a{display: block; text-decoration: none; color: #000; font-size: 12px; font-weight: 500;}
+header div:first-child ul.index_After > li{padding-left: 30px;}
+header div:first-child ul.index_After > li:first-child::before{padding-right: 20px; content: url('/images/header_ico_03.png');}
+header div:first-child ul.index_After > li:nth-child(2) a::before{padding-right: 20px;content: url('/images/header_ico_06.png');}
+header div:first-child ul.index_After > li:nth-child(2) ol:hover.active{
+    position: absolute; right: 0; top: 40px; width: 16%; padding: 20px 20px; z-index: 50;
+    background-color: #ffffff; box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5); display: block;
+}
+header div:first-child ul.index_After > li:nth-child(2) ol li{display: block; text-align: left;}
+header div:first-child ul.index_After > li:nth-child(2) ol li:hover a{ color: #acacac;}
+header div:first-child ul.index_After > li:nth-child(3){position: relative;}
+header div:first-child ul.index_After > li:nth-child(3) a::before{padding-right: 20px; content: url('/images/header_ico_05.png');}
+header div:first-child ul.index_After > li:nth-child(4) a::before{padding-right: 20px; content: url('/images/header_ico_07.png');}
+header div:first-child ul.index_After > li:nth-child(3) span{
+    color: #ffffff; display: block; position: absolute; bottom: -9.8%; left: 25%; background-color: #ea3a33; width: 20px; line-height: 16px; border-radius: 15px; text-align: center; box-sizing: border-box;
+    padding-bottom: 3px; font-size: 12px; font-weight: 600;     
+}
+header div:first-child span a:hover,header div:first-child ul li:nth-child(4) a:hover,header div:first-child ul li:hover{
+    color: #8a8a8a;
+}
+header div:nth-child(2){margin: 0 auto;  padding: 0; margin-bottom: 3.42%;}
+header div:nth-child(2) h1{display: block; text-align: center; width: 100%;}
+header div:nth-child(2) h1 a{display: block; width: 100%;}
+header div:nth-child(2) h1 a img{width: 100%; max-width: 10%; display: block; margin: 0 auto;}
+header nav{margin: 0 auto; display: block; position: relative;}
+header nav input[type='button']{display: none;}
+header nav input[type='button'].active{display: block;}
+header nav input[type='button']{
+    font-size: 24px; color: #000; z-index: 21;
+    position: absolute; top: 200%; right: 2%; 
+}
+header nav ul:after{content: ''; display: block; clear: both;}
+header nav ul{display: block; width: 100%; text-align: center; line-height: 32px;  position: relative;}
+header nav ul li{display: inline-block; font-size: 14px; color: #6a6a6a; font-weight: 600; box-sizing: border-box; border-bottom: 2px solid #ffffff; margin-bottom: 0.3%;}
+header nav ul li:nth-child(1),header nav ul li:nth-child(9),header nav ul li:nth-child(10),header nav ul li:nth-child(11){display: none;}
+header nav ul li:not(:last-child){margin-right: 2%;}
+header nav ul li:hover{ color: #000000; font-weight: 600; border-bottom: 2px solid #000000; transition-duration: 0.75s;}
+header nav figure{
+    z-index: 10; background-color: #f7f8f3; box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
+    position: absolute; left: 0; top: 40px; display: none;
+}
+header nav ul li.active figure{
+    display: flex;
+}
+header nav figure:nth-of-type(2),
+header nav figure:nth-of-type(3),
+header nav figure:nth-of-type(5),
+header nav figure:nth-of-type(7){
+    flex-direction: row-reverse; 
+}
+header nav .material-symbols-outlined.active{
+    position: absolute; bottom: -5%; right: 2%; width: 3%; height: 20px; font-size: 20px; 
+    z-index: 20;
+}
+header nav figure img{width: 52%;}
+header nav figure figcaption{width: 48%; box-sizing: border-box; padding: 4% 4.15%; align-self: center;}
+header nav figure:nth-of-type(2) figcaption,header nav figure:nth-of-type(3) figcaption,header nav figure:nth-of-type(5) figcaption,header nav figure:nth-of-type(7) figcaption{
+    display: flex; text-align: right; justify-content: right; flex-direction: column; align-items: flex-end;
+}
+header nav figure figcaption h2{
+    color: #727483; font-size: 24px; font-weight: 500; line-height: 30px; margin-bottom: 36px; text-align: left;
+}
+header nav figure figcaption h2 small{ display: block; color: #00456c; font-size: 14px; font-weight: 700; line-height: 24px;}
+header nav figure figcaption p{
+    line-height: 24px; color: #6a6a6a; text-transform: uppercase; font-size: 12px; margin-bottom: 50px; text-align: left;
+}
+header nav figure figcaption .btn{
+    background-color: #002f4a; color: #ffffff; text-decoration: none; display: flex; 
+    border: 1px solid #002f4a; font-weight: 700; box-sizing: border-box; width: 39%; line-height: 50px;
+    justify-content: center;
+}
+header nav figure figcaption a.btn:hover{color: #002f4a; background-color: #ffffff;}
+header .bx-wrapper{text-align: center; background-color: #2d3432; color: #e3ffe3; font-size: 12px; font-weight: 400;}
+header .bx-wrapper .bx-viewport .rollingBanner li a{
+    display: block; width: 100%; text-decoration: none; color: inherit; font-size: inherit; font-weight: inherit;
+}
+/* bx-slider index 설정 */
+.bx-wrapper{
+    box-shadow: none; border: none; background: transparent; margin-bottom: 0;
+}
+.main.Container .bx-wrapper .bx-pager, .main.Container .bx-wrapper .bx-controls-auto {
+    position: absolute; bottom: 40px; width: 100%;
+}
+.bx-wrapper .bx-controls-direction a{width: 55px; height: 55px; background-repeat: no-repeat; z-index: 9;}
+.bx-wrapper .bx-controls .bx-controls-direction .bx-prev{left: 0; background: url('../images/custom_scont.png');}
+.bx-wrapper .bx-controls .bx-controls-direction .bx-prev:hover{left: 0; background: url('../images/custom_scont.png'); background-position: right 0 top -55px;}
+.bx-wrapper .bx-controls .bx-controls-direction .bx-next{right: 0; background-image: url('../images/custom_scont_r.png'); background-position: 0px 0px; }
+.bx-wrapper .bx-controls .bx-controls-direction .bx-next:hover{right: 0; background-image: url('../images/custom_scont_h.png'); background-position: 0px 0px;}
+.main.Container .bx-wrapper .bx-controls .bx-pager .bx-pager-item a{
+    background: rgba(255, 255, 255, 0.5); text-indent: -9999px; display: block; width: 100px; height: 5px; margin: 0 5px; border-radius: 0;
+}
+.main.Container .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link.active,.main.Container .bx-wrapper .bx-controls .bx-pager .bx-pager-item .bx-pager-link:focus {
+    background: #ffffff;
+}
+/* index 카드뷰 */
+.productList:after{content: ''; display: block; clear: both;}
+.productList >:not(li:nth-child(4n+1)){margin-left: 2%;}
+.productList >:not(li:last-child){margin-bottom: 65px;}
+.productList > li:last-child{margin-bottom: 110px;}
+.productList li{float:left; width: 23.5%; display: block; background-color: #ffffff; position: relative;}
+.productList li > mark{
+    position: absolute; top: 0; left: 0; width: 40%;
+    display: block; background-color: #000; color: #fff;
+    font-style: normal; font-size: 14px; font-weight: 500; text-align: center;
+    line-height: 24px;
+}
+.productList li > span{
+    position: absolute; top: 0; left: 0; width: 20%; text-align: center;
+    background-color: #b72c28; color: #fff; line-height: 24px;
+    font-size: 14px;
+}
+.productList li img{width: 100%;}
+.productList li > div:first-of-type:after{content: ''; display: block; clear: both;}
+.productList li > div:first-of-type{padding: 15px 4.8%; font-size: 14px; color: #727483; line-height: 24px;vertical-align: middle; }
+.productList li > div:first-of-type > *{float: left; display: block; line-height: 24px;}
+.productList li > div:first-of-type > div{width: 70%;}
+.productList li > div:first-of-type > div ol:after{content: ''; display: block; clear: both;}
+.productList li > div:first-of-type > div ol{width: 70%;}
+.productList li > div:first-of-type > div ol{float: left; width: 70%;}
+.productList li > div:first-of-type > div span{float: right; width: 30%;}
+.productList li > div:first-of-type > div span:hover{color: #000;}
+.productList li > div:first-of-type > div span::before{content: '+';}
+.productList li > div:first-of-type ol .co:not(:first-child){margin-left: 5.45%;}
+.productList li > div:first-of-type ol .co{
+    float: left; width: 26px; display: block; border-radius: 16px; text-indent: -9999px; box-sizing: border-box;
+    background-image: url('../images/coloroption_sprite.png'); background-repeat: no-repeat; border: 1px solid transparent;}
+.productList li > div:first-of-type ol .active{ border: 1px solid #000; box-sizing: border-box;}
+.productList li > div:first-of-type ol .co:hover:not(.active){ border: 1px solid #acacac; box-sizing: border-box;}
+.productList li > div:first-of-type > span::after{content: 'colors'; padding-left: 5px;}
+.productList li > div:first-of-type > span{float: right; display: block; width: 30%; text-align: right;}
+.productList li > div:last-of-type{padding: 0 20px 15px;}
+.productList li > div:last-of-type h3{min-height: 55px;}
+.productList li > div:last-of-type h3 a{display: block; text-decoration: none; font-size: 13px; line-height: 20px; color: #000000; font-weight: 600;}
+.productList li > div:last-of-type h3 a:hover{color: #8a8a8a; font-weight: 600;}
+.productList li > div:last-of-type div{float: left; width: 50%; display: block;}
+.productList li > div:last-of-type span{float: right; text-align: right; display: block;}
+.productList li > div:last-of-type input{background-repeat: no-repeat; border: none; cursor: pointer; background-color: transparent; text-indent: -9999px; min-width: 19px; line-height: 22px; box-sizing: border-box;}
+.productList li > div:last-of-type input:not(:nth-of-type(1)){margin-left: 20px;}
+.productList li > div:last-of-type input:nth-of-type(1){background-image: url('../images/productlist_ico_1.png');}
+.productList li > div:last-of-type input:nth-of-type(2){background-image: url('../images/productlist_ico_2.png');}
+.productList li > div:last-of-type input:nth-of-type(3){background-image: url('../images/productlist_ico_3.png');}
+.productList li > div:last-of-type input:nth-of-type(1).active{background-image: url('../images/productlist_ico_f1.png');}
+.productList li > div:last-of-type input:nth-of-type(2).active{background-image: url('../images/productlist_ico_f2.png');}
+.productList li > div:last-of-type input:nth-of-type(3).active{background-image: url('../images/productlist_ico_F3.png');}
+.productList li > div:last-of-type span{float: right; display: block;}
+.productList li > div:last-of-type span del{font-size: 12px; font-weight: 500; color: #acacac; padding-right: 20px;}
+.productList li > div:last-of-type span:not(:first-child){font-size: 13px; font-weight: 600; color: #6a6a6a;}
+.productList li > div:last-of-type span[title $="Out"]{color: #b72c28; font-weight: 700;}
+
+footer{background-color: #2d3432; clear: both;}
+footer > a{
+    background-color: #ffffff; display: block; line-height: 65px; text-decoration: none; color: #000;
+    font-size: 16px; font-weight: 700; text-transform: uppercase; text-align: center; border-top: 1px solid #eaeaea; box-sizing: border-box;
+}
+footer > a:after{content: url('../images/arrowtop.png'); padding-left: 0.8%;}
+footer > div:first-of-type{position: relative; padding: 55px 0 10px;}
+footer > div:first-of-type h2 img{width: 100%; max-width: 188px;}
+footer > div:first-of-type div{position: absolute; right: 0; top: 55px; width: 100%; padding-left: 200px; box-sizing: border-box; display: flex; flex-flow: row nowrap; justify-content: flex-end;}
+footer > div:first-of-type div span{min-width: 270px; color: #ffffff; position: relative; line-height: 35px; display: block; width: 17%; padding-left: 90px; box-sizing: border-box;}
+footer > div:first-of-type div span label{ display: inline-block; position: absolute; left: 0; font-size: 16px; font-weight: 600;}
+footer > div:first-of-type div span input{ display: block; background-color: transparent;}
+footer > div:first-of-type div span input[type='email']{
+    border-width: 0 0 1px; border-style: solid; border-color: #fff; line-height: inherit; width: 100%;
+}
+footer > div:first-of-type div span input[type='submit']{
+    position: absolute; right: 0; top: 0; height: 35px; border: none; width: 35px; background: url('../images/footer_ico_1.png') no-repeat center; text-indent: -9999px;
+}
+footer > div:first-of-type div ul{
+    display: flex; flex-flow: row nowrap; justify-content: flex-end; width: 44%; min-width: 690px;
+}
+footer > div:first-of-type div ul li{
+    display: block;
+}
+footer > div:first-of-type div ul li:not(:nth-child(n):nth-child(-n+3)){
+    margin-left: 4.5%;
+}
+footer > div:first-of-type div ul li a{
+    display: block;
+}
+footer > div:first-of-type div ul li:nth-child(2),footer > div:first-of-type div ul li:nth-child(3){
+    margin-left: 20px;
+}
+footer > div:first-of-type div ul li:nth-child(n):nth-child(-n+3) a{
+    text-indent: -9999px; width: 35px; height: 35px; background-position: center; background-size: contain;
+}
+footer > div:first-of-type div ul li:nth-child(1) a{background-image: url('../images/footer_ico_2.png');}
+footer > div:first-of-type div ul li:nth-child(2) a{background-image: url('../images/footer_ico_3.png');}
+footer > div:first-of-type div ul li:nth-child(3) a{background-image: url('../images/footer_ico_4.png');}
+footer > div:first-of-type div ul li:not(:nth-child(n):nth-child(-n+3)){width: 12.5%; min-width: 225px;}
+footer > div:first-of-type div ul li:not(:nth-child(n):nth-child(-n+3)) a{background-color: #fff; line-height: 35px; font-size: 16px; font-weight: 700; color: #4a4a4a;}
+footer > div:first-of-type div ul li:not(:nth-child(n):nth-child(-n+3)) a:hover{color: #000000; background-color: #6a6a6a;}
+footer > address{ padding: 0 0 40px; text-align: right; display: block; box-sizing: border-box; border-bottom: 1px solid #ffffff;}
+footer > address span{font-style: normal; line-height: 26px; color: #ffffff;}
+footer > address span:nth-child(1){font-weight: 700; display: block;}
+footer > address span:nth-child(1) mark{background-color: transparent; color: #e3ffe3; font-style: normal; font-size: 16px;}
+footer > address span:nth-child(1) a{display: inline-block; text-decoration: none; margin: 0 1.3%; color: #ffffff;}
+footer > address span:nth-child(1) a:hover{color: #6a6a6a; transition: 0.25s ease-in-out;}
+footer > address span:nth-child(2),footer > address span:nth-child(3){font-size: 12px; font-weight: 500; margin-left: 1.82%;}
+footer > div:last-of-type{
+    display: block; text-align: right; font-size: 12px; color: #fff; font-style: normal;
+    padding: 35px 0 30px; font-weight: 500;
+}
+footer > div:last-of-type ol li{
+    display: inline-block; line-height: 26px;
+}
+footer > div:last-of-type ol li:not(:first-child){margin-left: 3%;}
+
+footer > div:last-of-type ol li a{
+    display: block; text-decoration: none; color: #ffffff;
+}
+    
+}

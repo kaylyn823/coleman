@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - coleman</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/coleman.js"></script>
+    <link rel="icon" type="image/favicon.png" href="images/favicon.png" sizes="48x48">
+    <link rel="stylesheet" href="css/import.css">
+<body>
+    <div id="forgotPopup" class="popup forgot">
+        <input type="button" value="close" class="material-symbols-outlined">
+        <p>
+            <strong>Reset Password</strong>
+            Enter the email address you're using for your account. We'll send you an email with a link to reset your password.
+        </p>
+        <form>
+            <input type="email" id="signInuserE" placeholder="Please enter a valid email address">
+            <input type="submit" value="Send" class="btn L22550">
+        </form>
+    </div>
+    <div id="searchPanel" class="panel search">
+        <div>
+            <form>
+                <input type="search" id="searchKeyword" placeholder="What are you looking for?" title="insert your search Keyword's">                            
+                <input type="submit" value="Search">
+            </form>
+            <strong>POPULAR SEARCHES</strong>
+            <ul>
+                <li><a href="coolersList.html">Coolers</a></li>
+                <li><a href="tent1_detail.html">Reunion Collection</a></li>
+                <li><a href="tent3_detail.html">PEAK1 collection</a></li>
+                <li><a href="tentList.html">Tent</a></li>
+                <li><a href="funiture.html">Chair</a></li>
+            </ul>
+        </div>
+        <input type="button" value="close" class="material-symbols-outlined">
+    </div>
+    <div id="signInPanel" class="panel signIn">
+        <div>
+            <h2>Create Account</h2>                
+            <input type="button" value="Sign up" class="btn R15050" data-panelName="signUpPanel">
+            <img src="images/coleman_logo.png" alt="coleman logo">
+        </div>
+        <form action="index_after.html">
+            <div>
+                <h2>Login</h2>
+                <p>Welcome Back</p>
+                <p>Sign in for a more personalized experience</p>
+                <ul>
+                    <li>
+                        <label for="userLEmail">EMAIL ADDRESS*</label>
+                        <input type="email" id="userLEmail">
+                    </li>
+                    <li>
+                        <label for="userLPW">PASSWORDS*</label>
+                        <input type="password" id="userLPW">
+                        <span class="material-symbols-outlined">
+                            visibility_off
+                        </span>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </li>
+                    <li data-popname="forgotPopup">
+                        Forgot Password?
+                    </li>
+                </ul>
+                <input type="button" value="close" class="material-symbols-outlined">
+                <input type="submit" value="Login" class="btn R22550">
+            </div>
+        </form>
+    </div>
+    <div id="signUpPanel" class="panel signUp">
+        <div>
+            <h2>have an account?</h2>
+            <input type="button" value="Login" class="btn R15050" data-panelName="signInPanel">
+            <img src="images/coleman_logo.png" alt="coleman logo">
+        </div>
+        <form action="index_after.html">
+            <div>                                             
+                <h2>Create an Account</h2>
+                <ul>
+                    <li>
+                        <label for="userSFname">FIRST NAME</label>
+                        <input type="text" id="userSFname">
+                    </li>
+                    <li>
+                        <label for="userSLname">LAST NAME</label>
+                        <input type="text" id="userSLname">
+                    </li>
+                    <li>
+                        <label for="userSEmail">EMAIL ADDRESS*</label>
+                        <input type="email" id="userSEmail">
+                    </li>
+                    <li>
+                        <label for="userSPw">PASSWORD*</label>
+                        <input type="password" id="userSPw">
+                        <span class="material-symbols-outlined">visibility_off</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="rssAgreee">
+                        <label for="rssAgreee">agree to RSS</label>
+                        <p>By checking off the box, I agree that I want to receive emails from Coleman. about updates, products, collections, upcoming events and services that I may find interesting. 
+                            I can withdraw this consent at any time as described in the <a href="privacypolicy.html"><strong>Privacy Policy</strong></a> or by clicking on the “unsubscribe” link in the
+                            <a href="contactus.html"><strong>email.</strong></a>
+                        </p>
+                    </li>
+                </ul>
+                <input type="button" value="close" class="material-symbols-outlined">
+                <input type="submit" value="Register" class="btn R22550">
+            </div>
+        </form>
+    </div>  
+    <!-- popup -->
+    <header>
+        <div>
+            <span>
+                Ship To: United States of America ($USD) | EN
+                <a href="findstore.html">Find a Store</a>
+            </span>
+            <ul class="index_Gen">
+                <li data-panelName="signUpPanel">Sign up</li>
+                <li data-popname="searchPanel">search</li>
+                <li data-panelName="signInPanel">Login</li>
+                <li data-panelName="signInPanel">
+                    Bag
+                    <span>0</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-symbols-outlined mui" data-panelName="muIPanel">
+            <h1>
+                <a href="index.html">
+                    <img src="images/coleman_logo.png" alt="coleman">
+                </a>
+            </h1>
+        </div>
+        <nav>
+            <input type="button" value="close" class="material-symbols-outlined">   
+            <ul>
+                <li><a href="index.html"><img src="../images/coleman_logo.png" alt="coleman_logo"></a></li>
+                <li data-gnbbox="coolers">
+                    Coolers &amp; Drinkware
+                    <figure class="boxGnb" id="coolers">
+                        <img src="images/lnb1.png" alt="316 series">
+                        <figcaption>
+                            <h2>
+                                <small>since 1954</small>
+                                Your family cooler just got a whole lot
+                                cooler. Say hello to the Coleman® 
+                            </h2>
+                            <p>Coleman coolers are perfect for outdoor events like camping, backyard hangs and tailgating.Find all coolers of various sizes so that you can enjoy the convenience your Coleman camping gear brings to outdoor recreation.
+                            </p>
+                            <a href="coolersList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="tent">
+                    Tents &amp; Canopies
+                    <figure class="boxGnb" id="tent">
+                        <img src="images/lnb2.png" alt="skydome 4person">
+                        <figcaption>
+                            <h2>
+                                Coleman® Skylodge™ 4-Person Tent
+                            </h2>
+                            <p>Crank up the camping fun in the comfort of Coleman® tents and canopies,
+                                for shelter that's always got you covered. Get ready for your fastest tent pitch yet
+                                with the Skylodge™ 4-Person Tent for an easy-up tent in as little as 1 minute,
+                                so you can stroke campfires and stack s'mores in no time.
+                            </p>
+                            <a href="tentList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="sleepingBag">
+                    Sleeping Bags &amp; Beds
+                    <figure class="boxGnb" id="sleepingBag">
+                        <img src="images/lnb3.png" alt="Big Bay series">
+                        <figcaption>
+                            <h2>                        
+                                Big Bay™ 20° Mummy Sleeping Bag
+                            </h2>
+                            <p>Cold-weather camping is easy when you have a Big Bay™ 20° Mummy Sleeping Bag.
+                                From treks out for a car camping trip to stargazing nights in the backyard,
+                                this sleeping bag's Coletherm™ MAX insulation will keep you warm
+                                in temps as low as 20°F.
+                            </p>
+                            <a href="sleepingBagList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="lighting">
+                    Lighting
+                    <figure class="boxGnb" id="lighting">
+                        <img src="images/lnb4.png" alt="1900 Collection™ 600 Lumen LED Lantern">
+                            <figcaption>
+                                <h2>                            
+                                    Coleman® will keep everything illuminated.
+                                </h2>
+                                <p>
+                                    Whether you’re at the campsite or in your backyard,
+                                    our selection of outdoor lighting products are perfect for
+                                    your next bright adventure. 
+                                </p>
+                                <a href="lightingList.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="grills">
+                    Grills &amp; Stoves
+                    <figure class="boxGnb" id="grills">
+                        <img src="images/lnb5.png" alt="coleman grills">
+                            <figcaption>
+                                <h2>                            
+                                    Level up your food game with the Cascade™ Collection. 
+                                </h2>
+                                <p>
+                                    Wow friends and family with a variety of outdoor meals when you travel with 
+                                    Coleman Camp Kitchen Equipment for your crew. Our camping stoves &amp; grills are
+                                    perfect for small or large crews when preparing breakfast, lunch, &amp; dinner.
+                                </p>
+                                <a href="grillsList.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="campFuniture">
+                    Camp Furniture
+                    <figure class="boxGnb" id="campFuniture">
+                        <img src="images/lnb6.png" alt="Cross Rocker Outdoor Rocking Chair">
+                            <figcaption>
+                                <h2>
+                                    <small>New Arrival</small>
+                                    Say hello to the Cross Rocker Outdoor Rocking Chair.
+                                </h2>
+                                <p>
+                                    Sit back and count the constellations in our Big and Tall camping chair, featuring
+                                    an oversized seat and large footing for well-balanced stability. Recline in a heavy duty
+                                    camping chair you can trust with the reinforced steel frame of this oversized camping
+                                    chair that comfortably supports up to 600 lbs. 
+                                </p>
+                                <a href="funiture.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="ourStory">
+                    Explore Coleman
+                    <figure class="boxGnb" id="ourStory">
+                        <img src="images/lnb7.png" alt="since 1901">
+                            <figcaption>
+                                <h2>
+                                    Where We Are Today.
+                                </h2>
+                                <p>
+                                    After 122 years, Coleman gear is everywhere you are: on the trail, by the lake, 
+                                    at the match, or in the middle of a music festival. We're always around a place where
+                                    there are friends, coolers, and campfires. So, grab a tent, fire up a grill, and
+                                    pull up a chair. The Outside Is Calling. Answer it.
+                                </p>
+                                <a href="exploreColeman.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li><a href="findstore.html">Find a Store</a></li>
+            </ul>
+        </nav>
+        <ol class="rollingBanner">
+            <li>
+                <a href="faq.html">Free Shipping on orders $50</a>
+            </li>
+            <li>
+                <a href="eventsale.html">Shop Best of Sale.</a>
+            </li>
+            <li>
+                Enjoy complimentary Standard shipping and returns on all orders..
+            </li>
+        </ol>
+    </header>
+    <!-- Header-->
+    <div class="faqContainer">
+        <ol class="fsttxtNv">
+            <li><a href="index.html">Home</a></li>
+            <li>FAQs</li>
+        </ol>
+        <div class="tabTab">
+            <h2>FAQs</h2>
+            <ul>
+                <li><a href="accessibility.html">Accessibility Policies</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li class="active"><a href="faq.html">FAQs</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="faqNavi">
+            <ol>
+                <li data-tabname="tab1" class="active">
+                    general faqs
+                </li>
+                <li data-tabname="tab2">
+                    product faqs
+                </li>
+                <li data-tabname="tab3">
+                    How to clean
+                </li>
+            </ol>
+            <div class="searchField">
+                <form>
+                    <input type="search" placeholder="What are you looking for?">
+                    <input type="submit" value="Search" class="btn L22534">
+                </form>
+            </div>
+        </div>
+        <div class="deTxt faq1 active" id="tab1">
+            <h3 class="boDo">
+                General FAQs
+            </h3>
+            <ol>
+                <li>
+                    <details open>
+                        <summary>I forgot my password. How can I reset it? Accordian Link</summary>
+                        <p>
+                            Shipping service and rates are subject to change without notice. Free shipping offers do not apply to expedited shipping methods, unless specified.
+                        </p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>What personal information does Coleman collect and is it kept private?</summary>
+                        <p>
+                            Please see our <a href="privacypolicy.html">Privacy Statement</a> for information regarding the collection and use of personal information from this website.
+                        </p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>What is your return policy? Accordian Link</summary>
+                        <p>
+                            For the 2022 Holiday season we have extended our return window to 90 Days, eligible on orders placed 11/7/2022-12/25/2022.<br>
+                            Unused items in their packaging purchased from Coleman.com may be returned in their original condition within 60 days of your order date for a full merchandise refund, not including<br>
+                            shipping charges. Purchases returned within this time frame will be refunded in the original form of payment. If we do not receive your items within the 60 days of purchase your refund will not<br>
+                            be processed. Items marked final sale cannot be returned.
+                        </p>                    
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>Can I change or cancel an order I have already placed?</summary>
+                        <p>During normal business hours, Mon.-Fri. 9 a.m. to 5 p.m. ET, once an order is placed there is a 30-minute remorse window where you can call customer service at 800-835-3278 to update or cancel your order. After 30 minutes we are unable to make any changes or cancellations to your order.</p>
+                        <p>Please Note: We are only available to address changes during our normal business hours. We apologize for any inconvenience this may case. If your order cannot be cancelled outside of these hours, and you would like to return the order after it is received, please visit our returns page to generate a return label.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>How do I create an account?</summary>
+                        <p>To create an account, go to the Create an Account page by clicking on <mark data-panelName="signInPanel">this link</mark> .</p>
+                        <em>After you create an account you can: view status of your order, view order history, manage shipping addresses and payment methods, change your password, process returns, and see promotional discounts when available.</em>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary class="active">What do you charge for shipping?</summary>
+                        <p>Shipping service and rates are subject to change without notice. Free shipping offers do not apply to expedited shipping methods, unless specified.</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Standard</td>
+                                    <td>$6.95, FREE on $50+</td>
+                                </tr>
+                                <tr>
+                                    <td>Standard Ground</td>
+                                    <td>$6.95, FREE on $50+</td>
+                                </tr>
+                                <tr>
+                                    <td>3-Day</td>
+                                    <td>$12.95</td>
+                                </tr>
+                                <tr>
+                                    <td>2-Day</td>
+                                    <td>$19.95</td>
+                                </tr>
+                                <tr>
+                                    <td>Overnight</td>
+                                    <td>$24.95</td>
+                                </tr>
+                        </tbody>
+                        </table>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>How is Sales Tax calculated?</summary>
+                        <p>When placing your order you will initially be given an order total based on an estimated sales tax. Once your order is processed and an invoice is generated the actual sales tax will be calculated according to the laws of the state to which the order is shipped.</p>
+                        <p>Items sold by this website and shipped to all US destinations are subject to tax unless a product exemption applies. </p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>What if an item is out of stock?</summary>
+                        <p>Some of our most popular items sell out, but may become available in the future. If you'd like to be made aware when an item is back in stock, simply click the "Notify Me When In Stock" button on the product page and provide your email address. We'll let you know as soon as we get more. If there is no "Notify Me" button, then it is not available for purchase at Coleman.com.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>How can I find out about employment opportunities with Coleman?</summary>
+                        <p>We have career opportunities posted online for your convenience. <a href="https://careers.newellbrands.com/us/en">Click here</a> to view the current job postings.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>What payment methods can I use? Accordian Link</summary>
+                        <ul>
+                            <li><a href="https://usa.visa.com/pay-with-visa/find-card/apply-credit-card">VISA</a></li>
+                            <li><a href="https://www.mastercard.us/en-us.html">Mastercard</a></li>
+                            <li><a href="https://www.americanexpress.com/">American Express</a></li>
+                            <li><a href="https://www.discover.com/credit-cards/?ICMPGN=ACQ_NAV_DLOGO">Discover</a></li>
+                            <li><a href="https://www.paypal.com/us/digital-wallet/ways-to-pay/credit-services">Paypal</a></li>
+                            <li><a href="https://www.apple.com/apple-card/">ApplePay</a></li>
+                            <li><a href="https://www.afterpay.com/en-US">Afterpay (Click here for more information)</a></li>
+                        </ul>
+                        <p>Please Note: We only accept credit cards issued by US banks. Please confirm your payment method meets our requirements prior to placing your order to avoid delays or cancellation.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>What is the Coleman Warranty?</summary>
+                        <p>Your product must be under warranty to obtain warranty service. Coleman® products have a limited warranty from the date of original retail purchase that the product will be free from defects in material and workmanship. The length of the limited warranty may vary by product. To learn more about the Coleman Warranty click here.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>How do I see my order history?</summary>
+                        <p>Registered User Orders: Log into your customer account, then click on “Order History” on your account page. You will see a list of your most recent orders. Click on the order number to see more information about your order.</p>
+                        <p>Guest Orders: Use our Track Order feature by entering your order number, email address and billing zip code. <mark data-panelName="signInPanel">Click here</mark> to go to the track order page.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>Can I order replacement parts through Coleman?</summary>
+                        <p>Some replacement parts can be ordered through eReplacementparts.com and OldColemanParts.com. Coleman does not guarantee the availability of replacement parts and questions about the availability of specific parts should be directed to our partners.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary class="active">When will I get my order?</summary>
+                        <p>Orders typically take 1-2 business days to process before they are shipped. We do not ship on weekends or holidays. Orders placed after 1pm ET are submitted for fulfillment the following day. Please consider this timeline prior to your purchase.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Delivery Method</th>
+                                    <th>Delivery Timeframe <br> (including 1-2 business days for processing)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Standard</td>
+                                    <td>3-9 Business Days</td>
+                                </tr>
+                                <tr>
+                                    <td>Standard Ground</td>
+                                    <td>4-11 Business Days</td>
+                                </tr>
+                                <tr>
+                                    <td>3-Day</td>
+                                    <td>3-4 Business Days</td>
+                                </tr>
+                                <tr>
+                                    <td>2-Day</td>
+                                    <td>2-3 Business Days</td>
+                                </tr>
+                                <tr>
+                                    <td>Next Day</td>
+                                    <td>1-2 Business Days</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            Not all shipping methods are available for all products and/or locations. Please allow additional transit time for orders shipped to PO Boxes, Alaska, Hawaii and APO/FPO addresses. Shipments are sent via FedEx services and are delivered by FedEx or Parcel Post depending on the shipment contents and destination. Delivery dates are estimates and not guaranteed. Shipping service and rates are subject to change without notice. Please Note: Some items will arrive in packaging that reveals what's inside.
+                        </p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>How do I place an order?</summary>
+                        <details open>
+                            <summary>To place an order, please follow these steps:</summary>
+                            <ul>
+                                <li>Browse the site by using the menu at the top of the page. Click on any item you like to see more information. Select a color (if available) and choose a quantity. Proceed by clicking "Add to bag".</li>
+                                <li>Once you are ready to check out, review the item(s) in your cart for accuracy. Apply any promotion codes (when available). Next, click "Continue to Checkout" to start the checkout process.</li>
+                                <li>Sign in to your Coleman.com account, or enter your email address and continue as a guest.</li>
+                                <li>Select or enter your shipping address, choose from the available shipping methods, then click “Continue”.</li>
+                            </ul>
+                        </details>
+                        <p>You should receive an email confirming your order within a couple of hours. We'll get in touch again once your package has shipped.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>How do I sign up for Coleman email updates and get 15% off my first order?</summary>
+                        <p>To sign up for Coleman email updates and get 15% off your first order please enter your email in the field at the bottom of any Coleman.com page. A discount code will be emailed to you shortly after.</p>
+                        <p>Offer available to first time email subscribers only.</p>
+                        <p>*You will be emailed a one-time use code valid only at www.coleman.com. Full-price items only. Not valid in combination with other promotional codes.Offer valid until used. Offer cannot be redeemed for cash. Offer not valid on warranty claims or credits. Prices and specifications are subject to change without notice. Coleman is not responsible for typographical or photographic errors. Applicable sales taxes apply. No rain checks. Offers good while supplies last.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>How do I update my email preferences or unsubscribe from your mailing list?</summary>
+                        <p>Links to update your email preferences or unsubscribe from our mailing list are included at the bottom of every Coleman email</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>Can I use more than one promo code?</summary>
+                        <p>You can only use one promo code per order.</p>
+                    </details>
+                </li>
+            </ol>
+        </div>
+        <div class="deTxt faq2" id="tab2">
+            <h3 class="boDo">
+                Tents FAQs
+            </h3>
+            <ol>
+                <li>
+                    <details open>
+                        <summary>There was water inside my tent or my sleeping bag/ clothes on the edges are damp, is my tent leaking/defective?</summary>
+                        <p>
+                            Your tent is not leaking- what you are experiencing is condensation forming on the inside of the tent due to a lack of ventilation and high humidity inside the tent and difference in temperature between the outside and inside of the tent. This can happen in any tent, even if it's not raining. The warm water vapor from one's breath and body heat can condense and form water droplets as it comes into contact with the cool tent fabric. Additionally, wet clothes or gear inside the tent create such warm water vapor. Try cracking a window, opening peak vents, removing wet items and checking to make sure rain fly guy lines and ground vents are properly secured to keep air flowing through the tent so that condensation is minimized.
+                        </p>
+                    </details>
+                </li>
+                <li>
+                    <h3 class="boDo">Care and Cleaning of  Coleman® Tents</h3>
+                    <details open>
+                        <summary>Tent Care and Cleaning Tips</summary>
+                        <ul>
+                            <li>Do not snap poles together. Expend poles section by sections. Using care here will greatly extend the life of your poles, aiding in splintering protection and keeping the structure of your tent sturdy. When collapsing your sock-corded poles, collapse them near the center first to ease the stress on the cord. Try to avoid pulling the poles as this can tear the shock-cord or the tent body. Often it is easier to push the pole through the pole sleeve.</li>
+                            <li>If your tent will be set up for a week or longer, it may be wise to place the tent where it may get an ideal amount of shade from the surrounding area. In order to extend the life of your tent, avoid extended UV exposure. UV rays can damage all fabrics over time. If there is no shade available, your rainfly will help protect the body of your tent from damage by the elements.v</li>
+                            <li>Sweep out your tent. Make sure that rocks, leaves, dirt and branches are all out of the tent before packing it.</li>
+                            <li>If at all possible, only take down your tent when it is completely dry after a rainstorm or morning dew. Wait until it dries, so you will not have to worry about drying the tent at a later time.</li>
+                            <li>You can use a sponge and mild soap to wipe off a dirty tent. Do not use a washing machine to clean your tent. And always let it air dry before re-packing.</li>
+                            <li>Your tent must be stored dry. If you must close camp in the rain, open your tent and set it up as soon as possible to avoid mildew and odors. When your tent is stored between camping trips, a cool, dry place is ideal.</li>
+                            <li>Depending upon the temperature and climate, your tent may gather some moisture on the inside. This can usually be avoided by opening the tent to allow ventilation. The easiest way to ventilate is to open all nylon windows and allow the screen to protect you when possible. Please note that if you are in inclement weather, condensation is not leakage.</li>
+                            <li>Under hard ground conditions, stakes may bend. Tent stake replacements are available, but not always handy at a campsite. A tent may also be tied using guylines, to rocks or other stable objects as a temporary fix.</li>
+                            <li>Do not pull up stakes with the tent body or stake loop. Use a stake puller or the end of a mallet to remove stubborn stakes. Ripped stake loops can be sewn into the tent again, but be sure to  seam seal the stitching.</li>
+                            <li>Coleman zippers are self-repairing. Fit the coils into the zipper slider and slide it to fit.</li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <h3 class="boDo">Additional Tent Care Tips</h3>
+                    <details open>
+                        <summary>Give Air an Escape Route</summary>
+                        <p>Open doors and windows in order to allow air to escape as the tent is collapsed. Letting the air escape as the tent is collapsed will make rolling and storing it easier. Rolling the tent toward the open doors and windows will help too.</p>                    
+                    </details>
+                    <details open>
+                        <summary>Fold Your Tent</summary>
+                        <p>It may be easier to fold the tent along original fold lines. However, after a few years, this becomes more difficult as the lines fade. A good rule of thumb is to fold the tent about the same length as the tent poles before you roll it up.</p>
+                    </details>
+                    <details open>
+                        <summary>Store Your Tent</summary>
+                        <p>Roll your tent lightly and neatly with poles and stakes (in their bags) rolled into the tent body. This technique uses the tent poles as a structure to help roll the tent. A slow, tight roll of the tent is one of the easiest ways to compact the tent for an easy fit into the storage bag.</p>
+                    </details>
+                </li>
+                <li>
+                    <h4>Coolers FAQs</h4>
+                    <details open>
+                        <summary>How Do I Clean My Coleman Cooler?</summary>
+                        <ul>
+                            <li>Care and Cleaning of Coleman® Coolers</li>
+                            <li>Clean both the inside and outside with a solution of mild soap and warm water.</li>
+                            <li>If the product has a faucet, be sure to rinse with hot soapy water and drain completely.</li>
+                            <li>Use baking soda and water to remove tough stains.</li>
+                            <li>Remove odors with a diluted solution of chlorine bleach and water. If odor persists, wipe interior with a cloth saturated with vanilla extract, then leave in cloth in cooler overnight.</li>
+                            <li>Always air dry with the lid open before storing.</li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <h4>Grills FAQs</h4>
+                    <details open>
+                        <summary>Why does my grill have little to no flame?</summary>
+                        <ul>
+                            <li>
+                                Care and Cleaning of Coleman® Coolers<br>
+                                Clean both the inside and outside with a solution of mild soap and warm water.<br>
+                                If the product has a faucet, be sure to rinse with hot soapy water and drain completely.<br>
+                                Use baking soda and water to remove tough stains.<br>
+                                Remove odors with a diluted solution of chlorine bleach and water. If odor persists, wipe interior with a cloth saturated with vanilla extract, then leave in cloth in cooler overnight.<br>
+                                Always air dry with the lid open before storing.<br>
+                            </li>
+                            <li>The second possible cause is the surge protection device built into the grill's regulator. All Coleman Grills have the surge protection device. This device cuts the flow of fuel to the grill if a sudden increase in propane flow is detected. This is to prevent a large venting of propane if the hose or valve on the grill is damaged. This device is also activated if the burner valves on the grill are in the open position when the valve on the tank is opened. You want to always be sure the burner knobs on the grill are in the off position before shutting off the tank valve when shutting down the grill. Just turning the knobs to the right until they stop may not turn off the burners. Most knobs must be pushed in and turned to the right before they will fully shut off the grill. Always make sure the knobs are in the off position before opening the tank valve when starting the grill. If either one of the knobs are in the open position, the surge protection device will activate and the flow of fuel to the grill will be very low.</li>
+                            <li>The third possible cause is the use of an Overflow Protection Device that is now required on all propane tanks sold in the United States. This device is built into the tank and prevents too much propane from being put into the tank. It involves a float that rises on the liquid propane in the tank and shuts the valve if too much propane is put into the tank. Though this device is primarily used when the tank is being filled, it can also activate if the tank is tipped. Most propane cylinders on grills are stored below the grill body itself on a plate just above the wheels. If the grill is tilted when being moved, the moving liquid propane in the tank can cause the float inside the tank to rise and activate the OPD. This will shut off the flow of propane through the valve.</li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <h4>Stoves FAQs</h4>
+                    <details open>
+                        <summary>What effects do temperature and altitude have on the performance of my Coleman® stove?</summary>
+                        <p>
+                            Coleman® liquid-fueled stoves generally will need air pumped into the tank more often and, when started, will burn with a yellow flame for a longer time if the temperatures are below 32°F/ 0°C.
+                            These effects are related to both the stove and fuel. At low temperatures, it will take longer for the generator to heat to the point where the fuel will vaporize efficiently and the burners settle to a blue flame. The performance of Coleman® Propane Stoves will not be affected by temperatures above 0° F / -18°C. As the temperature drops below 0° F, there will be a gradual reduction of maximum heat output down to -20°F / -29°C where the stove may fail to function.
+                        </p>
+                        <p>
+                            Altitudes above 10,000 ft will have an effect on both propane and liquid fuel stoves. Because of lower air pressure and decreased oxygen at these altitudes, you will experience more yellow flame and less heat output. The stoves will not operate as efficiently.
+                        </p>
+                    </details>
+                    <details open>
+                        <summary>Why does my Coleman® stove light with a large yellow flame?</summary>
+                        <p>
+                            It is normal for a.Coleman®. liquid fuel stove to burn with a large yellow flame when first started. Until the generator assembly is hot enough to vaporize the fuel, the stove will burn with a yellow flame. Once the generator heats up enough, the flame will turn to blue and settle closer to the burner. Under normal use, this can take from 20 to 60 seconds depending on the outside temperature. The colder the stove and fuel, the longer it will take. It is important to have the lighting lever on the side of the liquid fuel stove's valve in the ""up"" position when starting the stove and to leave the lever in the ""up"" position until the flame at the burner turns blue. When the lighting lever is in the "up" position on the valve, the fuel mixture fed to the generator contains less fuel and more air than when the lever is in the "down" position. Running this lean mixture when lighting the stove allows the generator to heat up enough to vaporize the fuel without building up excess fuel in the burner. If, after the flame at the burner turns blue, you turn the lighting lever to the "down" position and the flame at the burner turns yellow again, turn the lighting lever "up" for another thirty seconds. The yellow flame indicates the generator is not hot enough. On both liquid fuel and propane stoves it is a proper fuel and air mixture that produces the correct blue flame at the burner. On a liquid fuel stove, outside air and fuel from the generator are mixed at the Bunsen where the generator plugs into the manifold behind and above the burner. On the manifold, right behind where the generator plugs in, there are two holes that draw in air to mix with the fuel on the way to the burner. If either or both of these holes are blocked or if a spider or insect enters these holes and build a nest or web sac inside the manifold, the fuel and air mixture will be incorrect and there will be a large yellow flame at the burner that will not settle down to blue. On a propane stove, there is, under the cook top, a tube that runs from each burner to the valve at the front of the stove. Near the valve end of the tube are two holes that draw in air to mix with the fuel. These holes and the tube near the holes can also be clogged by a spider or insect nest or egg sac. This will cause a large yellow flame at the burner. For either stove, the solution is to run a small bottle or gun-cleaning brush or some pipe cleaners up inside the tube to dislodge the blockage and then to blow the Bunsen or tube clear. <br>
+                            Over-filling the fuel tank can also cause excessive flame on liquid fuel stoves. You should always fill a stove tank on a flat, level surface with the generator parallel to the table top. Do not tilt the tank while filling. Inside the filler hole is a short neck reaching inside the tank. The maximum fuel level should always be just below the bottom of this neck. If the fuel level reaches up inside the neck or is enough to require you to tilt the tank to keep fuel from pouring out the filler hole, the tank is over-filled and the stove can flood when lighted. This will cause large yellow flames that will not settle to a blue flame.
+                        </p>
+                    </details>
+                    <details open>
+                        <summary>Why does my stove "pop" and blow out the burners during use or right afterwards?</summary>
+                        <p>
+                            There are two causes for "popping" at the burners when a Coleman® stove is running or being shut off. The first is the presence of water droplets in the tank of a liquid fuel stove. Condensation can occur in the fuel can or in the tank of a stove stored for long periods. If water droplets are in the stove's tank, they can be drawn up into the fuel and air tube and, when they hit the hot generator and pass into the burner assembly, instantly turn to steam. This produces an increase of pressure in the burner assembly and will cause a "pop". This will occur while the stove is running. To cure this, empty the fuel from the tank and rinse the tank out with clean fuel to remove all traces of water. Refill the tank with fresh fuel. The second cause can occur on both liquid fuel and propane stoves. A proper mixture of fuel and air is necessary for a properly burning flame at the burner. The burner bowl surrounds the burner rings to contain the burner flame. If the burner bowl on your stove is not properly positioned and tightened down on the manifold, you can experience "flashback" at the burner. This means that the flame ignites the fuel mixture before it exits the burner. The flame burns inside the burner and does not appear inside the burner bowl. This can damage the stove's manifold. If your stove "pops" while running and the flame disappears from the burner, turn the stove off, allow it to cool then check the position and tightness of the burner bowl. There is a screw in the center of the burner that can be loosened to re-position the burner bowl on the manifold. Make sure the screw is tightened snugly on the burner before lighting the stove. Liquid fuel stoves can also experience a "flashback" if the end of the generator is not totally inserted in the manifold or if the Bunsen hole where the generator plugs in has been damaged. Make sure the end of the generator is fully inserted in the manifold and that the fuel tank is hooked on the front of the stove case. If the manifold is damaged at the Bunsen hole, you will need to replace the manifold.
+                        </p>
+                    </details>
+                    <details open>
+                        <summary>Why won't my stove shut off?</summary>
+                        <p>
+                            It is normal for a liquid fuel stove to continue burning for up to two minutes after the valve is shut off. The fuel flow is shut off in the valve directly behind the knob but there is still fuel in the stove's generator. The generator will continue to push the remaining fuel to the burner until it is all burned. If a liquid fuel stove continues to burn longer than two minutes after it is shut off, this indicates a problem with the valve not sealing. The only solution for this is to replace the valve stem or complete valve assembly. Propane stoves should shut off within a few seconds of the valve being closed. If the stove continues to run, the valve will need to be replaced.
+                        </p>
+                    </details>
+                    <details open>
+                        <summary>Why does the burner on my liquid fuel stove not light, only stay lit a few seconds before going out or the flame pulsate up and down?</summary>
+                        <ul>
+                            <li>
+                                If a liquid fuel stove lights for only a few seconds then goes out or the flame pulsates, it could be one of four problems.
+                            </li>
+                            <li>
+                                If the stove will not light or lights for a few seconds then goes out and there is no sound of air passing through the generator, there is either no pressure in the fuel tank or the generator is clogged. Make sure the tank is pumped up at least 35 strokes before lighting the stove. If there is still no fuel flow, try cleaning the tip of the generator. Turn the valve knob on the stove all the way clockwise until it stops. This closes the valve and pushes the needle assembly inside the generator through the hole in the gas tip at the end of the generator to clear any blockage. Under normal use, carbon will build up inside a stove's generator. If some of the carbon breaks free of the inside of the generator and blocks the hole in the gas tip, it will restrict or shut off the fuel flow. If, after you close and open the valve knob, you still get no fuel flow to the burner, the stove generator will need to be replaced.
+                            </li>
+                            <li>
+                                If the stove will not light, or lights for a few seconds then goes out, but you still hear air passing through the generator, there is either not enough fuel in the tank or the fuel and air tube assembly in the tank has a lacquer build-up that is preventing the fuel from reaching the generator. Make sure the fuel tank is at least half full before lighting the stove. A low fuel level can make it difficult for the fuel and air tube to draw fuel properly. If there is plenty of fuel in the tank and the stove still will not light and continue to burn, the fuel and air tube may have a lacquer build-up preventing fuel from being drawn from the tank.
+                            </li>
+                            <li>
+                                If a stove is stored for long periods with fuel in the tank, it can cause a coating of lacquer to build up on the fuel and air tube. The tube has a small hole at the bottom that draws in the fuel and one at the top to draw in air. If the bottom hole is obstructed, the fuel will pass into the generator and mantles in surges or not at all. You can sometimes clean the fuel and air tube by pouring out the fuel in the tank then filling it about halfway with denatured alcohol. Do not use rubbing alcohol as it has water in it and do not pump up the tank or open the valve while the alcohol is in the tank. Let the stove sit for 24 hours then shake the tank and pour out the alcohol. Rinse the tank with clean Coleman Fuel and refill with fresh fuel.
+                            </li>
+                            <li>
+                                If the stove's burner still pulsates or will not light, you will need to replace the fuel and air tube.
+                            </li>
+                            <li>
+                                We suggest that if you are storing your stove for more than two weeks, pour as much fuel as possible from the tank back into the fuel can. This will help reduce the build-up of lacquer on the fuel and air tube. In order to totally empty the fuel tank, you will need to run the stove until the tank is empty. Emptying most of the fuel from the tank through the filler hole is usually sufficient.
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <h4>Lanterns FAQs</h4>
+                    <details open>
+                        <summary>How do I install a mantle on a Lantern?</summary>
+                        <p>Following the instructions found on the mantle package, tie or clip the mantle to the lantern...Mantles are cloth and when new they are soft. Before you can use your lantern, it is necessary to burn the mantle with a match. When the mantles are burned for the first time, the cloth fibers burn away and leave a natural source chemical ash that, when heated, produces a bright incandescent light. If you try to burn your new mantles with the fuel from the lantern, the mantle is likely to tear.. Once the mantle is burned, you can light your lantern. At first use, we recommend that you light your lantern with a match to allow the mantles to heat up and shape themselves. Using the electronic ignition on the first lighting can cause the mantle to break.</p>
+                    </details>
+                    <details open>
+                        <summary>Can I use my Coleman® stove or lantern indoors?</summary>
+                        <p>Your Coleman® stove and lantern using liquid fuel or propane are designed for outdoor use only. All fuel appliances (Stoves and Lanterns) should be used outdoors in well-ventilated areas clear of combustible materials due to the danger of fire and the emission of carbon monoxide (CO) from burning fuel and the effects of carbon monoxide exposure.</p>
+                    </details>
+                </li>
+                <li>
+                    <h4>Coleman Lantern and Stove Repair Service:</h4>
+                    <p>Flat Rate Service (FRS) ensures that your lantern or stove will be returned to original factory specifications for performance. FRS includes labor, all necessary repair parts, and return shipping. FRS does not include painting, polishing or other aesthetic improvements. In other words, your serviced lantern or stove will have the same appearance it had when you sent it to Coleman.</p>
+                    <p><a href="file/ColemanLanternServiceForm.pdf">Click Here</a> to download the service form.</p>
+                    <details open>
+                        <summary>Service is available for the following lanterns and stoves:</summary>
+                        <ul>
+                            <li>Dual fuel lanterns (1927-present)</li>
+                            <li>Dual fuel stoves (1938-present)</li>
+                            <li>Kerosene lanterns (1974-present)</li>
+                            <li>Propane lanterns (1974-present)</li>
+                            <li>Propane stoves (1969-present)</li>
+                        </ul>
+                        <p>To determine the production date of your product, look for a date stamp that is in MMYY format (e.g. 0195 is January 1995).</p>
+                        <p>If we cannot repair your lantern or stove we will contact you to discuss options.</p>
+                    </details>
+                    <details open>
+                        <summary class="active">Pricing:</summary>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Liquid Fuel Lantern</td>
+                                    <td>$55.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Liquid Fuel Stove</td>
+                                    <td>$55.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Propane Lantern</td>
+                                    <td>$40.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Propane Stove</td>
+                                    <td>$40.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Make checks payable to:</td>
+                                    <td>The Coleman Co., Inc.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                    <details open>
+                        <summary>Shipping Instructions:</summary>
+                        <details open>
+                            <summary>Please ship the lantern or stove with the completed service form (click the link below) and check to:</summary>
+                            <ul>
+                                <li>The Coleman Company, Inc.</li>
+                                <li>Attn: Service Dept</li>
+                                <li>3600 N Hydraulic</li>
+                                <li>Wichita, KS 67219</li>
+                                <li>Allow 8-10 weeks for service and return shipping.</li>
+                            </ul>
+                        </details>
+                        <details open>
+                            <summary>Important steps to take before shipping : <a href="file/ColemanLanternServiceForm.pdf">Click Here</a> to download the service form.</summary>
+                            <ul>
+                                <li>Drain all liquid fuel from the lantern or stove before shipping.</li>
+                                <li>Do not ship propane cylinders with the lantern or stove.</li>
+                                <li>Do not ship the glass globe or ventilator (top cover) with lanterns.</li>
+                            </ul>
+                        </details>
+                    </details>
+                </li>
+                <li>
+                    <h4>Airbeds FAQs</h4>
+                    <details open>
+                        <summary>What are the weight restrictions for Coleman Airbeds?</summary>
+                        <details open>
+                            <summary>The general weight guidelines are:</summary>
+                            <ul>
+                                <li>Twin size mattress: 300 lbs for 1 person.</li>
+                                <li>Full size mattress: 450 lbs between 2 individuals.</li>
+                                <li>Queen size mattress (both single and raised models): 600 lbs between 2 individuals.</li>
+                            </ul>
+                        </details>
+                    </details>
+                    <details open>
+                        <summary>My airbed seems to be leaking. What can I do?</summary>
+                        <p>It is important to note that the firmness of your bed may decrease after you initially inflate it. This is normal and not an indication of leaking. The material is simply stretching after inflation. Add air to your desired firmness. If you believe your bed is still potentially leaking, follow the steps below:</p>
+                    </details>
+                    <details open>
+                        <summary>Leak Identification Process:</summary>
+                        <p>To identify a leak, fully inflate the bed and listen for any hissing or other sounds that may indicate a leak location. Place your hand parallel to the surface of the airbed approximately 2 inches away and slowly trace the surface of the airbed. Most leaks are found on the top surface, so check the top of the surface first. If the leak is not found, check the side and bottom. If a leak is found, follow the steps below.</p>
+                    </details>
+                    <details open>
+                        <summary>Leak repair with liquid sealant for flocked or laminated PVC:</summary>
+                        <p>Please note holes larger than 1/2 inches or cuts larger than 1 inch are unlikely to be repaired successfully. Clean the bed with a dry paper towel and then lay the bed flat on the ground. This will help the glue to say in place while it dries. Apply about a dime size of liquid sealant (Seal all) to the bed using a small circular pattern. Wait 4 hours for the glue to cure.</p>
+                    </details>
+                    <details open>
+                        <summary>Leak repair with an adhesive patch for smooth PVC:</summary>
+                        <p>Please note holes larger than 1/2 inches or cuts larger than 1 inch are unlikely to be repaired successfully. Clean off the bed with a dry paper towel and lay the bed flat on the ground. Cut the repair patch in a circle. Apply to the bed making sure there are no wrinkles. Use your thumb to apply pressure ensuring the patch is completely adhered to the PVC.</p>
+                    </details>
+                </li>
+            </ol>
+        </div>
+        <div class="faq3" id="tab3">
+            <h2 class="boDo">
+                Coleman Care &amp; Cleaning
+            </h2>
+            <ol>
+                <li>
+                    <details open>
+                        <summary>Care and Cleaning of Coleman® Lanterns</summary>
+                        <p>A cleaner Coleman™ lantern works better and looks better. The benefits of regular cleanings include better fuel efficiency, flame control and no rust or corrosion.</p>
+                        <p>Although there isn't a set schedule for cleaning your lantern, you should clean it whenever it is dirty before storing your lantern at the end of camping season. Under most conditions, lanterns can be wiped out with warm water and dishwashing soap and then dried before storing. After cleaning, proper storage of your Coleman® lantern is also important. Put it into a plastic bag, sealing with a twist tie to prevent spiders or other insects from crawling in the unit, which can block the fuel and airflow.</p>
+                        <p>With a liquid fuel lantern, transfer as much fuel as possible out of the fuel tank and back into the fuel can to prevent a lacquer buildup on the tank's fuel tube. Keep in mind that storing a liquid fuel appliance with fuel in the tank can eventually cause a buildup on the fuel tube, which restricts fuel flow to the generator and burner.</p>
+                        <p>When it's time to take out your lantern, remember to oil the pump cup on the tank's pump plunger at least twice a year with a light machine oil. This allows the cup to seal against the inside of the pump barrel and insures the pump will work smoothly and push air into the tank properly.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>Care and Cleaning of Coleman® Stoves</summary>
+                        <ul>
+                            <li>
+                                <details open>
+                                    <summary>A cleaner Coleman® stove works better and looks better. The benefits of regular cleanings include better fuel efficiency, flame control and no rust or corrosion. Although there isn't a set schedule for cleaning your stove, you should clean it whenever it is dirty or after a boil-over that causes buildup in the burners. Annual cleanings are recommended before storing your stove at the end of camping season Under most conditions, stoves can be wiped out with warm water and dishwashing soap and then dried before storing. For a deeper cleaning, here are a few suggestions:</summary>
+                                    <ol>
+                                        <li>If there has been a boil-over, remove the screw from the center of each burner and lift off the burner rings and bowl to check the manifold for fluid or food debris. If there is a build-up, clean it with dishwashing soap and warm water before rinsing with clean water.</li>
+                                        <li>If the stove has a massive amount of grease and dirt build-up inside the case, on the grill or burners, you can take the stove to a car wash and use a high-pressure hose on it. Don't use any type of tire, oven or engine cleaner because it can damage the paint on the inside of the case and the metal of the grate and manifold.</li>
+                                        <li>If a stove has been cleaned with any type of water hose, turn the stove upside down to ensure all the water is removed from inside the manifold. Any water left inside the manifold can cause it to rust and disturb the flow of fuel to the burner, preventing the stove from burning properly.</li>
+                                    </ol>
+                                </details>
+                            </li>
+                            <li>After cleaning, proper storage of your Coleman® stove is also important. Put it into a plastic bag, sealing with a twist tie to prevent spiders or other insects from crawling in the unit, which can block the fuel and airflow.</li>
+                            <li>With a liquid fuel stove, transfer as much fuel as possible out of the fuel tank and back into the fuel can to prevent a lacquer buildup on the tank's fuel tube. Keep in mind that storing a liquid fuel appliance with fuel in the tank can eventually cause a buildup on the fuel tube, which restricts fuel flow to the generator and burner.</li>
+                            <li>When it's time to take out your stove, remember to oil the pump cup on the tank's pump plunger at least twice a year with a light machine oil. This allows the cup to seal against the inside of the pump barrel and insures the pump will work smoothly and push air into the tank properly.</li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>Care and Cleaning of Coleman® Sleeping Bags</summary>
+                        <ul>
+                            <li>Proper care of your sleeping bag will keep it looking better and lasting longer. Follow these simple suggestions to care for your Coleman® sleeping bag during the years to come. Dry cleaning is NOT recommended.</li>
+                            <li>
+                                <details open>
+                                    <summary>Sleeping Bag Washing Instructions</summary>
+                                    <ol>
+                                        <li>Use only oversized commercial front loading washing machine with a rotating drum action - DO NOT use top loading agitator style machines.</li>
+                                        <li>Wash warm, rinse cold on gentle cycle using ¼ mild detergent.</li>
+                                        <li>Use a fabric softener in wash. (Do not use detergents with bleach.)</li>
+                                        <li>Tumble dry at low temperature in oversized commercial dryer.</li>
+                                        <li>Alternate method: hand wash in bathtub, in warm water with a mild detergent. Rinse cold.</li>
+                                        <li>Bag must be thoroughly dry before being stored.</li>
+                                    </ol>
+                                </details>
+                            </li>
+                            <li>
+                                <details open>
+                                    <summary>Rolling the Sleeping Bag</summary>
+                                    <ul>
+                                        <li>Zip up sleeping bag.</li>
+                                        <li>Fold in half, lengthwise.</li>
+                                        <li>If applicable, fasten toggle and loop to ensure bag stays in folded position.</li>
+                                        <li>Start rolling snuggly from opposite end of ties, loops or straps (whichever applicable). Have ties lying directly on the ground.</li>
+                                        <li>After rolling bag completely, secure ties, loops or straps. If bag has Wrap 'N Roll feature, continue rolling into attached carrier, tie and transport.</li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details open>
+                                    <summary>Storing the Sleeping Bag</summary>
+                                    <p>For longtime storage, it is not recommended to store sleeping bags in its stuff sack or carrier, since it can reduce the loft, or puffiness, of the bag over time.</p>
+                                </details>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>Care and Cleaning of Coleman® Coolers</summary>
+                        <ul>
+                            <li>Clean both the inside and outside with a solution of mild soap and warm water.</li>
+                            <li>If the product has a faucet, be sure to rinse with hot soapy water and drain completely.</li>
+                            <li>Use baking soda and water to remove tough stains.</li>
+                            <li>Remove odors with a diluted solution of chlorine bleach and water. If odor persists, wipe interior with a cloth saturated with vanilla extract, then leave in cloth in cooler overnight.</li>
+                            <li>Always air dry with the lid open before storing.</li>
+                        </ul>
+                    </details>
+                </li>
+            </ol>
+            <h2 class="boDo">
+                Coleman® Tent Care
+            </h2>
+            <p>For tips on how to care for your tent, please read: Care and Cleaning of Coleman® Tents.</p>
+            <details open>
+                <summary>There was water inside my tent or my sleeping bag/ clothes on the edges are damp, is my tent leaking/defective?</summary>
+                <p>Your tent is not leaking- what you are experiencing is condensation forming on the inside of the tent due to a lack of ventilation and high humidity inside the tent and difference in temperature between the outside and inside of the tent. This can happen in any tent, even if it's not raining. The warm water vapor from one's breath and body heat can condense and form water droplets as it comes into contact with the cool tent fabric. Additionally, wet clothes or gear inside the tent create such warm water vapor. Try cracking a window, opening peak vents, removing wet items and checking to make sure rain fly guy lines and ground vents are properly secured to keep air flowing through the tent so that condensation is minimized.</p>
+            </details>
+            <div class="flexContr">
+                <figure class="flexBox Rimgrtxt">
+                    <img src="images/faq01_R.png" alt="How to Clean Your Coleman Lantern">
+                    <figcaption>
+                        <h5>How to Clean &amp; Store
+                            Your Coleman® Lantern</h5>                    
+                        <p>Another epic camping season in the books and your lantern isail with it? Leave it up to us because we know how to make it shine again.</p>            
+                    </figcaption>
+                </figure>
+                <figure class="flexBox Limgrtxt">
+                    <img src="images/faq02_L.png" alt="How to Clean Your Coleman Lantern">
+                    <figcaption>
+                        <details open>
+                            <summary>Cleaning the Lantern at the End of the Season</summary>
+                            <p>Cleaning your camping lantern is easier than you think. First, wipe down the outside and globe with warm water and dish soap. This will cut down on the amount of fuel you need to use, give you better control of your flame, and prevent rust and other corrosion.</p>
+                            <p>For lanterns that use liquid fuel, you’ll want to keep the fuel line clear of buildup. To do this, drain the tank as much as possible when you know you won’t be using it for a while. This ensures that you’ll be getting as much fuel to the generator and burner as you need.</p>
+                        </details>
+                        <details open>
+                            <summary>Storing the Lantern for Your Next Camping Trip</summary>
+                            <p>At the end of the season, make sure to store it properly by giving the lantern a good cleaning and then wrapping it in a sealed, plastic bag. This stops spiders and other bugs from crawling inside, potentially blocking the fuel and airflow.</p>
+                            <p>When you’re ready to head out on your next adventure, oil the pump cup on the tank’s pump plunger with a light machine oil. This allows the cup to seal against the inside of the pump barrel so the pump will work smoothly and push air into the tank properly. Do this twice a year and your lantern will light the night season after season.</p>
+                        </details>
+                    </figcaption>
+                </figure>
+                <figure class="flexBox Rimgrtxt">
+                    <img src="images/faq03_R.png" alt="How to Clean Your Coleman Stove">
+                    <figcaption>
+                        <h5>How to Clean &amp;
+                            Store Your Coleman® Camping Stove</h5>
+                        <p>One of the best things about camping is the food, so your camp stove probably needs a little TLC. Here’s how to keep it working great for years to come.</p>
+                        <p>Our products are rugged and durable, so most of the time all you need to do is simply wipe down your stove with warm water and dish soap. But for those epic
+                            camping trips and cookouts, your stove may get grimier than usual, especially if you’re cooking something yummy, yet greasy, like bacon. Give your stove a deep
+                            clean and it’ll be as good as new.</p>
+                        <details open>
+                            <summary>Cleaning a Liquid Fuel Stove</summary>
+                            <p>Take off the fuel tank (it’s the part with the generator and tip), then hand-wash the case and burners separately from the fuel tank. Let both of them dry upside down and then put them back together. </p>
+                            <p>You may be tempted to take the burners off and give them a good scrub. Don’t. If the rings are out of order, you could end up with a stove that won’t light well, or at all, the next time you want to use it</p>
+                        </details>
+                    </figcaption>
+                </figure>
+                <figure class="flexBox Limgrtxt">
+                    <img src="images/faq04_L.png" alt="How to Clean Your Coleman Stove">
+                    <figcaption>
+                        <details open>
+                            <summary>Cleaning a Propane Stove</summary>
+                            <p>Take apart your propane camping stove by unscrewing the burners. Hand-wash the burners, the cooktop, and the case with warm, soapy water. Let all of the stove parts dry upside down. Then, when everything is absolutely dry and there is no water left, put the stove back together again.</p>
+                        </details>
+                        <details open>
+                            <summary>The Do’s and Don’ts of Cleaning &amp; Storing a Stove</summary>
+                            <ul>
+                                <li>Don’t use an oven, engine, or tire cleaner on your Coleman® camping stove. The cleaner will damage the case’s paint, the stove grate finish, and the manifold’s metal.</li>
+                                <li>Don’t leave water inside your stove. A dry stove is a good stove, whichever fuel you use. Water left inside a camping stove can cause rust, which can slow fuel flow and shorten the life of your stove.</li>
+                                <li>If you have a liquid fuel stove, either burn off all the fuel in the tank or drain the fuel back into the storage can. Letting fuel sit in there can cause buildup in the fuel line, which can reduce how much gas is getting to the generator and burner. Before using it again, oil the pump cup on the tank’s pump plunger with a light machine oil. The seal helps keep the pump working smoothly so it pushes the air into the tank correctly. Do this twice a year.</li>
+                                <li>Whether it’s liquid fuel or propane, when you’re ready to store your stove, put it in a plastic bag and tie the bag shut. This should keep bugs from getting inside which could eventually cut down on fuel efficiency and airflow.</li>
+                            </ul>
+                        </details>
+                    </figcaption>
+                </figure>
+                <figure class="flexBox Rimgrtxt">
+                    <img src="images/faq05_R.png" alt="">
+                    <figcaption>
+                        <h5>How to Clean &amp; Store
+                            Your Coleman® Sleeping Bag</h5>
+                        <p>You’ve used your sleeping bag for multiple camping trips and it’s starting to show. It’s time for a good cleaning.</p>
+                        <p>The easiest way to clean your sleeping bag is taking it to a self-serve laundromat, because most people don’t have a commercial-grade, front-loading, over-sized washer and dryer at home. Wash it with a mild detergent in cold water. Dry it on the lowest temperature available or just hang it and let it air dry. DO NOT take it to a dry cleaner or try to use a standard washer and dryer at home. You can also hand-wash your sleeping bag in the bathtub in cold water using mild detergent. Whichever method you choose, make sure the sleeping bag is completely dry before rolling it up.</p>
+                        <p>The rolling process is generally the same for most sleeping bags, though some have special features to help you pack it up. If you have a rectangular-shaped bag, start by folding it in half lengthwise, like a hotdog bun. Most Coleman® sleeping bags feature the Roll Control™ system—a toggle and loop system along the sides to keep the bag straight.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>                    
+                <p>Once you’re done rolling it, bags featuring the Quick Cord™ system makes rolling it up and fastening it a cinch without tying. There’s a looped cord on one side and a straight cord with a hook on the other side. Pull the loop toward you, feed the cord through and wrap it around the bag so it’s wrapped tight, then connect the hook to the looped cord until it’s in place. If your sleeping bag includes the Wrap ’N Roll™ feature—the one with a flap at the end— just continue to roll it into the built-in carrier. Mummy bags are even easier. Just start stuffing it feetfirst into the included sack. This way, all the air escapes out of the head end, opening, or hood.</p>
+                <p>When the camping season is over and you’re ready to store your sleeping bag long-term, take your sleeping bag out of its stuff sack or carrier. It will help it stay fluffier longer.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="#">Back To top</a>
+        <div>            
+            <h2>
+               <img src="images/footer_logo.png" alt="coleman">
+            </h2>
+            <div>
+                <form>
+                    <span>
+                        <label for="userEmail">Subscribe</label>
+                        <input type="email" name="Subscribe" id="userEmail" placeholder="Email Address">
+                        <input type="submit" value="send">
+                    </span>
+                </form>
+                <ul>
+                    <li><a href="https://www.facebook.com/colemanusa">facebook</a></li>
+                    <li><a href="https://www.instagram.com/colemanusa/">instagram</a></li>
+                    <li><a href="https://www.youtube.com/user/Colemancampfire">youtube</a></li>
+                    <li><a href="findstore.html" class="btn L22534">Find a Store</a></li>
+                    <li><a href="contactus.html" class="btn L22534">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <address>
+            <span>
+                <mark>Coleman Korea Service Center</mark>
+                <a href="tel:+8215775932">1577-5932</a>
+                10:00am - 4:00pm (Monday - Friday)
+            </span>
+            <span>
+                Contact Us Coleman Korea Check the location of the service center.
+            </span>
+            <span>
+                Coleman Service Center, 2nd floor, 60 Dolmugae-gil, Gwacheon-si, Gyeonggi-do
+            </span>
+        </address>
+        <div>
+            <ol>
+                <li>© 2023 The Coleman Company, Inc. All rights reserved.</li>
+                <li><a href="accessibility.html">Accessibility Statement</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                <li><a href="faq.html">Faq</a></li>
+                <li><a href="sitemap.html">Site map</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="exploreColeman.html">Our Story</a></li>
+            </ol>
+        </div>
+    </footer>
+</body>
+</html>

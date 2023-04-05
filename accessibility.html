@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility - coleman</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/coleman.js"></script>
+    <link rel="icon" type="image/favicon.png" href="images/favicon.png" sizes="48x48">
+    <link rel="stylesheet" href="css/import.css">
+<body>
+    <div id="forgotPopup" class="popup forgot">
+        <input type="button" value="close" class="material-symbols-outlined">
+        <p>
+            <strong>Reset Password</strong>
+            Enter the email address you're using for your account. We'll send you an email with a link to reset your password.
+        </p>
+        <form>
+            <input type="email" id="signInuserE" placeholder="Please enter a valid email address">
+            <input type="submit" value="Send" class="btn L22550">
+        </form>
+    </div>
+    <div id="searchPanel" class="panel search">
+        <div>
+            <form>
+                <input type="search" id="searchKeyword" placeholder="What are you looking for?" title="insert your search Keyword's">                            
+                <input type="submit" value="Search">
+            </form>
+            <strong>POPULAR SEARCHES</strong>
+            <ul>
+                <li><a href="coolersList.html">Coolers</a></li>
+                <li><a href="tent1_detail.html">Reunion Collection</a></li>
+                <li><a href="tent3_detail.html">PEAK1 collection</a></li>
+                <li><a href="tentList.html">Tent</a></li>
+                <li><a href="funiture.html">Chair</a></li>
+            </ul>
+        </div>
+        <input type="button" value="close" class="material-symbols-outlined">
+    </div>
+    <div id="signInPanel" class="panel signIn">
+        <div>
+            <h2>Create Account</h2>                
+            <input type="button" value="Sign up" class="btn R15050" data-panelName="signUpPanel">
+            <img src="images/coleman_logo.png" alt="coleman logo">
+        </div>
+        <form action="index_after.html">
+            <div>
+                <h2>Login</h2>
+                <p>Welcome Back</p>
+                <p>Sign in for a more personalized experience</p>
+                <ul>
+                    <li>
+                        <label for="userLEmail">EMAIL ADDRESS*</label>
+                        <input type="email" id="userLEmail">
+                    </li>
+                    <li>
+                        <label for="userLPW">PASSWORDS*</label>
+                        <input type="password" id="userLPW">
+                        <span class="material-symbols-outlined">
+                            visibility_off
+                        </span>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </li>
+                    <li data-popname="forgotPopup">
+                        Forgot Password?
+                    </li>
+                </ul>
+                <input type="button" value="close" class="material-symbols-outlined">
+                <input type="submit" value="Login" class="btn R22550">
+            </div>
+        </form>
+    </div>
+    <div id="signUpPanel" class="panel signUp">
+        <div>
+            <h2>have an account?</h2>
+            <input type="button" value="Login" class="btn R15050" data-panelName="signInPanel">
+            <img src="images/coleman_logo.png" alt="coleman logo">
+        </div>
+        <form action="index_after.html">
+            <div>                                             
+                <h2>Create an Account</h2>
+                <ul>
+                    <li>
+                        <label for="userSFname">FIRST NAME</label>
+                        <input type="text" id="userSFname">
+                    </li>
+                    <li>
+                        <label for="userSLname">LAST NAME</label>
+                        <input type="text" id="userSLname">
+                    </li>
+                    <li>
+                        <label for="userSEmail">EMAIL ADDRESS*</label>
+                        <input type="email" id="userSEmail">
+                    </li>
+                    <li>
+                        <label for="userSPw">PASSWORD*</label>
+                        <input type="password" id="userSPw">
+                        <span class="material-symbols-outlined">visibility_off</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="rssAgreee">
+                        <label for="rssAgreee">agree to RSS</label>
+                        <p>By checking off the box, I agree that I want to receive emails from Coleman. about updates, products, collections, upcoming events and services that I may find interesting. 
+                            I can withdraw this consent at any time as described in the <a href="privacypolicy.html"><strong>Privacy Policy</strong></a> or by clicking on the “unsubscribe” link in the
+                            <a href="contactus.html"><strong>email.</strong></a>
+                        </p>
+                    </li>
+                </ul>
+                <input type="button" value="close" class="material-symbols-outlined">
+                <input type="submit" value="Register" class="btn R22550">
+            </div>
+        </form>
+    </div>  
+    <!-- popup -->
+    <header>
+        <div>
+            <span>
+                Ship To: United States of America ($USD) | EN
+                <a href="findstore.html">Find a Store</a>
+            </span>
+            <ul class="index_Gen">
+                <li data-panelName="signUpPanel">Sign up</li>
+                <li data-popname="searchPanel">search</li>
+                <li data-panelName="signInPanel">Login</li>
+                <li data-panelName="signInPanel">
+                    Bag
+                    <span>0</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-symbols-outlined mui" data-panelName="muIPanel">
+            <h1>
+                <a href="index.html">
+                    <img src="images/coleman_logo.png" alt="coleman">
+                </a>
+            </h1>
+        </div>
+        <nav>
+            <input type="button" value="close" class="material-symbols-outlined">   
+            <ul>
+                <li><a href="index.html"><img src="../images/coleman_logo.png" alt="coleman_logo"></a></li>
+                <li data-gnbbox="coolers">
+                    Coolers &amp; Drinkware
+                    <figure class="boxGnb" id="coolers">
+                        <img src="images/lnb1.png" alt="316 series">
+                        <figcaption>
+                            <h2>
+                                <small>since 1954</small>
+                                Your family cooler just got a whole lot
+                                cooler. Say hello to the Coleman® 
+                            </h2>
+                            <p>Coleman coolers are perfect for outdoor events like camping, backyard hangs and tailgating.Find all coolers of various sizes so that you can enjoy the convenience your Coleman camping gear brings to outdoor recreation.
+                            </p>
+                            <a href="coolersList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="tent">
+                    Tents &amp; Canopies
+                    <figure class="boxGnb" id="tent">
+                        <img src="images/lnb2.png" alt="skydome 4person">
+                        <figcaption>
+                            <h2>
+                                Coleman® Skylodge™ 4-Person Tent
+                            </h2>
+                            <p>Crank up the camping fun in the comfort of Coleman® tents and canopies,
+                                for shelter that's always got you covered. Get ready for your fastest tent pitch yet
+                                with the Skylodge™ 4-Person Tent for an easy-up tent in as little as 1 minute,
+                                so you can stroke campfires and stack s'mores in no time.
+                            </p>
+                            <a href="tentList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="sleepingBag">
+                    Sleeping Bags &amp; Beds
+                    <figure class="boxGnb" id="sleepingBag">
+                        <img src="images/lnb3.png" alt="Big Bay series">
+                        <figcaption>
+                            <h2>                        
+                                Big Bay™ 20° Mummy Sleeping Bag
+                            </h2>
+                            <p>Cold-weather camping is easy when you have a Big Bay™ 20° Mummy Sleeping Bag.
+                                From treks out for a car camping trip to stargazing nights in the backyard,
+                                this sleeping bag's Coletherm™ MAX insulation will keep you warm
+                                in temps as low as 20°F.
+                            </p>
+                            <a href="sleepingBagList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="lighting">
+                    Lighting
+                    <figure class="boxGnb" id="lighting">
+                        <img src="images/lnb4.png" alt="1900 Collection™ 600 Lumen LED Lantern">
+                            <figcaption>
+                                <h2>                            
+                                    Coleman® will keep everything illuminated.
+                                </h2>
+                                <p>
+                                    Whether you’re at the campsite or in your backyard,
+                                    our selection of outdoor lighting products are perfect for
+                                    your next bright adventure. 
+                                </p>
+                                <a href="lightingList.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="grills">
+                    Grills &amp; Stoves
+                    <figure class="boxGnb" id="grills">
+                        <img src="images/lnb5.png" alt="coleman grills">
+                            <figcaption>
+                                <h2>                            
+                                    Level up your food game with the Cascade™ Collection. 
+                                </h2>
+                                <p>
+                                    Wow friends and family with a variety of outdoor meals when you travel with 
+                                    Coleman Camp Kitchen Equipment for your crew. Our camping stoves &amp; grills are
+                                    perfect for small or large crews when preparing breakfast, lunch, &amp; dinner.
+                                </p>
+                                <a href="grillsList.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="campFuniture">
+                    Camp Furniture
+                    <figure class="boxGnb" id="campFuniture">
+                        <img src="images/lnb6.png" alt="Cross Rocker Outdoor Rocking Chair">
+                            <figcaption>
+                                <h2>
+                                    <small>New Arrival</small>
+                                    Say hello to the Cross Rocker Outdoor Rocking Chair.
+                                </h2>
+                                <p>
+                                    Sit back and count the constellations in our Big and Tall camping chair, featuring
+                                    an oversized seat and large footing for well-balanced stability. Recline in a heavy duty
+                                    camping chair you can trust with the reinforced steel frame of this oversized camping
+                                    chair that comfortably supports up to 600 lbs. 
+                                </p>
+                                <a href="funiture.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="ourStory">
+                    Explore Coleman
+                    <figure class="boxGnb" id="ourStory">
+                        <img src="images/lnb7.png" alt="since 1901">
+                            <figcaption>
+                                <h2>
+                                    Where We Are Today.
+                                </h2>
+                                <p>
+                                    After 122 years, Coleman gear is everywhere you are: on the trail, by the lake, 
+                                    at the match, or in the middle of a music festival. We're always around a place where
+                                    there are friends, coolers, and campfires. So, grab a tent, fire up a grill, and
+                                    pull up a chair. The Outside Is Calling. Answer it.
+                                </p>
+                                <a href="exploreColeman.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li><a href="findstore.html">Find a Store</a></li>
+            </ul>
+        </nav>
+        <ol class="rollingBanner">
+            <li>
+                <a href="faq.html">Free Shipping on orders $50</a>
+            </li>
+            <li>
+                <a href="eventsale.html">Shop Best of Sale.</a>
+            </li>
+            <li>
+                Enjoy complimentary Standard shipping and returns on all orders..
+            </li>
+        </ol>
+    </header>
+    <!-- Header-->
+    <div class="accessibilityContainer">
+        <ol class="fsttxtNv">
+            <li><a href="index.html">Home</a></li>
+            <li>Accessibility</li>
+        </ol>
+        <div class="tabTab">
+            <h2>Accessibility</h2>
+            <ul>
+                <li class="active"><a href="accessibility.html">Accessibility Policies</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </div>
+        <h3 class="boDo">
+            Accessibility Policies &amp;<br>
+            Multi-Year Accessibility Plan
+        </h3>
+        <ul class="deTxt">
+            <li>
+                <h4>Introduction and Statement of  Commitment</h4>
+                <p>
+                    The Ontario government passed the Accessibility for Ontarians with Disabilities Act (AODA) in 2005. It is the goal of the government of Ontario to make Ontario accessible by 2025. coleman Inc. is committed to complying with the Accessibility for Ontarians with Disabilities Act, 2005 and all of the standards under it in order to meet the accessibility needs of persons with disabilities in a timely manner.
+                </p>
+                <details open>
+                    <summary>The regulations associated with the Integrated Accessibility Standards (hereafter referred to as the “IASR”) under the AODA require that effective January 1, 2014, coleman Inc. establish, implement, maintain and document a multi-year accessibility plan which outlines the company’s strategy to prevent and remove barriers for persons with disabilities and to meet its requirements under the Act. Under the AODA, the following accessibility standards set certain requirements that are applicable to coleman Inc.:</summary>
+                    <ul>
+                        <li>Customer Service;</li>
+                        <li>Information and Communications; and</li>
+                        <li>Employment</li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>This multi-year plan outlines coleman Inc.’s strategy to prevent and remove barriers to address the current and future requirements of the AODA, and in order to fulfill our commitment as outlined in coleman Inc.’s Accessibility Policies. Unless otherwise noted, this Multi-Year Accessibility Plan applies to coleman Inc.’s Ontario locations.<br>
+                        In accordance with the requirements set out in the IASR, coleman Inc will:</summary>
+                    <ul>
+                        <li>Post this plan on the employee bulletin board;</li>
+                        <li>Provide this plan in an accessible format, upon request; and Review and update this plan at least once every five years</li>
+                    </ul>
+                </details>
+            </li>
+            <li>
+                <h4>Overview</h4>
+                <p>Accessibility Standards for Customer Service</p>
+                <details open>
+                    <summary>
+                        Integrated Accessibility Standards Regulations
+                    </summary>
+                    <ol>
+                        <li>1. Emergency Procedure, Plans or Public Safety Information</li>
+                        <li>2. Workplace Emergency Response Information</li>
+                        <li>3. Training</li>
+                        <li>4. Self-Service Kiosks</li>
+                        <li>
+                            <details open>
+                            <summary>5. Information and Communication Standards</summary>
+                                <ul>
+                                    <li>a. Feedback, Accessible Formats and Communication Supports</li>
+                                    <li>b. Accessible Websites and Web Content</li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details open>
+                                <summary>6. Employment Standards</summary>
+                                <ul>
+                                    <li>a. Recruitment</li>
+                                    <li>b. Accessible Formats and Communication Supports for Employees</li>
+                                    <li>c. Documented Individual Accommodation Plans</li>
+                                    <li>d. Performance Management, Career Development / Processes</li>
+                                    <li>e. Return to Work &amp; Redeployment</li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>7. Design of Public Spaces</li>
+                    </ol>
+                </details>
+            </li>
+            <li>
+                <h4>Accessibility Standards for Customer Service</h4>
+                <details open>
+                    <summary>Commitment:</summary>
+                    <ul>
+                        <li>The Accessibility Standards for the Customer Service Regulation were created to establish accessibility standards for customer service in Ontario. In keeping with this regulation, the company is committed to providing respectful services that focus on the unique needs of the individual.</li>
+                        <li>
+                            <details open>
+                                <summary>To achieve this, the company makes reasonable efforts to ensure that its policies, procedures and practices pertaining to the provision of goods and services to the public and other third parties adhere to the following guiding principles as set out in Accessibility Standards for Customer Service: Ontario Regulation 429/07.</summary>
+                                <ol>
+                                    <li>Our goods and services must be provided in a manner that respects the dignity and independence of persons with disabilities.</li>
+                                    <li>The provision of our goods or services to persons with disabilities and others must be integrated unless an alternate measure is necessary, whether temporarily or on a permanent basis, to enable a person with a disability to obtain, use or benefit from the goods or services.</li>
+                                    <li>Persons with disabilities must be given an opportunity equal to that given to others to obtain, use and benefit from the goods or services. coleman Inc. has been in compliance with the Accessible Customer Service Regulation under the AODA since January 1, 2012.</li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>This multi-year plan outlines coleman Inc.’s strategy to prevent and remove barriers to address the current and future requirements of the AODA, and in order to fulfill our commitment as outlined in coleman Inc.’s
+                            Accessibility Policies. Unless otherwise noted, this Multi-Year Accessibility Plan applies to coleman Inc.’s Ontario locations. <br>
+                            In accordance with the requirements set out in the IASR, coleman Inc will:</li>
+                        <li>Commitment:</li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>The following measures have been implemented by coleman Inc.:</summary>
+                    <ul>
+                        <li>Ensuring all persons who, on behalf of coleman Inc. deal with the public or other third parties, and all those who are involved in the development and approvals of customer service policies, practices and procedures, as well as all others providing services to our customers, are trained to communicate and provide the best possible customer service to all customers, including persons with disabilities;</li>
+                        <li>Ensuring staff are trained and familiar with various assistive devices that may be used by customers with disabilities who are accessing the coleman Inc.‘s goods or services;</li>
+                        <li>Ensuring completion of accessibility training is tracked and recorded;</li>
+                        <li>Ensuring customers accompanied by a guide dog or other service animal in areas of coleman Inc. open to the public and other third parties, are accommodated;</li>
+                        <li>Ensuring that if a person with a disability is accompanied by a support person, the support person is accommodated;</li>
+                        <li>Issuing a public notice in a timely manner in the event of a planned or unexpected disruption of service or inaccessibility of facilities used by persons with disabilities. The notice must include the reason of the disruption, the anticipated duration, and a description of alternative facilities or service, if any, that may be available;</li>
+                        <li>Continuing to welcome and appreciate feedback from persons with disabilities through multiple communication methods;</li>
+                        <li>Reporting compliance with the customer service standard on the Accessibility Compliance Reporting tool at ServiceOntario’s One-Source for Business website. Required compliance date: January 1, 2012</li>
+                    </ul> 
+                </details>
+                <p>Status: Completed</p>
+                <details open>
+                    <summary>Action Taken:</summary>
+                    Report continued compliance with the customer service standard on the Accessibility Compliance Reporting tool at ServiceOntario’s One-Source for Business website.Required compliance date: In 2014
+                </details>
+                <p>Status: Completed</p>
+            </li>
+            <li>
+                <h4>Integrated Accessibility Standards Regulation</h4>
+                <ol>
+                    <li>
+                        <details open>
+                            <summary>1. Emergency Procedure, Plans or Public Safety Information</summary>
+                            <ul>
+                                <li>
+                                    <details open>
+                                        <summary>Commitment:</summary>
+                                        coleman Inc. is committed to complying with the provisions of the AODA in respect of this requirement, with the objective of making our company premises safer for persons with disabilities during emergency circumstances.
+                                    </details>
+                                </li>
+                                <li>
+                                    <details open>
+                                        <summary>Action Taken:</summary>
+                                        <details open>
+                                            <summary>The following measures were implemented by coleman Inc. effective January 1, 2012:</summary>
+                                            Emergency procedures, plans and public safety information that are prepared by coleman Inc. and made available to the public, will be made available in an accessible format or with appropriate communication supports, as soon as practicable, upon request;
+                                        </details>
+                                    </details>
+                                </li>
+                                <li>Required compliance date: January 1, 2012</li>
+                                <li>Status: Completed</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details open>
+                            <summary>2. Workplace Emergency Response Information</summary>
+                            <ul>
+                                <li>
+                                    <details open>
+                                        <summary>Commitment:</summary>
+                                        Where coleman Inc. is aware that an employee has a disability and that there is a need for accommodation, individualized workplace emergency response information will be provided to the employee as soon as practicable if such information is necessary given the nature of the employee’s disability.
+                                    </details>
+                                </li>
+                                <li>
+                                    <details open>
+                                        <summary>Action Taken:</summary>
+                                        <details open>
+                                            <summary>The following measures were implemented by coleman Inc. effective January 1, 2012:</summary>
+                                            <ol>
+                                                <li>Where the company becomes aware of the need to accommodate an employee’s disability, and if the employee’s disability is such that the individualized emergency response information is necessary, coleman Inc. will <br>provide individualized workplace emergency response information to the employee with the disability as soon as practicable after it becomes aware of the need. </li>
+                                                <li>If an employee who receives individualized workplace emergency response information requires assistance, with the employee’s consent, coleman Inc. will provide the workplace emergency response infor
+                                                    mation to the <br> person designated by the company to provide assistance to the employee.</li>
+                                                <li>
+                                                    <details open>
+                                                        <summary>coleman Inc. will review the individualized workplace emergency response information when:</summary>
+                                                        <ul>
+                                                            <li>the employee moves to a different location in the company;</li>
+                                                            <li>the employee’s overall accommodations needs or plans are reviewed; and/or</li>
+                                                            <li>coleman Inc. reviews its general emergency response policies.</li>
+                                                        </ul>
+                                                    </details>
+                                                </li>                                                    
+                                            </ol>
+                                        </details>
+                                    </details>
+                                </li>
+                                <li>Required compliance date: January 1, 2012</li>
+                                <li>Status: Completed</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details open>
+                            <summary>3. Training</summary>
+                            <ul>
+                                <li>
+                                    <details open>
+                                        <summary>Commitment:</summary>
+                                    </details>
+                                    coleman Inc. is committed to implementing a process to ensure that all employees and persons participating in the development and approval of coleman Inc.’s policies, are provided with appropriate training on the requirements of the IASR and on the Ontario Human Rights Code as it pertains to persons with disabilities, and are provided with such training as soon as practicable.
+                                </li>
+                                <li>
+                                    <details open>
+                                        <summary>Action Taken:</summary>
+                                        <details open>
+                                            <summary>The following measures were implemented by coleman Inc. effective January 1, 2015:</summary>
+                                            <ol>
+                                                <li>Determine and ensure that appropriate training on the requirements of the IASR and on the Ontario Human Rights Code as it pertains to persons with disabilities, is provided to all employees and persons participating in the development and approval of the coleman Inc.’s policies;</li>
+                                                <li>Ensure that the training is provided to persons referenced above as soon as practicable;</li>
+                                                <li>Keep and maintain a record of the training provided, including the dates that the training was provided and the number of individuals to whom it was provided;</li>
+                                                <li>Ensure that training is provided on any changes to the prescribed policies on an ongoing basis.</li>
+                                            </ol>
+                                        </details>
+                                    </details>
+                                </li>
+                                <li>Required compliance date: January 1, 2015</li>
+                                <li>Status: Completed/Ongoing</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details open>
+                            <summary>4. Self Service Kiosks</summary>
+                            <ul>
+                                <li>
+                                    <details open>
+                                        <summary>Commitment:</summary>
+                                        coleman Inc. is committed to eliminating barriers and improving accessibility for persons with disabilities and to providing goods and services in a way that respects the dignity and independence of people with disabilities.
+                                    </details>
+                                </li>
+                                <li>Planned Action:</li>
+                                <li>
+                                    <details open>
+                                        <summary>In accordance with the IASR coleman Inc. will:</summary>
+                                        <ol>
+                                            <li>Have regard to the accessibility for persons with disabilities in the design, procurement or acquisition of any self-service kiosks on or after January 1, 2014.</li>
+                                            <li>Ensure that any employees involved in the procurement or acquisition are apprised of the need to consider accessibility features in choosing the appropriate self-service kiosk.</li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li>Required compliance date: January 1, 2014</li>
+                                <li>Status: Completed</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details open>
+                            <summary>5. Information and Communication Standards</summary>
+                            <details open>
+                                <summary>Commitment:</summary>
+                                <details open>
+                                    <summary>a) Feedback, Accessible Formats and Communication Supports</summary>
+                                    <ol>
+                                        <li>Planned Action:</li>
+                                        <li>
+                                            <details open>
+                                                <summary>In accordance with the IASR coleman Inc. will:</summary>
+                                                <ol>
+                                                    <li>Ensure that feedback processes are accessible to persons with disabilities by providing or arranging for the provision of accessible formats and communications supports, upon request. The company will notify the public about the availability of accessible formats and communication supports.</li>
+                                                    <li>Except as otherwise provided for under the IASR, provide or arrange for the provision of accessible formats and communication supports upon request for persons with disabilities in a timely manner that takes into account the person’s accessibility needs.</li>
+                                                    <li>Consult with the person making the request in determining the suitability of an accessible format or communication support.</li>
+                                                    <li>Notify the public about the availability of accessible formats and communication supports.</li>
+                                                </ol>
+                                            </details>
+                                        </li>
+                                        <li>Required compliance date:</li>
+                                        <li>January 1, 2015 - Feedback</li>
+                                        <li>January 1, 2016 - Accessible formats &amp; Communication Supports</li>
+                                        <li>Status: Completed</li>
+                                    </ol>
+                                </details>
+                                <details open>
+                                    <summary>b) Accessible Websites and Web Content</summary>
+                                    <ul>
+                                        <li>
+                                            <details open>
+                                                <summary>Planned Action:</summary>
+                                                In accordance with the IASR, coleman Inc. will ensure that coleman.’s public websites and online content conform with the World Wide Web Consortium Web Content Accessibility Guidelines (WCAG) 2.0, Level A (new websites and online content) by January 1, 2014, to Level AA for all content by January 1, 2021.
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details open>
+                                                <summary>Required compliance date:</summary>
+                                                <ol>
+                                                    <li>January 1, 2014 - WCAG 2.0 Level A - new Internet websites and web content</li>
+                                                    <li>January 1, 2021 - WCG 2.0 Level AA - all Internet websites and web content, except for exclusions set out in the IASR.</li>
+                                                </ol>
+                                            </details>
+                                        </li>
+                                        <li>Status: In process</li>
+                                    </ul>
+                                </details>
+                            </details>
+                        </details>
+                    </li>
+                    <li>
+                        <details open>
+                            <summary>6. Employment Standards</summary>
+                            <ol>
+                                <li>
+                                    <details open>
+                                        <summary>a) Recruitment</summary>
+                                        <ul>
+                                            <li>
+                                                <details open>
+                                                    <summary>Commitment:</summary>
+                                                    coleman Inc. is committed to complying with the provisions of the AODA in respect of this requirement, with the objective of making the recruitment process accessible to persons with disabilities.
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <details open>
+                                                    <summary>Action Taken:</summary>
+                                                    Recruitment General
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <details open>
+                                                    <summary>coleman Inc. will notify employees and the public of the availability of accommodation for applicants with disabilities in the recruitment process. This will include:</summary>
+                                                    <ol>
+                                                        <li>A review and, as necessary, modification of existing recruitment policies, procedures, processes and templates.</li>
+                                                        <li>Specifying that accommodation is available for applicants with disabilities, on coleman Inc.’s website and on job postings.</li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                            <li>Recruitment, Assessment and Selection</li>
+                                            <li>
+                                                <details open>
+                                                    <summary>coleman Inc. will notify job applicants, when they are individually selected to participate in an assessment or selection process, that accommodations are available upon request in relation to the materials or processes to be used in the assessment/selection process. This will include:</summary>
+                                                    <ol>
+                                                        <li>A review and, as necessary, modification of existing recruitment policies, procedures, processes and templates;</li>
+                                                        <li>Inclusion of availability of accommodation notice as part of the script in the scheduling of an interview and/or assessment;</li>
+                                                        <li>If a selected applicant requests an accommodation, consult with the applicant and arrange for provision of suitable accommodations in a manner that takes in to account the applicant’s accessibility needs due to disability.</li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                            <li>Notice to Successful Applicants</li>
+                                            <li>
+                                                <details open>
+                                                    <summary>When making offers of employment, coleman Inc. will notify the successful applicant of its policies for accommodating employees with disabilities. This will include:</summary>
+                                                    <ol>
+                                                        <li>A review and, as necessary, modification of existing recruitment policies, procedures, processes and templates;</li>
+                                                        <li>Inclusion of notification of coleman Inc.’s policies on accommodating employees with disabilities in offer of employment letters.</li>
+                                                    </ol>
+                                                </details>
+                                            </li>
+                                            <li>Required compliance date: January 1, 2016</li>
+                                            <li>Status: Completed</li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details open>
+                                        <summary>b) Accessible Formats and Communication Supports for Employees</summary>
+                                        <ul>
+                                            <li>
+                                                <details open>
+                                                    <summary>Commitment:</summary>
+                                                </details>
+                                                coleman Inc. is committed to complying with the provisions of the AODA in respect of this requirement, with the objective of making the recruitment process accessible to persons with disabilities.
+                                            </li>
+                                            <li>
+                                                <details open>
+                                                    <summary>Action Taken:</summary>
+                                                    <details open>
+                                                        <summary>In accordance with the IASR, coleman Inc. will:</summary>
+                                                        <ol>
+                                                            <li>Inform its employees of its policies used to support its employees with disabilities, including, but not limited to, policies on the provision of job accommodations that take in to account an employee’s accessibility needs due to disability.</li>
+                                                            <li>Provide the information required to new employees as soon as practicable after they begin their employment.</li>
+                                                            <li>Provide updated information to its employees whenever there is a change to existing policies on the provision of job accommodations that take into account an employee’s accessibility needs due to disability.</li>
+                                                            <li>
+                                                                <details open>
+                                                                    <summary>Where an employee with a disability requests it, consult with the employee to provide or arrange for the provision of accessible formats and communication supports for:</summary>
+                                                                    <ul>
+                                                                        <li>Information that is needed in order to perform the employee’s job; and</li>
+                                                                        <li>Information that is generally available to employees in the workplace</li>
+                                                                    </ul>
+                                                                </details>
+                                                            </li>
+                                                            <li>coleman Inc. will consult with the employee making the request in determining the suitability of an accessible form at or communication support.</li>
+                                                        </ol>
+                                                    </details>
+                                                </details>                                                
+                                            </li>
+                                            <li>Required compliance date: January 1, 2016</li>
+                                            <li>Status: Completed</li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details open>
+                                        <summary>c) Documented Individual Accommodation Plans</summary>
+                                        <ul>
+                                            <li>
+                                                <details open>
+                                                    <summary>Commitment:</summary>
+                                                    coleman Inc. is committed to complying with the provisions of the AODA in respect of this requirement, with the objective of improving accommodation and return to work processes in the workplace.
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <details open>
+                                                    <summary>Action Taken:</summary>
+                                                    <details open>
+                                                        <summary>
+                                                            coleman Inc.’s existing policies will be reviewed to include processes that coleman Inc. will follow to accommodate an employee with a disability and to facilitate an employee’s return to work after absenteeism due to disability.The process for the development of documented individual accommodation plans includes the following elements:
+                                                        </summary>
+                                                        <ol>
+                                                            <li>The manner in which an employee requesting accommodation can participate in the development of the individual accommodation plan.</li>
+                                                            <li>The means by which the employee is assessed on an individual basis.</li>
+                                                            <li>The manner in which coleman Inc. can request an evaluation by an outside medical or other expert, at coleman’s expense, to assist coleman Inc. in determining if accommodation can be achieved and, if so, how accommodation can be achieved.</li>
+                                                            <li>The manner in which the employee can request the participation of a representative from their bargaining agent, where the employee is represented by a bargaining agent, or other representative from the workplace, where the employee is not represented by a bargaining agent, in the development of the accommodation plan.</li>
+                                                            <li>The steps taken to protect the privacy of the employee’s personal information.</li>
+                                                            <li>The frequency with which the individual accommodation plan will be reviewed and updated and the manner in which it will be done.</li>
+                                                            <li>If an individual accommodation plan is denied, the manner in which the reasons for the denial will be provided to the employee.</li>
+                                                            <li>The means of providing the individual accommodation plan in a format that takes into account the employee’s accessibility needs due to disability. Individual accommodation plans will:</li>
+                                                            <li>If requested, include any information regarding accessible formats and communications supports provided, as required in the Standard;</li>
+                                                            <li>If required, include individualized workplace emergency response information, as required in the Standard; and</li>
+                                                            <li>Identify any other accommodation that is to be provided.</li>
+                                                        </ol>    
+                                                    </details>
+                                                </details>
+                                            </li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details open>
+                                        <summary>d) Performance Management, Career Development and Redeployment</summary>
+                                        <ul>
+                                            <li>
+                                                <details open>
+                                                    <summary>Commitment:</summary>
+                                                    <details open>
+                                                        <summary>coleman Inc. will take into account the accessibility needs of employees with disabilities, as well as individual accommodation plans:</summary>
+                                                        <ol>
+                                                            <li>When using its performance management process in respect of employees with disabilities;</li>
+                                                            <li>When providing career development and advancement to its employees with disabilities;</li>
+                                                            <li>When redeploying employees with disabilities.</li>
+                                                        </ol>
+                                                    </details>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <details open>
+                                                    <summary>Action Taken:</summary>
+                                                    <details open>
+                                                        <summary>In accordance with the IASR, coleman Inc. will:</summary>
+                                                        <ol>
+                                                            <li>
+                                                                <details open>
+                                                                    <summary>Take the accessibility needs of employees with disabilities and, as applicable, their individualized accommodation plans, into account when:</summary>
+                                                                    <ul>
+                                                                        <li>Assessing performance</li>
+                                                                        <li>Managing career development and advancement</li>
+                                                                        <li>Redeployment is required</li>
+                                                                    </ul>
+                                                                </details>
+                                                            </li>
+                                                            <li>Provide a tailored workplace emergency response plan or information for employees with disabilities, if their disability makes it necessary</li>
+                                                        </ol>
+                                                    </details>
+                                                </details>
+                                            </li>
+                                            <li>Required compliance date: January 1, 2016</li>
+                                            <li>Status: Completed</li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details open>
+                                        <summary>e) Return to Work &amp; Redeployment </summary>
+                                    </details>
+                                </li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li>
+                        <details open>
+                            <summary>7. Design of Public Spaces</summary>
+                            <ul>
+                                <li>
+                                    <details open>
+                                        <summary>Commitment:</summary>
+                                        coleman Inc. will meet the Accessibility Standards for the Design of Public Spaces when building or making major modifications to public spaces.
+                                    </details>
+                                </li>
+                                <li>Required compliance date: January 1, 2017</li>
+                                <li>Status: Future-dated</li>
+                                <li>
+                                    <details open>
+                                        <summary>For More Information</summary>
+                                        <details open>
+                                            <summary>For more information on this Accessibility Plan, or for a copy of this plan in an accessible format, please contact coleman Inc. by any of the following means:</summary>
+                                            <ol>
+                                                <li>By telephone: 1-888-668-0625</li>
+                                                <li>By e-mail: CE@coleman.com</li>
+                                            </ol>
+                                        </details>
+                                    </details>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </div>     
+    <footer>
+        <a href="#">Back To top</a>
+        <div>            
+            <h2>
+               <img src="images/footer_logo.png" alt="coleman">
+            </h2>
+            <div>
+                <form>
+                    <span>
+                        <label for="userEmail">Subscribe</label>
+                        <input type="email" name="Subscribe" id="userEmail" placeholder="Email Address">
+                        <input type="submit" value="send">
+                    </span>
+                </form>
+                <ul>
+                    <li><a href="https://www.facebook.com/colemanusa">facebook</a></li>
+                    <li><a href="https://www.instagram.com/colemanusa/">instagram</a></li>
+                    <li><a href="https://www.youtube.com/user/Colemancampfire">youtube</a></li>
+                    <li><a href="findstore.html" class="btn L22534">Find a Store</a></li>
+                    <li><a href="contactus.html" class="btn L22534">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <address>
+            <span>
+                <mark>Coleman Korea Service Center</mark>
+                <a href="tel:+8215775932">1577-5932</a>
+                10:00am - 4:00pm (Monday - Friday)
+            </span>
+            <span>
+                Contact Us Coleman Korea Check the location of the service center.
+            </span>
+            <span>
+                Coleman Service Center, 2nd floor, 60 Dolmugae-gil, Gwacheon-si, Gyeonggi-do
+            </span>
+        </address>
+        <div>
+            <ol>
+                <li>© 2023 The Coleman Company, Inc. All rights reserved.</li>
+                <li><a href="accessibility.html">Accessibility Statement</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                <li><a href="faq.html">Faq</a></li>
+                <li><a href="sitemap.html">Site map</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="exploreColeman.html">Our Story</a></li>
+            </ol>
+        </div>
+    </footer>
+</body>
+</html>

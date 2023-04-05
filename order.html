@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last order list</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/coleman.js"></script>
+    <link rel="icon" type="image/favicon.png" href="images/favicon.png" sizes="48x48">
+    <link rel="stylesheet" href="css/import.css">
+<body>
+    <div id="searchPanel" class="panel search">
+        <div>
+            <form>
+                <input type="search" id="searchKeyword" placeholder="What are you looking for?" title="insert your search Keyword's">                            
+                <input type="submit" value="Search">
+            </form>
+            <strong>POPULAR SEARCHES</strong>
+            <ul>
+                <li><a href="coolersList.html">Coolers</a></li>
+                <li><a href="tent1_detail.html">Reunion Collection</a></li>
+                <li><a href="tent3_detail.html">PEAK1 collection</a></li>
+                <li><a href="tentList.html">Tent</a></li>
+                <li><a href="funiture.html">Chair</a></li>
+            </ul>
+        </div>
+        <input type="button" value="close" class="material-symbols-outlined">
+    </div>
+    <!-- popup -->
+    <header>
+        <div>
+            <span>
+                Ship To: United States of America ($USD) | EN
+                <a href="findstore.html">Find a Store</a>
+            </span>
+            <ul class="index_After">
+                <li data-popname="searchPanel">search</li>
+                <li>
+                    <a href="accountset.html">mypages</a>
+                </li>
+                <li>
+                    <a href="cart.html">Bag</a>
+                    <span>3</span>
+                </li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" value="menu" class="material-symbols-outlined mui" data-panelName="muIPanel">
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/coleman_logo.png" alt="coleman">
+                </a>
+            </h1>
+        </div>
+        <nav>
+            <input type="button" value="close" class="material-symbols-outlined">   
+            <ul>
+                <li><a href="index.html"><img src="../images/coleman_logo.png" alt="coleman_logo"></a></li>
+                <li data-gnbbox="coolers">
+                    Coolers &amp; Drinkware
+                    <figure class="boxGnb" id="coolers">
+                        <img src="images/lnb1.png" alt="316 series">
+                        <figcaption>
+                            <h2>
+                                <small>since 1954</small>
+                                Your family cooler just got a whole lot
+                                cooler. Say hello to the Coleman® 
+                            </h2>
+                            <p>Coleman coolers are perfect for outdoor events like camping, backyard hangs and tailgating.Find all coolers of various sizes so that you can enjoy the convenience your Coleman camping gear brings to outdoor recreation.
+                            </p>
+                            <a href="coolersList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="tent">
+                    Tents &amp; Canopies
+                    <figure class="boxGnb" id="tent">
+                        <img src="images/lnb2.png" alt="skydome 4person">
+                        <figcaption>
+                            <h2>
+                                Coleman® Skylodge™ 4-Person Tent
+                            </h2>
+                            <p>Crank up the camping fun in the comfort of Coleman® tents and canopies,
+                                for shelter that's always got you covered. Get ready for your fastest tent pitch yet
+                                with the Skylodge™ 4-Person Tent for an easy-up tent in as little as 1 minute,
+                                so you can stroke campfires and stack s'mores in no time.
+                            </p>
+                            <a href="tentList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="sleepingBag">
+                    Sleeping Bags &amp; Beds
+                    <figure class="boxGnb" id="sleepingBag">
+                        <img src="images/lnb3.png" alt="Big Bay series">
+                        <figcaption>
+                            <h2>                        
+                                Big Bay™ 20° Mummy Sleeping Bag
+                            </h2>
+                            <p>Cold-weather camping is easy when you have a Big Bay™ 20° Mummy Sleeping Bag.
+                                From treks out for a car camping trip to stargazing nights in the backyard,
+                                this sleeping bag's Coletherm™ MAX insulation will keep you warm
+                                in temps as low as 20°F.
+                            </p>
+                            <a href="sleepingBagList.html" class="btn L22550">show all</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="lighting">
+                    Lighting
+                    <figure class="boxGnb" id="lighting">
+                        <img src="images/lnb4.png" alt="1900 Collection™ 600 Lumen LED Lantern">
+                            <figcaption>
+                                <h2>                            
+                                    Coleman® will keep everything illuminated.
+                                </h2>
+                                <p>
+                                    Whether you’re at the campsite or in your backyard,
+                                    our selection of outdoor lighting products are perfect for
+                                    your next bright adventure. 
+                                </p>
+                                <a href="lightingList.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="grills">
+                    Grills &amp; Stoves
+                    <figure class="boxGnb" id="grills">
+                        <img src="images/lnb5.png" alt="coleman grills">
+                            <figcaption>
+                                <h2>                            
+                                    Level up your food game with the Cascade™ Collection. 
+                                </h2>
+                                <p>
+                                    Wow friends and family with a variety of outdoor meals when you travel with 
+                                    Coleman Camp Kitchen Equipment for your crew. Our camping stoves &amp; grills are
+                                    perfect for small or large crews when preparing breakfast, lunch, &amp; dinner.
+                                </p>
+                                <a href="grillsList.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="campFuniture">
+                    Camp Furniture
+                    <figure class="boxGnb" id="campFuniture">
+                        <img src="images/lnb6.png" alt="Cross Rocker Outdoor Rocking Chair">
+                            <figcaption>
+                                <h2>
+                                    <small>New Arrival</small>
+                                    Say hello to the Cross Rocker Outdoor Rocking Chair.
+                                </h2>
+                                <p>
+                                    Sit back and count the constellations in our Big and Tall camping chair, featuring
+                                    an oversized seat and large footing for well-balanced stability. Recline in a heavy duty
+                                    camping chair you can trust with the reinforced steel frame of this oversized camping
+                                    chair that comfortably supports up to 600 lbs. 
+                                </p>
+                                <a href="funiture.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li data-gnbbox="ourStory">
+                    Explore Coleman
+                    <figure class="boxGnb" id="ourStory">
+                        <img src="images/lnb7.png" alt="since 1901">
+                            <figcaption>
+                                <h2>
+                                    Where We Are Today.
+                                </h2>
+                                <p>
+                                    After 122 years, Coleman gear is everywhere you are: on the trail, by the lake, 
+                                    at the match, or in the middle of a music festival. We're always around a place where
+                                    there are friends, coolers, and campfires. So, grab a tent, fire up a grill, and
+                                    pull up a chair. The Outside Is Calling. Answer it.
+                                </p>
+                                <a href="exploreColeman.html" class="btn L22550">show all</a>
+                            </figcaption>
+                    </figure>
+                </li>
+                <li><a href="findstore.html">Find a Store</a></li>
+            </ul>
+        </nav>
+        <ol class="rollingBanner">
+            <li>
+                <a href="faq.html">Free Shipping on orders $50</a>
+            </li>
+            <li>
+                <a href="eventsale.html">Shop Best of Sale.</a>
+            </li>
+            <li>
+                Enjoy complimentary Standard shipping and returns on all orders..
+            </li>
+        </ol>
+    </header>
+    <!-- Header-->
+    <div class="orderContainer">
+        <ol class="fsttxtNv">
+            <li><a href="index_after.html">Home</a></li>
+            <li>Order</li>
+        </ol>
+        <div class="tabTab">
+            <h2>Order</h2>
+            <ul>
+                <li class="active">order</li>
+                <li><a href="wishList.html">wish list</a></li>
+                <li><a href="cart.html">shopping bag</a></li>
+                <li><a href="accountSet.html">account setting</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>
+                Can't find your order?
+                <small>Some orders may not be visible in your order history while the coleman system is being upgraded. To learn how to resolve this issue <a href="faq.html">FAQ</a> Please visit the page. </small>
+            </h3>
+        </div>
+        <div id="trackingPopup" class="popup tracking">
+            <h4>Delivery Status</h4>
+            <input type="button" value="close" class="material-symbols-outlined">
+            <ol>
+                <li>Product packaging</li>
+                <li>Product movement</li>
+                <li class="active">Start shipping</li>
+                <li>Departure of the delivery driver</li>
+                <li>Delivery completed</li>
+            </ol>
+            <fieldset>
+                <legend>consignee information</legend>
+                <ul>
+                    <li>
+                        <label for="orderUserName">consignee</label>
+                        <input type="text" id="orderUserName" value="Kaylyn KIM" disabled>
+                    </li>
+                    <li>
+                        <label for="orderAdd">address</label>
+                        <input type="text" id="orderAdd" value="#302 L town, korea." disabled>
+                    </li>
+                    <li>
+                        <label for="orderDrv">courier</label>
+                        <input type="text" id="orderDrv" value="L logistecs" disabled>
+                    </li>
+                    <li>
+                        <label for="orderTrac">Tracking Number</label>
+                        <input type="text" id="orderTrac" value="368547***" disabled>
+                    </li>
+                </ul>
+            </fieldset>
+            <div>
+                <h5>Delivery Status detail</h5>
+                <ul>
+                    <li>
+                        <span>date</span>
+                        <span>Logistics movement location</span>
+                        <span>Phone Number</span>
+                    </li>
+                    <li>
+                        <time datetime="2022-12-27 15:25:39">2022.12.27 15:25:39</time>
+                        <span>Product is on the move.</span>
+                        <a href="tel:+82-10-4941-0007">+82-10-4941-****</a>
+                    </li>
+                    <li>
+                        <time datetime="2022-12-27 20:17:15">2022.12.27 20:17:15</time>
+                        <span>Product is on the move.</span>
+                        <a href="tel:+82-10-4941-0007">+82-10-4941-****</a>
+                    </li>
+                    <li>
+                        <time datetime="2022-12-28 09:45:07">2022.12.28 09:45:07</time>
+                        <span>Product is on the move.</span>
+                        <a href="tel:+82-10-4941-0007">+82-10-4941-****</a>
+                    </li>
+                    <li>
+                        <time datetime="2022-12-29 00:12:48">2022.12.29 00:12:48</time>
+                        <span>Product is on the move.</span>
+                        <a href="tel:+82-10-4941-0007">+82-10-4941-****</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!-- section 내 popup -->
+        <div class="order List">
+            <a href="cooler2_detail.html">
+                <img src="images/cooler2_290.png" alt="Reunion™ 54-Quart Steel Belted® Matte Cooler stainlessSteel">
+            </a>
+            <ol>
+                <li><mark>Shipping</mark></li>
+                <li><b>Reunion™ 54-Quart Steel Belted® Matte Cooler</b></li>
+                <li>no. C01152597887</li>
+                <li>SKU : 3000006556</li>
+                <li>option : Stainless Steel</li>
+            </ol>
+            <div>
+                <input type="button" data-popname="trackingPopup" class="btn L22534" value="Delivery tracking">
+                <input type="button" class="btn L22534" value="view order detail" data-panel="order1">    
+            </div>
+            <div class="order viewBox" id="order1">
+                <div>
+                    <mark>Buy Online</mark>
+                    <time datetime="2022-12-27">December 27, 2022</time>
+                    <b>C01152593468</b>
+                </div>
+                <address>
+                    <strong>Address</strong>
+                    <span>Kaylyn KIM</span>
+                    <span>Seoul-si seoung dong-gu, jungang-ro 68, fine apartment 4floor #402 <br>
+                        34567</span>
+                    <span>kaylynkim@gmail.com <br>
+                        010-1234-5678</span>
+                </address>
+                <ol>
+                    <li>
+                        <b>order history</b>
+                        <mark>* December 10th, delivery completed</mark>
+                    </li>
+                    <li>
+                        <span>delivery fee</span>
+                        <span>$ 0</span>
+                    </li>
+                    <li>
+                        <span>product amount</span>
+                        <span>$ 209.99</span>
+                    </li>
+                    <li>
+                        <span>Total payment amount</span>
+                        <span>$ 209.99</span>
+                    </li>
+                </ol>
+                <input type="button" value="close" class="closePanel">
+            </div>
+        </div>
+        <div class="order List">                                
+            <a href="sleepingbag1_detail.html">
+                <img src="images/sleepingbag1_290.png" alt="Kompact™ 40°F Rectangle Sleeping Bag">
+            </a>            
+            <ol>
+                <li><mark>Shipped</mark></li>
+                <li><b>Kompact™ 40°F Rectangle Sleeping Bag</b></li>
+                <li>no. C0115258456792</li>
+                <li>SKU : 2000037218</li>
+                <li>option : Tiger Lily</li>
+            </ol>
+            <div>
+                <input type="button" class="btn L22534" value="view order detail" data-panel="order2">
+                <input type="button" class="btn thisL22534" value="Return request" data-panel="return2">
+                <input type="button" class="btn L22534" value="Write a review" data-panel="review2">
+            </div>
+            <div class="order viewBox" id="order2">
+                <div>
+                    <mark>Buy Online</mark>
+                    <time datetime="2022-12-08">December 8, 2022</time>
+                    <b>C01152597887</b>
+                </div>
+                <address>
+                    <strong>Address</strong>
+                    <span>Kaylyn KIM</span>
+                    <span>Seoul-si seoung dong-gu, jungang-ro 68, fine apartment 4floor #402 <br>34567</span>
+                    <span>kaylynkim@gmail.com<br>010-1234-5678</span>                
+                </address>
+                <ol>
+                    <li>
+                        <b>order history</b>
+                        <mark>* December 10th, delivery completed</mark>
+                    </li>
+                    <li>
+                        <span>delivery fee</span>
+                        <span>$ 0</span>
+                    </li>
+                    <li>
+                        <span>product amount</span>
+                        <span>$ 62.99</span>
+                    </li>
+                    <li>
+                        <span>Total payment amount</span>
+                        <span>$ 62.99</span>
+                    </li>
+                </ol>
+                <input type="button" value="close" class="closePanel">
+            </div>
+            <div class="return viewBox" id="return2">
+                <div>
+                    <h3>Pick-up address</h3>
+                    <ol class="addrRadio">
+                        <li>
+                            <input type="radio" name="returnCheck" id="lastAddr" checked>
+                            <label for="lastAddr">last delivery address</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="returnCheck" id="directAddr">
+                            <label for="directAddr">Direct input</label>
+                        </li>
+                        <li>
+                            <input type="button" value="Shipping address list" data-popname="returnAddPopup">
+                        </li>
+                    </ol>
+                    <div class="lastAddr">
+                        <address>
+                            <strong>Kaylyn KIM</strong>
+                            Seoul-si seoung dong-gu, jungang-ro 68, fine apartment 4floor #402 <br>34567
+                        </address>
+                        <span>010-1234-5678</span>
+                        <div class="selectComponent">
+                            <select>
+                                <option>Reason for return*</option>
+                                <option>Simple remorse</option>
+                                <option>Quality dissatisfaction</option>
+                                <option>Damage and product defects</option>
+                                <option>Wrong delivery</option>
+                                <option>Delivery delay</option>
+                                <option>Buy multiple products</option>
+                            </select>
+                        </div>
+                    </div>
+                    <ul class="inputList" for="directAddr">
+                        <li>
+                        <label for="drtUserN">Requester</label>
+                        <input type="text" id="drtUserN">
+                        </li>
+                        <li>
+                        <label for="drtUserAdd">Pick up address</label>
+                        <input type="text" id="drtUserAdd">
+                        </li>
+                        <li>
+                        <label for="drtUserZip">Zip code</label>
+                        <input type="text" id="drtUserZip" pattern="[0-9]">
+                        </li>
+                        <li>
+                        <label for="drtUserPNumb">Phone Number</label>
+                        <input type="tel" id="drtUserPNumb">
+                        </li>
+                    </ul>
+                    <!-- 다이렉트 부분 디자인 수정 -->    
+                    <div data-panelName="returnAddPopup" class="popup returnAdd">
+                        <strong>Shipping address list</strong>
+                        <input type="radio" name="returnCheck" id="selectAddr">
+                        <label for="selectAddr">Kaylyn office</label>
+                        <div>
+                            kaykim KIM <span>|</span>010-1234-5678
+                            <address>[77886] 333-607, B8654 <br>
+                                truffle-street, everland happy town US. 
+                            </address>
+                        </div>
+                        <input type="submit" value="apply" class="btn close">
+                    </div>
+                </div>
+                <ol>
+                    <li>
+                        <span>return summary</span>
+                        <span>* December 10th, delivery completed</span>
+                    </li>
+                    <li>
+                        <span>delivery fee</span>
+                        <span>$ 0</span>
+                    </li>
+                    <li>
+                        <span>product amount</span>
+                        <span>$ 62.99</span>
+                    </li>
+                    <li>
+                        <span>Total refund amount</span>
+                        <span>$ 62.99</span>
+                    </li>
+                </ol>
+                <div>
+                    <input type="button" class="btn L21034" value="request">
+                    <input type="button" value="close" class="closePanel">
+                </div>
+            </div>
+            <div class="review viewBox" id="review2">
+                <div>
+                    <h3>Write a Review</h3>
+                    <div class="starCount">
+                        <input type="radio" id="star5" name="starRaTing" value="5">
+                        <label for="star5"> 5 stars</label>
+                        <input type="radio" id="star4" name="starRaTing" value="4">
+                        <label for="star4"> 4 stars</label>
+                        <input type="radio" id="star3" name="starRaTing" value="3">
+                        <label for="star3"> 3 stars</label>
+                        <input type="radio" id="star2" name="starRaTing" value="2">
+                        <label for="star2"> 2 stars</label>
+                        <input type="radio" id="star1" name="starRaTing" value="1">
+                        <label for="star1"> 1 stars</label>
+                    </div>
+                    <small>overall Rating*</small>
+                </div>   
+                <div>
+                    <h3>Review Title</h3>
+                    <textarea placeholder="*Review can be written after logging in."></textarea>
+                    <p>You may receive emails regarding this submission.<br>
+                        Any emails will include the ability to opt-out of future communications.</p>
+                </div>
+                <div>
+                    <input type="button" id="reviewviewBox" class="btn L21034" value="Post Review">
+                    <input type="button" value="close" class="closePanel">
+                </div>
+            </div>
+        </div>
+        <div class="order List">    
+            <a href="tent3_detail.html">
+                <img src="images/tent3_290.png" alt="PEAK1™ 4-Person Dome Tent">
+            </a>
+            <ol>
+                <li><mark>Shipped</mark></li>
+                <li><b>PEAK1™ 4-Person Dome Tent</b></li>
+                <li>no. C0115258456698</li>
+                <li>SKU : 2155774</li>
+                <li>option : Marigold/Dark Stone</li>
+            </ol>
+            <div>
+                <input type="button" class="btn L22534" value="view order detail" data-panel="order3">
+            </div>
+            <div class="order viewBox" id="order3">
+                <div>
+                    <mark>Buy Online</mark>
+                    <time datetime="2022-10-08">October 8, 2022</time>
+                    <b>C0115258456698</b>
+                </div>
+                <address>
+                    <strong>Address</strong>
+                    <span>Kaylyn KIM</span>
+                    <span>Seoul-si seoung dong-gu, jungang-ro 68, fine apartment 4floor #402 <br>34567</span>
+                    <span>010-1234-5678</span>                    
+                </address>
+                <ol>
+                    <li>
+                        <span>order history</span>
+                        <span>* Qctober 12th, delivery completed</span>
+                    </li>
+                    <li>
+                        <span>delivery fee</span>
+                        <span>$ 0</span>
+                    </li>
+                    <li>
+                        <span>product amount</span>
+                        <span>$ 62.99</span>
+                    </li>
+                    <li>
+                        <span>Total payment amount</span>
+                        <span>$ 62.99</span>
+                    </li>
+                </ol>
+                <input type="button" value="close" class="closePanel">
+            </div>
+        </div>
+            <!-- btn.close를 click 하였을때 viewBox 는 모두 deactivate -->
+    </div>  
+    <footer>
+        <a href="#">Back To top</a>
+        <div>            
+            <h2>
+               <img src="images/footer_logo.png" alt="coleman">
+            </h2>
+            <div>
+                <form>
+                    <span>
+                        <label for="userEmail">Subscribe</label>
+                        <input type="email" name="Subscribe" id="userEmail" placeholder="Email Address">
+                        <input type="submit" value="send">
+                    </span>
+                </form>
+                <ul>
+                    <li><a href="https://www.facebook.com/colemanusa">facebook</a></li>
+                    <li><a href="https://www.instagram.com/colemanusa/">instagram</a></li>
+                    <li><a href="https://www.youtube.com/user/Colemancampfire">youtube</a></li>
+                    <li><a href="findstore.html" class="btn L22534">Find a Store</a></li>
+                    <li><a href="contactus.html" class="btn L22534">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <address>
+            <span>
+                <mark>Coleman Korea Service Center</mark>
+                <a href="tel:+8215775932">1577-5932</a>
+                10:00am - 4:00pm (Monday - Friday)
+            </span>
+            <span>
+                Contact Us Coleman Korea Check the location of the service center.
+            </span>
+            <span>
+                Coleman Service Center, 2nd floor, 60 Dolmugae-gil, Gwacheon-si, Gyeonggi-do
+            </span>
+        </address>
+        <div>
+            <ol>
+                <li>© 2023 The Coleman Company, Inc. All rights reserved.</li>
+                <li><a href="accessibility.html">Accessibility Statement</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                <li><a href="faq.html">Faq</a></li>
+                <li><a href="sitemap_si.html">Site map</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="exploreColeman.html">Our Story</a></li>
+            </ol>
+        </div>
+    </footer>
+</body>
+</html>
