@@ -437,7 +437,8 @@
     .accountsetContainer .returnAdd.active,
     .orderContainer .returnAdd.active,
     .checkoutContainer .returnAdd.active{
-        top: 30%; left: 2%; width: 92%;  padding: 0 2%;}
+        top: 30%; left: 2%; width: 92%;  padding: 0 2%;
+    }
     .returnAdd.active{position: fixed; box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5); z-index: 999; background-color: #ffffff;}    
     .returnAdd.active strong{display: block; font-size: 14px; font-weight: 700; line-height: 24px;
         padding: 45px 5%; border-bottom: 1px solid #acacac; box-sizing: border-box; margin-bottom: 20px;}
@@ -449,10 +450,10 @@
     .returnAdd.active div{padding-left: 17%; font-size: 12px; font-weight: 400; color: #8a8a8a; box-sizing: border-box; border-bottom: 1px solid #acacac; margin-bottom: 45px;}
     .returnAdd.active div span{padding: 0 5%; color: #000000;}
     .returnAdd.active div address{width: 65%; margin: 20px 0 30px; line-height: 24px; font-style: normal;}
-    .returnAdd.active input[type='button']{
+    .returnAdd.active input[type='submit']{
         width: 100%; font-size: 16px; font-weight: 700; line-height: 35px; background-color: #002f4a; color: #0094ea; margin-bottom: 35px; 
         box-sizing: border-box; border: 1px solid #002f4a;}
-    .returnAdd.active input[type='button']:hover{background-color: transparent; color: #002f4a;}
+    .returnAdd.active input[type='submit']:hover{background-color: transparent; color: #002f4a;}
     /* order page */
     .orderContainer mark,.orderContainer address{font-style: normal;}
     .orderContainer .order.List{
@@ -2857,7 +2858,7 @@
         background-position: left center; background-size: 20px;}
     .returnAdd input[type='radio']:checked+label{background-image: url('../images/radio_on_ico.png');}
     .accountsetContainer .returnAdd.active{top: 50%; left: 30%; width: 40%; padding: 0 2%;} 
-    .orderContainer .returnAdd.active{top: 0; left: 30%; width: 40%;  padding: 0 4.4%;}
+    .orderContainer .returnAdd.active{top: -80%; left: 50%; width: 80%;  padding: 0 4.5%;}
     .checkoutContainer .returnAdd.active{top: 55%; left: 29%; width: 40%; padding: 0 2%;}
     .returnAdd.active{position: absolute; box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5); z-index: 999; background-color: #ffffff;}    
     .returnAdd.active strong{display: block; font-size: 14px; font-weight: 700; line-height: 24px; padding: 45px 0; border-bottom: 1px solid #acacac;
@@ -2867,9 +2868,9 @@
     .returnAdd.active div{padding-left: 13%; font-size: 14px; font-weight: 400; color: #8a8a8a; box-sizing: border-box; border-bottom: 1px solid #acacac; margin-bottom: 45px;}
     .returnAdd.active div span{padding: 0 5%; color: #000000;}
     .returnAdd.active div address{width: 65%; margin: 20px 0 30px; line-height: 24px; font-style: normal;}
-    .returnAdd.active input[type='button']{width: 100%; font-size: 16px; font-weight: 700; line-height: 35px; background-color: #002f4a; color: #0094ea;
+    .returnAdd.active input[type='submit']{width: 100%; font-size: 16px; font-weight: 700; line-height: 35px; background-color: #002f4a; color: #0094ea;
         margin-bottom: 35px; box-sizing: border-box; border: 1px solid #002f4a;}
-    .returnAdd.active input[type='button']:hover{background-color: transparent; color: #002f4a;}
+    .returnAdd.active input[type='submit']:hover{background-color: transparent; color: #002f4a;}
     /* order page */
     .orderContainer mark,.orderContainer address{font-style: normal;}
     .orderContainer .order.List{
@@ -5256,8 +5257,8 @@
     .returnAdd.active div{padding-left: 12%; font-size: 14px; font-weight: 400; color: #8a8a8a; box-sizing: border-box; border-bottom: 1px solid #acacac; margin-bottom: 45px;}
     .returnAdd.active div span{padding: 0 5%; color: #000000;}
     .returnAdd.active div address{width: 65%; margin: 20px 0 30px; line-height: 24px; font-style: normal;}
-    .returnAdd.active input[type='button']{width: 100%; font-size: 16px; font-weight: 700; line-height: 35px; background-color: #002f4a; color: #0094ea; margin-bottom: 35px; box-sizing: border-box; border: 1px solid #002f4a;}
-    .returnAdd.active input[type='button']:hover{background-color: transparent; color: #002f4a;}
+    .returnAdd.active input[type='submit']{width: 100%; font-size: 16px; font-weight: 700; line-height: 35px; background-color: #002f4a; color: #0094ea; margin-bottom: 35px; box-sizing: border-box; border: 1px solid #002f4a;}
+    .returnAdd.active input[type='submit']:hover{background-color: transparent; color: #002f4a;}
     /* order page */
     .orderContainer mark,.orderContainer address{font-style: normal;}
     .orderContainer .order.List{
