@@ -57,7 +57,8 @@ function customizeSlider(target,mod,contVal,pagerVal,atVal,slideW,slideM,maxSlid
         maxSlides:maxSlide,
         minSlides:minSlide,
         startSlide:startSlide,
-        pagerCustom: csPager
+        pagerCustom: csPager,
+        // touchEnabled: false
     });
 }
 function popupControl(btn,popup){
