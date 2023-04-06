@@ -1245,7 +1245,7 @@ header div:first-child{font-size: 0.75em; font-weight: 500; line-height: 30px; p
 header div:first-child > *{width: 45%; position: absolute;}
 header div:first-child span{left: 0; display: block; line-height: 30px;}
 header div:first-child ::before{display: inline-block; vertical-align: middle; line-height: 14px;}
-header div:first-child span a::before{padding-right: 1.25em; content: url('/images/header_ico_01.png');}
+header div:first-child span a::before{padding-right: 1.25em; content: url('../images/header_ico_01.png');}
 header div:first-child span a{display: inline-block; text-decoration: none; color: #000000; margin-left: 3%;  vertical-align: middle;}
 /* logout상태 index */
 header div:first-child ul.index_Gen{right: 0; text-align: right;}

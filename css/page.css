@@ -156,9 +156,9 @@
     .rec li > div:nth-child(3) input:nth-of-type(1){background-image: url('../images/productlist_ico_1.png');}
     .rec li > div:nth-child(3) input:nth-of-type(2){background-image: url('../images/productlist_ico_2.png');}
     .rec li > div:nth-child(3) input:nth-of-type(3){background-image: url('../images/productlist_ico_3.png');}
-    .rec li > div:nth-child(3) input:nth-of-type(1).active{background-image: url('../images/productlist_ico_F1.png');}
-    .rec li > div:nth-child(3) input:nth-of-type(2).active{background-image: url('../images/productlist_ico_F2.png');}
-    .rec li > div:nth-child(3) input:nth-of-type(3).active{background-image: url('../images/productlist_ico_F3.png');}
+    .rec li > div:nth-child(3) input:nth-of-type(1).active{background-image: url('../images/productlist_ico_f1.png');}
+    .rec li > div:nth-child(3) input:nth-of-type(2).active{background-image: url('../images/productlist_ico_f2.png');}
+    .rec li > div:nth-child(3) input:nth-of-type(3).active{background-image: url('../images/productlist_ico_f3.png');}
     .rec li > div:nth-child(3) span del{
         font-size: 12px; font-weight: 500; color: #acacac; padding-right: 10px;}
     .rec li > div:nth-child(3) span:not(:first-child){font-size: 13px; font-weight: 600; color: #6a6a6a;}
@@ -2605,9 +2605,9 @@
     .rec li > div:nth-child(3) input:nth-of-type(1){background-image: url('../images/productlist_ico_1.png');}
     .rec li > div:nth-child(3) input:nth-of-type(2){background-image: url('../images/productlist_ico_2.png');}
     .rec li > div:nth-child(3) input:nth-of-type(3){background-image: url('../images/productlist_ico_3.png');}
-    .rec li > div:nth-child(3) input:nth-of-type(1).active{background-image: url('../images/productlist_ico_F1.png');}
-    .rec li > div:nth-child(3) input:nth-of-type(2).active{background-image: url('../images/productlist_ico_F2.png');}
-    .rec li > div:nth-child(3) input:nth-of-type(3).active{background-image: url('../images/productlist_ico_F3.png');}
+    .rec li > div:nth-child(3) input:nth-of-type(1).active{background-image: url('../images/productlist_ico_f1.png');}
+    .rec li > div:nth-child(3) input:nth-of-type(2).active{background-image: url('../images/productlist_ico_f2.png');}
+    .rec li > div:nth-child(3) input:nth-of-type(3).active{background-image: url('../images/productlist_ico_f3.png');}
     .rec li > div:nth-child(3) span del{font-size: 12px; font-weight: 500; color: #acacac; padding-right: 20px;}
     .rec li > div:nth-child(3) span:not(:first-child){font-size: 13px; font-weight: 600; color: #6a6a6a;}
     .rec li > div:nth-child(3) span[title $="Out"]{color: #b72c28; font-weight: 700;}
@@ -4991,9 +4991,9 @@
     .rec li > div:nth-child(3) input:nth-of-type(1){background-image: url('../images/productlist_ico_1.png');}
     .rec li > div:nth-child(3) input:nth-of-type(2){background-image: url('../images/productlist_ico_2.png');}
     .rec li > div:nth-child(3) input:nth-of-type(3){background-image: url('../images/productlist_ico_3.png');}
-    .rec li > div:nth-child(3) input:nth-of-type(1).active{background-image: url('../images/productlist_ico_F1.png');}
-    .rec li > div:nth-child(3) input:nth-of-type(2).active{background-image: url('../images/productlist_ico_F2.png');}
-    .rec li > div:nth-child(3) input:nth-of-type(3).active{background-image: url('../images/productlist_ico_F3.png');}
+    .rec li > div:nth-child(3) input:nth-of-type(1).active{background-image: url('../images/productlist_ico_f1.png');}
+    .rec li > div:nth-child(3) input:nth-of-type(2).active{background-image: url('../images/productlist_ico_f2.png');}
+    .rec li > div:nth-child(3) input:nth-of-type(3).active{background-image: url('../images/productlist_ico_f3.png');}
     .rec li > div:nth-child(3) span del{font-size: 12px; font-weight: 500; color: #acacac; padding-right: 20px;}
     .rec li > div:nth-child(3) span:not(:first-child){font-size: 13px; font-weight: 600; color: #6a6a6a;}
     .rec li > div:nth-child(3) span[title $="Out"]{color: #b72c28; font-weight: 700;}
