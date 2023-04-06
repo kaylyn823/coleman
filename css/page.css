@@ -6278,9 +6278,7 @@
     .detailContainer .noRevi .L22534:hover{
         border: 1px solid #cccfea; background-color: transparent;
     }
-
-    /* none Review */
-    
+    /* none Review */    
     .detailContainer .noRevi{
         position: relative;
     }
@@ -6302,7 +6300,6 @@
         position: absolute; right: 15.6%; bottom: -64px;  padding: 0 3.2%;
 
     }
-
     /* write popup */
     .detailContainer .popup.write{
         position: absolute; left: 25.04%; width: 50%; background-color: #fff;
