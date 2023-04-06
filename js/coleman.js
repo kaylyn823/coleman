@@ -58,7 +58,6 @@ function customizeSlider(target,mod,contVal,pagerVal,atVal,slideW,slideM,maxSlid
         minSlides:minSlide,
         startSlide:startSlide,
         pagerCustom: csPager,
-        // touchEnabled: false
     });
 }
 function popupControl(btn,popup){
@@ -150,7 +149,8 @@ function inputSwap(){
             $(".inputList input:not([type='email'])").removeAttr('disabled');
         }else if(editStatus == true){            
             $('#updateMyPage').prop('value', 'Edit Account');
-            $(".inputList input:not([type='email'])").attr('disabled','disabled'); 
+            // $(".inputList input:not([type='email'])").attr('disabled','disabled'); 
+            $(".inputList input").attr('disabled','disabled'); 
         }
     });
 }

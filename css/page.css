@@ -249,6 +249,9 @@
     .saveNewAddContainer > div:last-of-type form > .inputList li label{display: block; padding: 0 1%; font-size: 16px; font-weight: 600; color: #4a4a4a; line-height: 32px;}
     .accountsetContainer > div:last-of-type form > .inputList li input,
     .saveNewAddContainer > div:last-of-type form > .inputList li input{line-height: 40px; width: 98%; padding: 0 1%; font-size: 14px; font-weight: 400; color: #6a6a6a; border: none; background-color: transparent; box-sizing: border-box;}
+    .accountsetContainer > div:last-of-type form > .inputList li input[disabled='disabled']{
+        background-color: #f8f8f8; color: #2a2a2a;        
+    }
     .accountsetContainer > div:last-of-type div:first-of-type h3{font-size: 16px; font-weight: 600; color: #4a4a4a; margin-bottom: 30px;}
     .accountsetContainer > div:last-of-type div:first-of-type ul{margin-bottom: 40px;}    
     .accountsetContainer > div:last-of-type div:first-of-type ul li{display: block;}
@@ -2678,6 +2681,9 @@
     .accountsetContainer > div:last-of-type form > .inputList li:nth-child(2n){float: right; width: 48.15%;}
     .accountsetContainer > div:last-of-type form > .inputList li label,
     .saveNewAddContainer > div:last-of-type form > .inputList li label{display: block; padding: 0 1%; font-size: 16px; font-weight: 600; color: #4a4a4a; line-height: 32px;}
+    .accountsetContainer > div:last-of-type form > .inputList li input[disabled='disabled']{
+        background-color: #f8f8f8; color: #2a2a2a;        
+    }
     .accountsetContainer > div:last-of-type form > .inputList li input,
     .saveNewAddContainer > div:last-of-type form > .inputList li input{line-height: 40px; width: 98%; padding: 0 1%; font-size: 14px; font-weight: 400; color: #6a6a6a; border: none; background-color: transparent; box-sizing: border-box;}
     .accountsetContainer > div:last-of-type div:first-of-type h3{font-size: 16px; font-weight: 600; color: #4a4a4a; margin-bottom: 30px;}
@@ -5070,7 +5076,13 @@
     .accountsetContainer > div:last-of-type form > .inputList li label,
     .saveNewAddContainer > div:last-of-type form > .inputList li label{display: block; padding: 0 1%; font-size: 16px; font-weight: 600; color: #4a4a4a; line-height: 32px;}
     .accountsetContainer > div:last-of-type form > .inputList li input,
-    .saveNewAddContainer > div:last-of-type form > .inputList li input{line-height: 40px; width: 98%; padding: 0 1%; font-size: 14px; font-weight: 400; color: #6a6a6a; border: none; background-color: transparent; box-sizing: border-box;}
+    .saveNewAddContainer > div:last-of-type form > .inputList li input{
+        line-height: 40px; width: 100%; padding: 0 1%; font-size: 14px; font-weight: 400; color: #6a6a6a;
+        border: none; background-color: transparent; box-sizing: border-box;
+    }
+    .accountsetContainer > div:last-of-type form > .inputList li input[disabled='disabled']{
+        background-color: #f8f8f8; color: #2a2a2a;        
+    }
     .accountsetContainer > div:last-of-type div:first-of-type h3{font-size: 16px; font-weight: 600; color: #4a4a4a; margin-bottom: 30px;}
     .accountsetContainer > div:last-of-type div:first-of-type ul{margin-bottom: 110px;}    
     .accountsetContainer > div:last-of-type div:first-of-type ul li{display: block;}
