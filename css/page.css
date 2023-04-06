@@ -4982,8 +4982,8 @@
     .rec li > div:first-of-type > span::after{content: 'colors'; padding-left: 5px;}
     .rec li > div:nth-child(3){padding: 0 20px 15px;}
     .rec li > div:nth-child(3) h3{min-height: 55px;}
-    .rec li > div:nth-child(3) h3 a{display: block; text-decoration: none; font-size: 13px; line-height: 20px; color: #000000; font-weight: 600;}
-    .rec li > div:nth-child(3) h3 a:hover{color: #8a8a8a; font-weight: 600;}
+    .rec li > div:nth-child(3) h3 a{display: block; width: 100%; text-decoration: none; font-size: 13px; line-height: 20px; color: #000000; font-weight: 600;}
+    .rec li > div:nth-child(3) h3 a:hover{color: #8a8a8a;}
     .rec li > div:nth-child(3) div{width: 50%;}
     .rec li > div:nth-child(3) span{text-align: right;}
     .rec li > div:nth-child(3) input{background-repeat: no-repeat; border: none; cursor: pointer; background-color: transparent; text-indent: -9999px; min-width: 19px; line-height: 22px; box-sizing: border-box;}
@@ -5165,7 +5165,7 @@
     }
     .saveNewAddContainer > div:last-of-type form > div{
         display: flex; flex-flow: row nowrap; justify-content: flex-end;
-        font-size: 16px; font-weight: 600;
+        font-size: 14px; font-weight: 600;
     }
     .saveNewAddContainer > div:last-of-type form > div a.btn{
         display: block; width: 27%; line-height: 34px;
