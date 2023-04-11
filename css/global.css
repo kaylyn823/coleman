@@ -394,7 +394,7 @@ input[type='checkbox']:checked+label{
         display: flex; justify-content: center;
     }
     header div:nth-child(2) .material-symbols-outlined.mui{
-       width: 12.5%; height: 50px; font-size: 35px;
+       width: 12.5%; height: 50px; font-size: 35px; color: #2a2a2a;
     }
     header div:nth-child(2) h1{
         width: 30%; display: flex; margin: 0 auto; align-self: center; padding-right: 14.5%;}
@@ -864,6 +864,7 @@ input[type='checkbox']:checked+label{
         display: flex;  flex-flow: row nowrap; 
         width: 10%; height: 55px; font-size: 50px;
         justify-content: flex-start;
+        color: #2a2a2a;
     }
     header div:nth-child(2) h1{
         width: 30%; display: flex; padding-left: 24%;}
