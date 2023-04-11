@@ -176,7 +176,7 @@ input[type='checkbox']:checked+label{
     background-position: left center; background-size: 20px; background-repeat: no-repeat;
     background-image: url('../images/check_on.png');
 }
-.material-symbols-outlined{background-color: transparent; border: none; cursor: pointer;
+.material-symbols-outlined{background-color: transparent; border: none; cursor: pointer; color: #2a2a2a;
 }
 @media screen and (max-width:767px){
     .productList, footer > *:not(a){
