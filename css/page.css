@@ -154,6 +154,7 @@
     .rec li > div:nth-child(3) input{
         background-repeat: no-repeat; border: none; cursor: pointer; background-color: transparent; text-indent: -9999px;
         width: 100%; max-width: 22px; line-height: 22px; box-sizing: border-box;
+        display: inline-block;
     }
     .rec li > div:nth-child(3) input:not(:nth-of-type(1)){margin-left: 10px;}
     .rec li > div:nth-child(3) input:nth-of-type(1){background-image: url('../images/productlist_ico_1.png');}
