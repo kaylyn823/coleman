@@ -1132,7 +1132,7 @@
         display: none;
     }
     .checkoutContainer .checkRt > ol li label{
-        padding-left: 15%; line-height: 20px; font-size: 16px; font-weight: 500;
+        padding-left: 15%; line-height: 20px; font-size: 12px; font-weight: 500;
         color: #4a4a4a; display: inline-block; background-position: left top 2%;
     }
     .checkoutContainer .checkRt > ol li a,
