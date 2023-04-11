@@ -2233,7 +2233,7 @@
     .material-symbols-outlined{
         position: absolute; top: 2%; right: 2%; font-size: 18px;
         text-align: right; display: block;
-        color: #4a4a4a;
+        color: #4a4a4a; font-family: 'Material Symbols Outlined';
     }
     .ourstoryContainer .historyLogo ul{
         padding: 5%;
