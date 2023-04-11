@@ -1,10 +1,10 @@
 @media screen and (max-width:767px){
    
     /* 상품 공유 팝업 */
-    .share{position: fixed; left: 15%; top: 30%; width: 70%; text-align: center; z-index: 3; box-sizing: border-box; background-color: #ffffff; margin: 0 auto; box-shadow: 0.6rem 0.6rem 0.93rem 0.3rem rgba(0, 0, 0, 0.50);}
+    .share{position: fixed; left: 15%; top: 30%; width: 70%; text-align: center; z-index: 10000; box-sizing: border-box; background-color: #ffffff; margin: 0 auto; box-shadow: 0.6rem 0.6rem 0.93rem 0.3rem rgba(0, 0, 0, 0.50);}
     .share .inner{display: none;}
     .share .inner.active{
-        position: absolute; z-index: 5; background-color: #ffffff; width: 100%;
+        position: absolute; z-index: 10001; background-color: #ffffff; width: 100%;
         margin: 0 auto; font-size: 14px; font-weight: 500;
         display: block; padding: 35px 0 0;
     } 
@@ -15,7 +15,7 @@
     .share .inner .btn{
         margin: 0 auto 20px; width: 70%;  display: block; text-align: center;
         background-color: #000000; color: #ffffff;
-        line-height: 34px; font-size: 16px; font-weight: 700;
+        line-height: 34px; font-size: 14px; font-weight: 700;
     }
     .share h2{float: left; display: block; width: 43.66%; line-height: 55px; margin-left: 6.34%; text-align: left;}
     .share .material-symbols-outlined{
@@ -151,7 +151,10 @@
     .rec li > div:nth-child(3) h3 a:hover{color: #8a8a8a; font-weight: 600;}
     .rec li > div:nth-child(3) div{width: 50%;}
     .rec li > div:nth-child(3) span{text-align: right;}
-    .rec li > div:nth-child(3) input{background-repeat: no-repeat; border: none; cursor: pointer; background-color: transparent; text-indent: -9999px; min-width: 19px; line-height: 22px; box-sizing: border-box;}
+    .rec li > div:nth-child(3) input{
+        background-repeat: no-repeat; border: none; cursor: pointer; background-color: transparent; text-indent: -9999px;
+        width: 100%; max-width: 22px; line-height: 22px; box-sizing: border-box;
+    }
     .rec li > div:nth-child(3) input:not(:nth-of-type(1)){margin-left: 10px;}
     .rec li > div:nth-child(3) input:nth-of-type(1){background-image: url('../images/productlist_ico_1.png');}
     .rec li > div:nth-child(3) input:nth-of-type(2){background-image: url('../images/productlist_ico_2.png');}
