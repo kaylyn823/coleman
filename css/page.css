@@ -453,10 +453,10 @@
     .returnAdd.active div{padding-left: 17%; font-size: 12px; font-weight: 400; color: #8a8a8a; box-sizing: border-box; border-bottom: 1px solid #acacac; margin-bottom: 45px;}
     .returnAdd.active div span{padding: 0 5%; color: #000000;}
     .returnAdd.active div address{width: 65%; margin: 20px 0 30px; line-height: 24px; font-style: normal;}
-    .returnAdd.active input[type='submit']{
+    .returnAdd.active input[type='button']{
         width: 100%; font-size: 16px; font-weight: 700; line-height: 35px; background-color: #002f4a; color: #0094ea; margin-bottom: 35px; 
         box-sizing: border-box; border: 1px solid #002f4a;}
-    .returnAdd.active input[type='submit']:hover{background-color: transparent; color: #002f4a;}
+    .returnAdd.active input[type='button']:hover{background-color: transparent; color: #002f4a;}
     /* order page */
     .orderContainer mark,.orderContainer address{font-style: normal;}
     .orderContainer .order.List{
@@ -1044,37 +1044,36 @@
         line-height: 36px; box-sizing: border-box; border-bottom: 1px solid #acacac;
     }
     .checkoutContainer .checkRt .odThum > ul li:first-child label{
-        font-size: 16px; font-weight: 700;
+        font-size: 13px; font-weight: 700;
     }
     .checkoutContainer .checkRt .odThum > ul li:first-child input{
-        width: 96%; margin: 0 auto 20px;
-        font-size: 24px; color: inherit; font-weight: 600;
+        width: 96%; margin: 0 auto 20px; font-size: 12px; color: inherit; font-weight: 600;
     }
     .checkoutContainer .checkRt .odThum > ul li input{
         background-color: transparent; border: none; text-align: right;
     }
     .checkoutContainer .checkRt .odThum > ul li:nth-child(2),
     .checkoutContainer .checkRt .odThum > ul li:nth-child(3){
-        line-height: 24px; font-size: 16px; font-weight: 500;
+        line-height: 24px; font-size: 13px; font-weight: 500;
     }
     .checkoutContainer .checkRt .odThum > ul li:nth-child(3) label small{
         font-size: 12px; color: #7b8a7b; display: block;
         margin-bottom: 20px;
     }
     .checkoutContainer .checkRt .odThum > ul li:nth-child(4){
-        font-size: 16px; font-weight: 500; line-height: 24px; padding-bottom: 15px;
+        font-size: 13px; font-weight: 500; line-height: 24px; padding-bottom: 15px;
         box-sizing: border-box; border-bottom: 1px solid #acacac;
     }
     .checkoutContainer .checkRt .odThum > ul li:nth-child(2) input,
     .checkoutContainer .checkRt .odThum > ul li:nth-child(3) input,
     .checkoutContainer .checkRt .odThum > ul li:nth-child(4) input{
-        width: 96%; font-size: 16px; color: #000; font-weight: 500; margin: 0 auto;
+        width: 96%; font-size: 13px; color: #000; font-weight: 500; margin: 0 auto;
     }
     .checkoutContainer .checkRt .odThum > div{
         width: 90%; margin: 0 auto; padding-bottom: 5%;
     }
     .checkoutContainer .checkRt .odThum > div > h4{
-        font-size: 16px; color: #000; margin-bottom: 20px;
+        font-size: 14px; color: #000; margin-bottom: 20px;
     }
     .checkoutContainer .checkRt .odThum > div ol{
         width: 95%; height: 400px; overflow-y: scroll; margin-bottom: 20px; 
@@ -1085,13 +1084,16 @@
     .checkoutContainer .checkRt .odThum > div ol li{
         width: 100%; margin-bottom: 20px; display: block;
     }
+    .checkoutContainer .checkRt .odThum > div ol li h5{
+        font-size: 14px;
+    }
     .checkoutContainer .checkRt .odThum > div ol li a{
         width: 100%; margin: 0 auto 30px;
         display: block;
     }
     .checkoutContainer .checkRt .odThum > div ol li a img{
-        width: 100%; max-width: 80%; margin: 0 auto; display: block;
-        box-sizing: border-box; border: 1px solid #acacac;
+        width: 100%; margin: 0 auto; display: block;
+        box-sizing: border-box; border: 1px solid #eaeaea;
     }
     .checkoutContainer .checkRt .odThum > div ol li h5{
         display: block; margin-bottom: 45px; 
@@ -1109,8 +1111,8 @@
         margin-bottom: 35px; 
     }
     .checkoutContainer .checkRt .odThum > div ol li b{
-        display: block; font-size: 16px; color: #000; font-weight: 500;
-        text-align: right; padding-right: 5%;
+        display: block; font-size: 14px; color: #000; font-weight: 500;
+        text-align: right;
     }
     .checkoutContainer .checkRt .odThum > div > .btn{
         display: block; width: 100%; box-sizing: border-box;
@@ -1170,7 +1172,7 @@
         /* padding: 5px auto; */
     }
     .orderCompleteContainer div:last-of-type a:first-child{
-        background-color: transparent; border: 1px solid #acacac;
+        background-color: transparent; border: 1px solid #eaeaea;
         color: #acacac;
     }
     .orderCompleteContainer div:last-of-type a:last-child{
@@ -2874,9 +2876,9 @@
     .returnAdd.active div{padding-left: 13%; font-size: 14px; font-weight: 400; color: #8a8a8a; box-sizing: border-box; border-bottom: 1px solid #acacac; margin-bottom: 45px;}
     .returnAdd.active div span{padding: 0 5%; color: #000000;}
     .returnAdd.active div address{width: 65%; margin: 20px 0 30px; line-height: 24px; font-style: normal;}
-    .returnAdd.active input[type='submit']{width: 100%; font-size: 16px; font-weight: 700; line-height: 35px; background-color: #002f4a; color: #0094ea;
+    .returnAdd.active input[type='button']{width: 100%; font-size: 16px; font-weight: 700; line-height: 35px; background-color: #002f4a; color: #0094ea;
         margin-bottom: 35px; box-sizing: border-box; border: 1px solid #002f4a;}
-    .returnAdd.active input[type='submit']:hover{background-color: transparent; color: #002f4a;}
+    .returnAdd.active input[type='button']:hover{background-color: transparent; color: #002f4a;}
     /* order page */
     .orderContainer mark,.orderContainer address{font-style: normal;}
     .orderContainer .order.List{
@@ -5269,8 +5271,8 @@
     .returnAdd.active div{padding-left: 12%; font-size: 14px; font-weight: 400; color: #8a8a8a; box-sizing: border-box; border-bottom: 1px solid #acacac; margin-bottom: 45px;}
     .returnAdd.active div span{padding: 0 5%; color: #000000;}
     .returnAdd.active div address{width: 65%; margin: 20px 0 30px; line-height: 24px; font-style: normal;}
-    .returnAdd.active input[type='submit']{width: 100%; font-size: 16px; font-weight: 700; line-height: 35px; background-color: #002f4a; color: #0094ea; margin-bottom: 35px; box-sizing: border-box; border: 1px solid #002f4a;}
-    .returnAdd.active input[type='submit']:hover{background-color: transparent; color: #002f4a;}
+    .returnAdd.active input[type='button']{width: 100%; font-size: 16px; font-weight: 700; line-height: 35px; background-color: #002f4a; color: #0094ea; margin-bottom: 35px; box-sizing: border-box; border: 1px solid #002f4a;}
+    .returnAdd.active input[type='button']:hover{background-color: transparent; color: #002f4a;}
     /* order page */
     .orderContainer mark,.orderContainer address{font-style: normal;}
     .orderContainer .order.List{
