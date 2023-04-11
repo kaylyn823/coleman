@@ -132,19 +132,19 @@
     .rec li img{width: 100%; display: block;}
     .rec li > div:first-of-type{padding: 15px 4.8%; font-size: 14px; color: #727483; line-height: 24px;vertical-align: middle;}
     .rec li > div:first-of-type > *{line-height: 24px;}
-    .rec li > div:first-of-type ol{width: 80%;}
-    .rec li > div:first-of-type > div{width: 70%;}
     .rec li > div:first-of-type > div ol{width: 100%;}
-    .rec li > div:first-of-type > span{width: 20%;}
-    .rec li > div:first-of-type > span:hover{color: #000;}
-    .rec li > div:first-of-type > span::before{content: '+';}
+    .rec li > div:first-of-type > div{width: 70%;}
+    .rec li > div:first-of-type > div span{width: 20%;}
+    .rec li > div:first-of-type > div span:hover{color: #000;}
+    .rec li > div:first-of-type > div span::before{content: '+';}
     .rec li > div:first-of-type ol .co:not(:first-child){margin-left: 5%;}
     .rec li > div:first-of-type ol .co{
         width: 26px; border-radius: 16px; text-indent: -9999px; box-sizing:border-box; border: 1px solid transparent;
         background-image: url('../images/coloroption_sprite.png'); background-repeat: no-repeat;}
     .rec li > div:first-of-type ol .active{ border: 1px solid #000; box-sizing: border-box;}
     .rec li > div:first-of-type ol .co:hover:not(.active){ border: 1px solid #acacac; box-sizing: border-box;}
-    .rec li > div:first-of-type > span{width: 20%; text-align: right;}
+    .rec li > div:first-of-type > span{display: block; width: 30%; text-align: right;}
+    .rec li > div:first-of-type > span::after{content: 'colors'; padding-left: 5px; display: inline-block;}
     .rec li > div:nth-child(3){padding: 0 15px 15px;}
     .rec li > div:nth-child(3) h3{min-height: 55px;}
     .rec li > div:nth-child(3) h3 a{display: block; text-decoration: none; font-size: 13px; line-height: 20px; color: #000000; font-weight: 600;}
