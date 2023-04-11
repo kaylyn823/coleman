@@ -1222,9 +1222,9 @@
         transition: 0.05s ease-in-out;
         margin-right: 20%;
     }
-    .listContainer > div:first-of-type div:after{ display: block; content: url('../images/sort_arrow.png'); transition: 0.5s ease;
+    .listContainer > div:first-of-type div:after{ display: block; content: url('../images/sort_arrow.png'); transition: 0.5s ease; rotate: 90deg;
     }
-    .listContainer > div:first-of-type div:after{rotate: 180deg;}
+    .listContainer > div:first-of-type div:hover:after{rotate: 180deg;}
     .listContainer > div:first-of-type div #sortOption{
         position: absolute; top: 200%; right: 0; z-index: 99; padding: 4% 10px 4% 5%; background-color: #ffffff;
         width: 160%; box-shadow: 0.6rem 0.6rem 0.93rem 0.3rem rgba(0, 0, 0, 0.50); display: none;
