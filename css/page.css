@@ -153,8 +153,7 @@
     .rec li > div:nth-child(3) span{text-align: right;}
     .rec li > div:nth-child(3) input{
         background-repeat: no-repeat; border: none; cursor: pointer; background-color: transparent; text-indent: -9999px;
-        width: 100%; max-width: 22px; line-height: 22px; box-sizing: border-box;
-        display: inline-block;
+        width: 100%; max-width: 20px; line-height: 22px; box-sizing: border-box; padding: 0; display: inline-block;
     }
     .rec li > div:nth-child(3) input:not(:nth-of-type(1)){margin-left: 10px;}
     .rec li > div:nth-child(3) input:nth-of-type(1){background-image: url('../images/productlist_ico_1.png');}
@@ -2609,7 +2608,10 @@
     .rec li > div:nth-child(3) h3 a:hover{color: #8a8a8a; font-weight: 600;}
     .rec li > div:nth-child(3) div{width: 50%;}
     .rec li > div:nth-child(3) span{text-align: right;}
-    .rec li > div:nth-child(3) input{background-repeat: no-repeat; border: none; cursor: pointer; background-color: transparent; text-indent: -9999px; min-width: 19px; line-height: 22px; box-sizing: border-box;}
+    .rec li > div:nth-child(3) input{
+        padding: 0; background-repeat: no-repeat; border: none; cursor: pointer; background-color: transparent; text-indent: -9999px;
+        width: 100%; max-width: 20px; line-height: 22px; box-sizing: border-box; display: inline-block;
+    }
     .rec li > div:nth-child(3) input:not(:nth-of-type(1)){margin-left: 20px;}
     .rec li > div:nth-child(3) input:nth-of-type(1){background-image: url('../images/productlist_ico_1.png');}
     .rec li > div:nth-child(3) input:nth-of-type(2){background-image: url('../images/productlist_ico_2.png');}
@@ -4994,7 +4996,10 @@
     .rec li > div:nth-child(3) h3 a:hover{color: #8a8a8a;}
     .rec li > div:nth-child(3) div{width: 50%;}
     .rec li > div:nth-child(3) span{text-align: right;}
-    .rec li > div:nth-child(3) input{background-repeat: no-repeat; border: none; cursor: pointer; background-color: transparent; text-indent: -9999px; min-width: 19px; line-height: 22px; box-sizing: border-box;}
+    .rec li > div:nth-child(3) input{
+        background-repeat: no-repeat; border: none; cursor: pointer; background-color: transparent; text-indent: -9999px; width: 100%; max-width: 20px;
+        line-height: 22px; box-sizing: border-box; padding: 0;
+    }
     .rec li > div:nth-child(3) input:not(:nth-of-type(1)){margin-left: 20px;}
     .rec li > div:nth-child(3) input:nth-of-type(1){background-image: url('../images/productlist_ico_1.png');}
     .rec li > div:nth-child(3) input:nth-of-type(2){background-image: url('../images/productlist_ico_2.png');}
